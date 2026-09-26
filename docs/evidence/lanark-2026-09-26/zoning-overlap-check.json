@@ -1,0 +1,7 @@
+{
+  "method": "Full-polygon geometric check in EPSG:2272 using the parcel WKT and returned OBJECTID 634 zoning ring.",
+  "parcel_vertices_inside_zoning": [true, true, true, true, true],
+  "parcel_boundary_to_zoning_boundary_intersections": 0,
+  "result": "The simple parcel polygon is wholly inside the returned R1D-H feature by a coordinate-level vertex-and-edge check.",
+  "limitation": "This is a geometric data check, not an authoritative City zoning determination."
+}

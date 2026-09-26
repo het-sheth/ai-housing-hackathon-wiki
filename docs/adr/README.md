@@ -10,6 +10,7 @@ ADRs explain consequential choices, their evidence, alternatives and tradeoffs. 
 | [0002](0002-separate-research-and-application.md) | Accepted | Keep research and application repositories separate |
 | [0003](0003-stack-candidate.md) | Proposed | Evaluate a familiar TypeScript web stack; Better T Stack remains optional |
 | [0004](0004-context-and-handoffs.md) | Accepted | Use selective Markdown context, ADRs and a current handoff |
+| [0005](0005-propose-project-comparison.md) | Proposed | Evaluate two housing proposals on one Pittsburgh parcel |
 
 ## For Agents
 
