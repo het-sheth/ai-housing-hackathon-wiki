@@ -13,6 +13,10 @@ updated: 2026-09-26
 
 **Promise:** For this Pittsburgh property and housing proposal, explain the applicable zoning checks, show what changes when the proposal changes, and identify the next evidence or human review needed.
 
+## New practitioner evidence from the video
+
+[The ACTION-Housing caption analysis](/wiki/research/action-housing-video-findings.md) describes a real preference for one taller building over two, community/design discussions and paid diligence artifacts. It supports investigating proposal tradeoffs but comes from a 35-unit rental development context, not our candidate single-home rehabilitation workflow. Do not broaden the weekend app to reproduce that entire project. The transcript also explains why finance affects design: deferring a financial engine does not mean financing is irrelevant; financial feasibility must remain unassessed.
+
 ## Who, when and decision
 
 Primary user hypothesis: a project lead at a small nonprofit housing developer considering further diligence. A small private developer is an alternative primary user if case review shows a better fit. The user wants to decide whether to retain or adjust a proposal and what to investigate next. We have not observed their actual workflow or established who approves spending.

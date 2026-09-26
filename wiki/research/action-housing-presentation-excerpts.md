@@ -9,7 +9,7 @@ updated: 2026-09-26
 
 # ACTION-Housing presentation excerpts
 
-Four screenshots downloaded by Het and visually inspected on September 26, 2026 show slides 35, 36, 62 and 63 of a presentation playing in the video Building Affordable Housing by Action Housing. These are four excerpts of one presentation, not independent corroboration. The full talk, speaker explanation, original deck and publication date have not been verified. The SME described it as a presentation from two years earlier; that is user-supplied context.
+Four screenshots downloaded by Het and visually inspected on September 26, 2026 show slides 35, 36, 62 and 63 of a presentation playing in the video Building Affordable Housing by Action Housing. These are four excerpts of one presentation, not independent corroboration. At initial review, the full talk, speaker explanation, original deck and publication date had not been verified. Subsequent automatic-caption retrieval established the upload date and supplied spoken context; see [full caption analysis](/wiki/research/action-housing-video-findings.md). The original deck remains unverified. The SME described it as a presentation from two years earlier; that is user-supplied context.
 
 ## Observations from the screenshots
 
@@ -34,4 +34,4 @@ Original screenshots remain unchanged in Het's Downloads; they have not been cop
 
 # Citations
 
-[Building Affordable Housing by Action Housing, Pro-Housing Pittsburgh video](https://www.youtube.com/watch?v=vJ0ReB26gVA). Publication date unverified. Access attempt September 26, 2026 did not retrieve the talk. Evidence above comes from the four user-supplied screenshots, not a claimed viewing of the full video.
+[Building Affordable Housing by Action Housing, Pro-Housing Pittsburgh video](https://www.youtube.com/watch?v=vJ0ReB26gVA). YouTube upload date subsequently retrieved as April 16, 2024. Initial web access failed; yt-dlp later retrieved original English automatic captions on September 26, 2026. Evidence above remains a screenshot transcription; the linked caption analysis adds context and corrections.

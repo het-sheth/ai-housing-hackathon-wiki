@@ -1,0 +1,16 @@
+{
+  "video_id": "vJ0ReB26gVA",
+  "url": "https://www.youtube.com/watch?v=vJ0ReB26gVA",
+  "title": "Building Affordable Housing by Action Housing",
+  "channel": "Pro-Housing Pittsburgh",
+  "upload_date": "2024-04-16",
+  "duration_seconds": 4261,
+  "retrieved": "2026-09-26",
+  "method": "yt-dlp --ignore-config --skip-download --write-auto-subs --sub-langs en-orig --sub-format json3",
+  "caption_kind": "YouTube original English automatic captions, not human-verified transcription",
+  "caption_sha256": "a0261e44d700dfceffa38e10206bc1dd938d11f83fdca5588a4f053365a186e6",
+  "nonempty_events": 1724,
+  "first_event_ms": 120,
+  "last_event_ms": 4259000,
+  "publication_scope": "Original summary and timestamps only; full captions retained in temporary local research storage, not published."
+}

@@ -1,6 +1,6 @@
 # Current handoff: Pittsburgh housing hackathon
 
-Updated: 2026-09-26. Stage: local application start authorized; scaffolding has not started. Latest instruction: update handoffs first and explain the YouTube findings.
+Updated: 2026-09-26. Stage: local application start authorized; scaffolding has not started. Latest work: full original English automatic captions retrieved and analyzed after Het requested tool-based transcription. Het then asked about "jev or some other system one model"; Het clarified typesafe.ai. Official docs identify Jev as a typed-decision model, not text generation. No account/API access or integration tested. Candidate role: proposal classification with user confirmation; no feasibility verdict or confidence-as-Ease substitution. See docs/typesafe-evaluation-2026-09-26.md.
 
 ## For Humans
 
@@ -41,15 +41,15 @@ Lanark: 1623 LANARK ST, PARID `0023C00208000000`, exact boundary and PLI ID matc
 
 ### Exactly what was reviewed from YouTube
 
-The full ACTION-Housing video and its transcript were NOT retrieved or reviewed. The web fetch failed. Four user-downloaded screenshots were visually inspected, showing slides 35, 36, 62 and 63. No video timestamps were established.
+After the initial web fetch failed, yt-dlp successfully downloaded YouTube original English automatic captions on September 26. Metadata: uploaded April 16, 2024; duration 71:01. A timestamped transcript was generated in `/tmp/action-housing-video/transcript.txt`; original JSON captions are beside it. Parent and reused agents reviewed the text across the full duration. This is caption analysis, not full audio/visual verification. Do not publish the full transcript. Provenance/hash: `docs/action-housing-video-provenance.json`.
 
-Slides 35-36 show a $16,426,148 budget with construction listed as 67%, and matching funding including $11,692,000 tax credit equity, public sources, sponsor loan and deferred fee. Slides 62-63 discuss investor/developer benefits and explicitly name Sixth Ward Flats; slide 63 describes 35 low-income units, including 20 for veterans. The project identity/date for the budget slides is not visible, so do not attribute that budget to Sixth Ward Flats without more context. Do not turn slide statements into current tax/financing guidance or Pittsburgh cost benchmarks.
+Read `wiki/research/action-housing-video-findings.md` for timestamped findings. Especially relevant: 29-32 minutes, one taller building versus two and community/design tradeoffs; 41 minutes, reported utility delay; 57-58 minutes, schematic design, environmental work and market study as paid diligence artifacts. The case is a multifamily rental project, not validation of a single-home CLT workflow. Funding affects design even if a financial engine is deferred. Current zoning/tax rules must come from current primary authorities, not the 2024 talk.
 
-Inference: full financial feasibility exceeds construction cost minus revenue; mission, costs, funding and stakeholder returns must remain separate. This supports deferring a full financial model but does not prove demand for zoning comparison. No acquisition workflow, current tools, staff handoffs or pain points have been established from these excerpts. Sources, limitations and screenshot hashes are documented in the presentation page and `docs/action-housing-screenshot-manifest.json`. Originals remain in Downloads, not the public repository.
+Captions contain obvious name/number errors. Near 62:49 the speaker says the current example did not have the veterans set-aside on the later slide, so do not merge all slide facts into one project. Screenshots accurately record slide text but lack this clarification. The exact $16.426m budget cannot be reassigned by guessing. Caption discussion dates construction to 2019; costs are not current benchmarks. Original screenshot notes now link the new analysis and preserve their original evidence boundary.
 
 ### Build boundary and next actions
 
-1. Resume the authorized app start only after addressing Het's current handoff/video question. Use a feature branch in the new local repository. Do not request the same permission again.
+1. Resume the authorized app start after incorporating the transcript findings and the pending model clarification. Use a feature branch in the new local repository. Do not request the same permission again.
 2. Settle the stack preference if an answer arrives; Vite + React + TypeScript is the recommendation. Record a compact first-slice plan before code. Do not add auth/database/payment infrastructure without need. Keep any eventual provider API key server-side.
 3. Complete one precise rule trace before automating a comparison. Use conditional statements, not approval verdicts. Same-use repair and expansion are distinct. Unknown lawful use prevents a definitive permission result; added unit/reconstruction must not accidentally enter the repair pathway.
 4. Build the smallest honest interaction: confirm one real site, state proposal, inspect findings, change one supported input, see explained differences, export sources/unknowns. Do not present fixture data as live lookup or deterministic explanations as model-generated AI. AI integration is not yet implemented or selected.
@@ -66,4 +66,4 @@ This handoff update: wiki check passed with 78 concepts and zero problems (exit 
 
 ### Resume prompt
 
-Read AGENTS.md and docs/handoffs/current.md in the research repository. Het has authorized starting a separate local application, but asked to update handoffs and explain YouTube findings first. Only four screenshots were reviewed, not the full video. React/TypeScript/Vite is recommended, not explicitly selected. Preserve the evidence limitations, use fresh app code, and continue a small local build without reopening broad research or asking again whether a new repo is allowed. Keep research PR #3 separate from the app.
+Read AGENTS.md and docs/handoffs/current.md in the research repository. Het has authorized starting a separate local application, but asked to update handoffs and explain YouTube findings first. The full automatic-caption text was subsequently retrieved and analyzed, with timestamps and quality caveats; see wiki/research/action-housing-video-findings.md. React/TypeScript/Vite is recommended, not explicitly selected. Preserve the evidence limitations, use fresh app code, and continue a small local build without reopening broad research or asking again whether a new repo is allowed. Keep research PR #3 separate from the app.
