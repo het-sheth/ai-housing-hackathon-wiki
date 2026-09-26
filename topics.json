@@ -1,1 +1,11 @@
-{ "order": ["getting-started"] }
+{
+  "order": [
+    "event",
+    "tracks",
+    "data",
+    "research",
+    "product",
+    "datasets",
+    "getting-started"
+  ]
+}
