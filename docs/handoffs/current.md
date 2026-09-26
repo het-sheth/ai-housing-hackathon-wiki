@@ -1,75 +1,69 @@
 # Current handoff: Pittsburgh housing hackathon
 
-Updated: 2026-09-26. Stage: brainstorming and discovery. Product implementation has not started.
+Updated: 2026-09-26. Stage: local application start authorized; scaffolding has not started. Latest instruction: update handoffs first and explain the YouTube findings.
 
 ## For Humans
 
-Het and Rushi are a two-person team. Track 1 is selected. Het has Saturday and Sunday, with submission due September 27 at 11:59 p.m. Eastern. We want a usable Pittsburgh housing product that fits practitioners' existing workflow. A nonprofit site-screening assistant is a hypothesis; target user, features and stack are not approved.
+Het and Rushi are building Track 1, Development Feasibility Navigator. Submission is September 27, 2026 at 11:59 p.m. Eastern. Het has Saturday and Sunday; Rushi's availability and preferred responsibilities remain unknown.
 
-Deep Research has finished. Het identified `/home/het/Downloads/deep-research-report.md` on September 26. The report was read and compared with targeted primary-source research. Do not restart broad research. Het subsequently posted the revised question himself and supplied SME replies emphasizing financial feasibility, comparable rents/sales, and zoning. The assistant has not contacted anyone. Product scope remains proposed. Do not publish raw channel messages or attributed quotations without permission.
+Het asked to start building in a new local repository. This authorizes a separate local app start, not publication, deployment or claims of validated demand. The working direction is one Pittsburgh parcel, two supported housing proposals, source-backed zoning differences and a downloadable next-action brief. Detailed supported rules and the scoring rubric still require resolution. ADR 0005 remains a proposed detailed scope, not blanket permission to implement every suggested feature.
+
+React + TypeScript with Vite was recommended as the fastest fit for the current UI scope. Het asked which option would be faster; he has not explicitly selected the stack. Better T Stack is an alternative, not an existing dependency. No app directory, framework scaffold, implementation plan, application code, AI endpoint or app remote has been created. Proposed location: `/home/het/personal/ai-housing-navigator`. Node v25.2.1 and npm 11.6.2 are installed.
 
 ## For Agents
 
 ### Read next
 
-1. Root `AGENTS.md` and `docs/adr/README.md`.
-2. `wiki/product/context-start.md` for compact research context.
-3. Only the relevant topic/source section for the question at hand.
+1. Root `AGENTS.md`, this handoff and `docs/adr/README.md`.
+2. `wiki/product/proposal-comparison.md` for the proposed interaction and build boundary.
+3. `wiki/product/lanark-worked-example.md` for the real parcel and evidence limitations.
+4. `wiki/product/september-26-evidence-update.md` and `wiki/research/action-housing-presentation-excerpts.md` for the latest source findings.
 
-### Confirmed context
+### Repository and publication state
 
-- Rushi supplied the long housing systems research. Its PDF and original Markdown overlap.
-- Het works with nonprofit software, has no pre-existing housing-nonprofit relationships, and does not want a standalone analytics tool.
-- Local design should be Pittsburgh-specific in data, jurisdiction, workflow and visual identity. Local Easter eggs are optional finishing details.
-- Private customer conversations are outside this repository. Do not request or ingest them as wiki material.
-- The $75 Cursor event credit is treated as development budget. Runtime model-provider funding is not established; event terms have not been independently confirmed.
-- Participant Packet requires one track, public app repository, intact event-time code history, citations/tool disclosures, limitations and a public 3-5 minute demo. Six judging criteria have no specified weights.
+- Research repo: https://github.com/het-sheth/ai-housing-hackathon-wiki . Local: `/home/het/personal/ai-housing-hackathon-wiki`.
+- PRs #1 and #2 are merged. Their branches were deleted locally and remotely at Het's request.
+- PR #3 is open: https://github.com/het-sheth/ai-housing-hackathon-wiki/pull/3 . It contains the new research, Lanark evidence, proposed ADR 0005 and Rushi message draft.
+- Active branch: `docs/proposal-comparison`. The only housing remote branches verified after cleanup were `main` and `docs/proposal-comparison`. Automatic branch deletion after merge is enabled.
+- Local main now tracks origin/main. The separate template remote still exists as provenance; it is not another housing product.
+- Rushi's GitHub account is Baburaoooo; collaborator invitation acceptance is not verified. No assistant outreach occurred. Whether Het sent the drafted Rushi proposal is unknown.
+- Keep the app in a new repository with fresh code. Do not copy previous project implementation or research scripts. Public source facts can inform it with provenance and applicable reuse terms.
 
-### What exists
+### Evidence already established
 
-- Public research repo: https://github.com/het-sheth/ai-housing-hackathon-wiki . Local path: /home/het/personal/ai-housing-hackathon-wiki . No application repo yet.
-- Initial research imported through PR #1, merged. Rushi (Baburaoooo) invited with write permission; last verified state was pending.
-- PR #2 was also verified merged on GitHub on September 26. Both research branches are historical merged PR heads; local main still tracks template/main; origin/main was refreshed before this PR. Do not merge or reset blindly. New research is prepared for publication through the proposal-comparison PR.
-- Current follow-up branch: `docs/proposal-comparison`. Inspect Git status before editing; it contains the subsequent prompt, source conversions, ADRs and handoff work.
-- Original eight downloads in `raw/hackathon/`; SHA-256 manifest records provenance. Five PDFs cover 62 pages. Two data catalog CSVs are identical, with 60 entries.
-- Full page-marked PDF text and embedded hyperlinks in `raw/markdown/`; extraction checks preserve all non-whitespace characters from pdftotext. Layout-dependent tables/figures still need original PDF inspection.
-- Curated catalog resource pages, three-track comparison, rules, Rushi interpretation, source corrections and open questions in `wiki/`.
-- Copyable research prompt: `docs/deep-research-prompt.txt`. It is an assignment, not verified findings.
-- Downloaded packet contains original Meet links but no separate recording link. An updated packet or direct organizer link is still needed.
+The full Deep Research export `/home/het/Downloads/deep-research-report.md` was read and reviewed. Its missing reference bibliography and unsupported assumptions are documented in `docs/research-review-and-sme-questions.md`. Do not restart broad research. Original source PDFs/Markdown and duplicated catalog CSVs are not independent corroboration.
 
-### Data evidence and limits
+User-supplied SME guidance emphasizes zoning and financial feasibility, then explicitly supports doing one dimension well. This is advice, not judging interpretation, demand validation or endorsement. Official links and anonymized paraphrases are in the evidence update. Do not publish raw channel messages or attributed quotes without permission.
 
-Initial work checked six priority landing pages. A September 26 bounded agent audit subsequently matched one assessment PARID to parcel pin and queried an interior point against City zoning. See `docs/partial-data-audit-2026-09-26.md`. This commercial test record is not a housing demo candidate, and that earlier audit did not prove whole-parcel zoning/hazard integration or match rates. The subsequent approved Lanark experiment now demonstrates one exact assessment/boundary/permit join plus whole-parcel City zoning and slope checks. See `wiki/product/lanark-worked-example.md` and `docs/lanark-evidence-2026-09-26.md`. Assessment classification conflicts with permit history; legal use, current condition and financial feasibility remain unverified. No general match-rate or full-hazard validation is established. Current WPRDC slugs are `allegheny-county-parcel-boundaries1` and `zoning`; original catalog URLs remain preserved. Permit does not mean completed home; missing data does not mean no constraint. Current rules and financial assumptions need source verification before product use.
+Rescope advertises cited parcel rules, overlays, maps and pipeline screening. Static reports substantially overlap; product performance and Pittsburgh coverage are unverified. Proposal comparison is a differentiation hypothesis, not an established unique capability.
 
-### Experience evidence
+Lanark: 1623 LANARK ST, PARID `0023C00208000000`, exact boundary and PLI ID matches. Whole-polygon City zoning/slope queries were performed. R1D-H feature 634 covers the parcel in a bounded vertex/edge test; slope intersects a mapped >=25% feature. Assessment ASOFDATE 2026-09-01 says VACANT LAND while six completed PLI records describe dwelling rehabilitation and later work. Preserve this conflict. Neither source establishes present physical condition or lawful use. Full hazard, title, utilities and financial feasibility are unknown. $300,000 permit value and $197,500 CLT asking price are different quantities; their difference is not a funding gap. See saved records and query scope in `docs/evidence/lanark-2026-09-26/`.
 
-Available local repository history was inventoried; nine relevant projects' manifests and selected commits were read. Repeated patterns include React/TypeScript, Next.js, Tailwind/shadcn, Python/FastAPI and API integrations. Do not equate commit counts or dependency lists with expertise, deployment success or current preference. Rushi's technical responsibilities remain to be clarified. Do not reuse prior project code.
+### Exactly what was reviewed from YouTube
 
-### Agent documentation
+The full ACTION-Housing video and its transcript were NOT retrieved or reviewed. The web fetch failed. Four user-downloaded screenshots were visually inspected, showing slides 35, 36, 62 and 63. No video timestamps were established.
 
-AGENTS.md, CLAUDE.md and the getting-started pages now describe this housing project. Old template implementation plans were removed. Template origin remains recorded as provenance.
+Slides 35-36 show a $16,426,148 budget with construction listed as 67%, and matching funding including $11,692,000 tax credit equity, public sources, sponsor loan and deferred fee. Slides 62-63 discuss investor/developer benefits and explicitly name Sixth Ward Flats; slide 63 describes 35 low-income units, including 20 for veterans. The project identity/date for the budget slides is not visible, so do not attribute that budget to Sixth Ward Flats without more context. Do not turn slide statements into current tax/financing guidance or Pittsburgh cost benchmarks.
 
-### Next steps
+Inference: full financial feasibility exceeds construction cost minus revenue; mission, costs, funding and stakeholder returns must remain separate. This supports deferring a full financial model but does not prove demand for zoning comparison. No acquisition workflow, current tools, staff handoffs or pain points have been established from these excerpts. Sources, limitations and screenshot hashes are documented in the presentation page and `docs/action-housing-screenshot-manifest.json`. Originals remain in Downloads, not the public repository.
 
-Latest: Het requested recording the new information and proposing an idea to Rushi. Read `wiki/product/proposal-comparison.md` and proposed ADR 0005. Supporting SME/official-source findings are in `wiki/product/september-26-evidence-update.md`; screenshot findings in `wiki/research/action-housing-presentation-excerpts.md`. Draft, not sent: `docs/rushi-product-proposal.md`. No product acceptance, Rushi availability or external feedback on this proposal is established.
+### Build boundary and next actions
 
-The manual experiment was approved by Het and completed on September 26. The concrete output is `wiki/product/lanark-worked-example.md`. Review it with a practitioner before approving an application scope. No outreach occurred. Do not restart the example or interpret this approval as permission to implement an app.
+1. Resume the authorized app start only after addressing Het's current handoff/video question. Use a feature branch in the new local repository. Do not request the same permission again.
+2. Settle the stack preference if an answer arrives; Vite + React + TypeScript is the recommendation. Record a compact first-slice plan before code. Do not add auth/database/payment infrastructure without need. Keep any eventual provider API key server-side.
+3. Complete one precise rule trace before automating a comparison. Use conditional statements, not approval verdicts. Same-use repair and expansion are distinct. Unknown lawful use prevents a definitive permission result; added unit/reconstruction must not accidentally enter the repair pathway.
+4. Build the smallest honest interaction: confirm one real site, state proposal, inspect findings, change one supported input, see explained differences, export sources/unknowns. Do not present fixture data as live lookup or deterministic explanations as model-generated AI. AI integration is not yet implemented or selected.
+5. Keep financial feasibility unassessed; unknown evidence cannot improve ease. Evidence completeness and social/mission value are separate from ease. A component-only score's acceptance by organizers is unresolved.
+6. Rushi could validate a rule trace while Het handles UX/parcel demonstration, subject to his availability. Practitioner utility remains unvalidated. No external reply is required merely to create the local repo, but uncertainty must constrain product claims.
 
-1. The revised SME question was posted by Het. Replies support investigating zoning and financial feasibility together, including comps, hard costs and soft costs, particularly for developers/nonprofits. This is expert guidance, not demonstrated demand or a project walkthrough. A follow-up asking whether comps or cost assumptions are harder to obtain was drafted and copied; whether Het posted it is unknown. Rescope and the linked Pittsburgh examples were reviewed. Read `docs/next-product-experiment-2026-09-26.md`, which links the evidence notes. Rescope has substantial overlap; Pittsburgh support and live output remain untested. That manual example has now been completed for 1623 Lanark; the next step is practitioner review of the actual output. No assistant outreach is authorized.
-2. Treat the Deep Research as hypotheses: its numbered citations have no bibliography in the export, it does not demonstrate parcel/zoning joins, and several regulatory claims need correction. Preserve the downloaded original. Incorporate SME answers with their evidence type and remaining uncertainty.
-3. Validate a narrow workflow through a recent actual case and output review. General SME feedback has been supplied, but no full practitioner interview, endorsement, or product validation is established.
-4. Define the minimum input, useful output, supported cases, failure behavior and how it fits current tools.
-5. Test a small parcel-to-zoning/hazard join before promising broad coverage.
-6. Select architecture and create the application repository only after product scope is agreed. Better T Stack remains an option.
+### Reusable agents and rule work
 
-### Verification and publication
+Existing agents: `/root/practitioner` (Sol), `/root/data` (Terra), `/root/alternatives` (Luna). Reuse relevant context rather than launching broad research. The practitioner agent supplied an initial rule contract after app-start authorization; it is captured in `docs/initial-rule-contract.md` and requires review before production logic.
 
-September 26 research-review additions: `npm run check` passed, exit 0, 74 concepts and 0 problems. Draft SME questions, corrections, and bounded data audit are local and uncommitted on `docs/track-one-discovery`. No outreach or application implementation. Clipboard delivery failed because the sandbox could not connect to Wayland; the draft remains in the research-review document.
+### Verification
 
-Latest documentation check: `npm run check`, 78 concepts, 0 problems, exit 0. New evidence pages, proposed ADR 0005 and Rushi draft are included in the proposal-comparison PR batch. All 40 tests passed outside the sandbox; the sandbox reproduced the known subprocess failure. No outreach or application implementation occurred. Latest full test run: `npm test` outside the sandbox, 40 passed, exit 0. Full source extraction checks passed for all five PDFs. Sandboxed subprocess tests intermittently reported empty stdout/stderr and failures even with a TTY. The same suite passed outside the sandbox. Do not weaken tests to hide an execution-environment problem.
-
-Run `git status --short` and inspect remotes to establish current publication state. Do not assume uncommitted local notes are on GitHub. Update this section when checks or publication change. Preserve immutable raw files; whitespace-only changes to original sources are not cleanup tasks.
+This handoff update: wiki check passed with 78 concepts and zero problems (exit 0); all 40 tests passed outside the sandbox (exit 0); git diff --check passed. Sandboxed subprocess tests reproduced the known execution-environment failure. Never weaken assertions to hide it. Run `npm run check` for docs and `npm test` for the publishing guidance batch; record actual exit status. No app tests exist because no app code exists.
 
 ### Resume prompt
 
-Read AGENTS.md, docs/handoffs/current.md and docs/adr/README.md in /home/het/personal/ai-housing-hackathon-wiki. Deep Research is complete and reviewed in docs/research-review-and-sme-questions.md. Continue Track 1 discovery using actual SME answers if supplied. Scope and stack remain open. Do not repeat broad research or treat a proposed brief as an accepted design. Maintain this handoff and keep source claims separate from verified findings.
+Read AGENTS.md and docs/handoffs/current.md in the research repository. Het has authorized starting a separate local application, but asked to update handoffs and explain YouTube findings first. Only four screenshots were reviewed, not the full video. React/TypeScript/Vite is recommended, not explicitly selected. Preserve the evidence limitations, use fresh app code, and continue a small local build without reopening broad research or asking again whether a new repo is allowed. Keep research PR #3 separate from the app.
