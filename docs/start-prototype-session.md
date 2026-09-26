@@ -140,4 +140,18 @@ The first local slice is not the final hackathon submission. It must honestly id
 
 You are the orchestrator. Use small, bounded agents when they save time, and reuse available agents with relevant context. Previous thread had practitioner (Sol), data (Terra) and alternatives (Luna); those may not exist in this fresh session. Do not assume cross-session access. Avoid a large swarm or repeated full-research dispatches. A code/source reviewer is more useful now than more generic market research.
 
+### Delegate by task difficulty
+
+Use Astra, Sol and Luna subagents where available. This is explicit authorization for bounded delegation, not a large swarm. These are coding/research assistants, not a choice of runtime model for the housing app.
+
+| Model | Assignments | Boundary |
+|---|---|---|
+| Sol (`gpt-6-sol`) | Default implementation: UI flow, typed evidence model, source adapters, export, focused tests and ordinary debugging | Give one clear deliverable and owned files. Escalate a concrete blocker instead of reopening the whole design. |
+| Luna (`gpt-6-luna`) | Bounded support: source-register checks, documentation consistency, UI copy/accessibility checklist and explicit smoke-test checklists | No sole responsibility for legal interpretation, geometry correctness or the scoring rubric. Verify consequential output. |
+| Astra (`gpt-6-astra`) | Difficult cross-source/rule ambiguity, nontrivial geometry or reasoning bugs, and independent review of evidence handling and rule-state transitions | Use on a named hard question or focused review, not routine scaffolding. Review does not establish legal authority or replace practitioner confirmation. |
+
+The orchestrator owns the plan, shared interfaces, integration, running the app and final verification. Do not delegate everything and wait. Start with Sol on a clearly bounded implementation task while the orchestrator handles an independent part. Add Luna or Astra only when a concrete useful task exists; all three need not run on every iteration. Keep at most two child agents active at once by default. Parallel work must have non-overlapping file ownership; sequence work with unresolved shared interfaces. Reuse agents with relevant context. In a new session, spawn fresh ones only if previous agents are unavailable, and pass a concise task brief plus exact relevant files instead of the entire research history.
+
+For supported model overrides use the exact IDs above and the tool's compatible context/fork setting. If a model or subagent tool is unavailable, report the limitation briefly and use the closest available capability or implement directly. Do not let delegation setup delay the first running prototype. Never describe a review or test as completed without its actual result.
+
 Keep the main branch of the research wiki out of application work. Avoid unrelated cleanup. Do not send messages to SMEs or Rushi on my behalf. Do not ask me to confirm routine choices already authorized here. If something genuinely blocks the app, ask one precise question while completing independent work. The goal is a working small prototype I can react to, then quick iteration.

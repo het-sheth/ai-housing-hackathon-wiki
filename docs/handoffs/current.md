@@ -2,7 +2,7 @@
 
 Updated: 2026-09-26. Stage: fresh-session execution handoff prepared. Het explicitly requested a new local repo and a quick working prototype with iteration. Latest request is to stop this bloated session after saving a comprehensive build prompt. Do not start the app in this closing session.
 
-**Start the next session with `docs/start-prototype-session.md`.** It is a self-contained execution prompt with source map, exact resource IDs, supported flow, provenance, scope limits and acceptance checks. It directs implementation rather than another discovery phase. The default is React + TypeScript + Vite unless Het changes it. The initial repo path remains `/home/het/personal/ai-housing-navigator`; no app has been created.
+**Start the next session with `docs/start-prototype-session.md`.** It is a self-contained execution prompt with source map, exact resource IDs, supported flow, provenance, scope limits and acceptance checks. It directs implementation rather than another discovery phase. The prompt now explicitly assigns Sol to ordinary implementation, Luna to bounded support, and Astra to hard reasoning/review, with at most two child agents active by default. The default is React + TypeScript + Vite unless Het changes it. The initial repo path remains `/home/het/personal/ai-housing-navigator`; no app has been created.
 
 ## For Humans
 
