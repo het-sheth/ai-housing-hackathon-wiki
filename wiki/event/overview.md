@@ -11,6 +11,8 @@ status: researched
 
 This wiki organizes the AI Horizons AI for Housing Hackathon research for Het and Rushi, a two-person team. Het has Saturday and Sunday available. Rushi supplied the housing systems report and associated research. His research is evidence of an explored direction, not a confirmed product specification.
 
+For a small context window, start with [minimal brainstorming context](/wiki/product/context-start.md).
+
 1. [Rules and submission](/wiki/event/rules.md)
 2. [All three challenge tracks](/wiki/tracks/comparison.md)
 3. [Complete 60-entry resource catalog](/wiki/data/catalog.md)
@@ -18,9 +20,10 @@ This wiki organizes the AI Horizons AI for Housing Hackathon research for Het an
 5. [Deciphering Rushi's research](/wiki/research/rushi-direction.md)
 6. [Better T Stack assessment](/wiki/product/stack.md)
 7. [Open decisions](/wiki/product/open-questions.md)
-8. [Source provenance](/wiki/event/sources.md)
+8. [Deep Research prompt](/wiki/product/deep-research-brief.md)
+9. [Source provenance](/wiki/event/sources.md)
 
-This local research wiki was copied from het-sheth/okf-wiki-template. It preserves template provenance and is not the submitted application repository. No final track, product architecture, or implementation is approved yet. Source claims are distinguished from analysis; reading a catalog does not verify its datasets.
+This local research wiki was copied from het-sheth/okf-wiki-template. It preserves template provenance and is not the submitted application repository. Track 1 is selected as of September 26. Target user, product architecture and implementation scope remain undecided. Source claims are distinguished from analysis; reading a catalog does not verify its datasets.
 
 # Citations
 

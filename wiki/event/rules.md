@@ -36,6 +36,10 @@ Tools must provide decision support, with human review for consequential decisio
 
 Office hours: Saturday and Sunday 10 a.m.-6 p.m. ET in housing-sme-help and technical-help. Begin submission Saturday afternoon and edit it before closing. Official updates are in schedule-and-announcements. The provided form and data-sheet URLs in the chat paste were truncated. Use the complete links in the packet or Slack.
 
+## Kickoff recordings
+
+The downloaded packet mentions a recorded kickoff. Its extracted text and embedded hyperlinks contain the original housing-training and Cursor-training Google Meet links, but no separate recording link. An updated packet or a direct organizer link is still needed.
+
 # Citations
 
 `raw/hackathon/Ai Horizons Hackathon - Participant Packet.pdf`, pp. 4-9. Slack excerpts supplied by Het on September 26, 2026.
