@@ -158,6 +158,16 @@ The final interview is resolved. Do not reopen Q1-Q6. Resolve technical facts th
 
 Keep research/specification here; application work belongs in /home/het/personal/ai-housing-navigator. Preserve existing uncommitted work in both repositories. No implementation is authorized by this draft alone.
 
+## September 26 accepted amendment and subsequent authorization
+
+Ask an early financial diligence question when relevant to the proposed housing project: is there a preliminary project budget, are there expected sale or rental assumptions where applicable, and is a funding path identified? Keep each answer editable and allow Unknown. Do not require exact figures merely to advance the intake. Store any figures or descriptions as user-provided assumptions with their source and date, separate from observed market evidence or a reviewed financial analysis.
+
+For a relevant missing or unknown answer, the primary assessment creates a prioritized financial diligence task that names the missing budget, sale/rental assumption or funding path and requests a responsible person or reviewer to establish it. This task follows confirmed adverse findings and blocking identity or legal dependencies in priority. It appears before generic unsupported diligence gaps when it would affect the user's next decision. Finance remains Unassessed without sufficient inputs and a reviewed evaluation method; even completed intake fields do not create a viability verdict, affordability finding or overall score. Comparison may show changed assumptions or tasks, but remains secondary.
+
+Het accepted this amendment after the original six-question interview. It is a product decision, not practitioner validation. The user subsequently authorized beginning application implementation; the earlier documentation-only sentence above records the state when this draft was first written.
+
+The accepted visual addition is a striking illustrative 3D animated intro, separate from the actual 2D parcel view. It cannot imply a surveyed property, verified site geometry or current building model. Procedural Three.js is the implementation direction for the intro; a Blender GLB can be considered later. Blender is not installed in the current workspace. The earlier deferral of evidentiary 3D site context still applies. Keep factual parcel and jurisdiction claims tied to sourced 2D evidence and text alternatives.
+
 ## References
 
 - [Accepted interview decisions](product-decisions-2026-09-26.md)
