@@ -1,0 +1,49 @@
+{
+  "case": {
+    "address": "1623 LANARK ST, PITTSBURGH, PA 15214",
+    "parcel_id": "0023C00208000000",
+    "retrieval_date": "2026-09-26",
+    "privacy_scope": "No owner, contact, contractor, or change-notice fields were requested or retained."
+  },
+  "responses": [
+    {
+      "file": "assessment-1623.json",
+      "source": "https://data.wprdc.org/api/3/action/datastore_search",
+      "resource_id": "property_assessments_table",
+      "filter": {"PROPERTYHOUSENUM": "1623", "PROPERTYADDRESS": "LANARK ST", "PROPERTYCITY": "PITTSBURGH"},
+      "fields": ["PARID", "PROPERTYHOUSENUM", "PROPERTYFRACTION", "PROPERTYADDRESS", "PROPERTYCITY", "PROPERTYSTATE", "PROPERTYZIP", "MUNIDESC", "NEIGHDESC", "CLASS", "CLASSDESC", "USECODE", "USEDESC", "LOTAREA", "YEARBLT", "FAIRMARKETLAND", "FAIRMARKETBUILDING", "FAIRMARKETTOTAL", "ASOFDATE"]
+    },
+    {
+      "file": "parcel.json",
+      "source": "https://data.wprdc.org/api/3/action/datastore_search",
+      "resource_id": "858bbc0f-b949-4e22-b4bb-1a78fef24afc",
+      "filter": {"pin": "0023C00208000000"},
+      "fields": ["pin", "map_block_lot", "municode", "calc_acreage", "shape_length", "wkt"]
+    },
+    {
+      "file": "zoning-intersects.json",
+      "source": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/MapServer/0/query",
+      "method": "Full parcel polygon, EPSG:2272, esriSpatialRelIntersects",
+      "fields": ["OBJECTID", "zon_new", "full_zoning_type", "status"]
+    },
+    {
+      "file": "zoning-feature-634.json",
+      "source": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/MapServer/0/query",
+      "method": "OBJECTID=634, geometry returned in EPSG:2272",
+      "fields": ["OBJECTID", "zon_new", "full_zoning_type", "status"]
+    },
+    {
+      "file": "slope-intersects.json",
+      "source": "https://services1.arcgis.com/YZCmUqbcsUpOKfj7/arcgis/rest/services/PGHWebSlope25/FeatureServer/0/query",
+      "method": "Full parcel polygon, EPSG:2272, esriSpatialRelIntersects",
+      "fields": ["objectid_1", "objectid", "slope25", "shape__are", "shape__len", "Shape__Area", "Shape__Length"]
+    },
+    {
+      "file": "pli-by-parcel.json",
+      "source": "https://data.wprdc.org/api/3/action/datastore_search",
+      "resource_id": "f4d1177a-f597-4c32-8cbf-7885f56253f6",
+      "filter": {"parcel_num": "0023C00208000000"},
+      "fields": ["permit_id", "permit_type", "work_description", "work_type", "commercial_or_residential", "total_project_value", "issue_date", "parcel_num", "address", "latitude", "longitude", "neighborhood", "ward", "zip_code", "status"]
+    }
+  ]
+}

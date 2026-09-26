@@ -16,6 +16,10 @@ Rushi's report proposes a broad parcel-to-keys evidence and dependency model. It
 
 For continuity, read `docs/handoffs/current.md` and `docs/adr/README.md`. ADRs record why; the handoff records current state.
 
+## Latest product discussion
+
+Start with [the proposal for Het and Rushi](/wiki/product/proposal-comparison.md), [September 26 evidence update](/wiki/product/september-26-evidence-update.md) and [the completed Lanark example](/wiki/product/lanark-worked-example.md). A proposal comparison is under consideration; no app scope or implementation has been approved.
+
 ## Read selectively
 
 | Current question | Start with | Full source only when needed |
