@@ -1,0 +1,50 @@
+[
+  {
+    "original": "/home/het/Downloads/Development Feasibility & Pro Forma Navigator _ AI for Housing Hackathon.pdf",
+    "stored": "raw/hackathon/Development Feasibility & Pro Forma Navigator _ AI for Housing Hackathon.pdf",
+    "sha256": "8b643ef6413c123c7591fd6d21fbec1b1b6d165869863acb44a62f702a7c59b4",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/Housing Production, Rents & Household Flow Observatory _ AI for Housing Hackathon.pdf",
+    "stored": "raw/hackathon/Housing Production, Rents & Household Flow Observatory _ AI for Housing Hackathon.pdf",
+    "sha256": "c9079dfb1fbff49b20411bf215a97d721953002e523a654dd381c0277278bc2c",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/Housing Typology, Equity & Climate Matchmaker _ AI for Housing Hackathon.pdf",
+    "stored": "raw/hackathon/Housing Typology, Equity & Climate Matchmaker _ AI for Housing Hackathon.pdf",
+    "sha256": "4c9830e76c2b1065107a6034b3e134a35ab7126f0a5f17079e7200c775f4dace",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/The U.S. Housing Problem as a System_ From Dirt to Keys, With Pittsburgh as the Laboratory.pdf",
+    "stored": "raw/hackathon/The U.S. Housing Problem as a System_ From Dirt to Keys, With Pittsburgh as the Laboratory.pdf",
+    "sha256": "b5cb17c9489de930345599ca2dd469dbfe273582dad680a0a6620b9e37226357",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/House_market)markdownsz.md",
+    "stored": "raw/hackathon/House_market)markdownsz.md.txt",
+    "sha256": "591c085eea0f18f909b0cf4f2d432d8b6cc5d8e87521ef71f42582703351af0e",
+    "note": "Original bytes preserved; Markdown stored as .md.txt to avoid altering it for OKF frontmatter."
+  },
+  {
+    "original": "/home/het/Downloads/Ai Horizons Hackathon - Participant Packet.pdf",
+    "stored": "raw/hackathon/Ai Horizons Hackathon - Participant Packet.pdf",
+    "sha256": "95c6fa813b336a317d69d91e084efd38a9db8d30f6b3b3d7f887ec8b6af34c47",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/AI Hackathon for Housing \u2014 Public Data Catalog - Data Catalog(1).csv",
+    "stored": "raw/hackathon/AI Hackathon for Housing \u2014 Public Data Catalog - Data Catalog(1).csv",
+    "sha256": "7d9039f21b189b41803df46e3c32874b4eb3fe4cd2402c070a5842da1ccaaf76",
+    "note": "Original bytes preserved."
+  },
+  {
+    "original": "/home/het/Downloads/AI Hackathon for Housing \u2014 Public Data Catalog - Data Catalog.csv",
+    "stored": "raw/hackathon/AI Hackathon for Housing \u2014 Public Data Catalog - Data Catalog.csv",
+    "sha256": "7d9039f21b189b41803df46e3c32874b4eb3fe4cd2402c070a5842da1ccaaf76",
+    "note": "Original bytes preserved."
+  }
+]

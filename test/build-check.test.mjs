@@ -36,7 +36,7 @@ test('buildManifest emits the federation shape with outgoing cross-wiki links', 
     data: { type: 'concept', title: 'Overview', description: 'd', tags: ['a'] },
     content: 'See [[course-wiki:ai-hero/day-1]] and [[other]] and [[bad:x]].',
   }]);
-  assert.equal(m.wiki, 'okf-wiki-template');
+  assert.equal(m.wiki, 'ai-housing-hackathon-wiki');
   const p = m.pages[0];
   assert.deepEqual(
     { id: p.id, topic: p.topic, type: p.type, href: p.href, tags: p.tags, links: p.links },
@@ -91,12 +91,12 @@ function writeConcept(dir, topicSlug, body) {
 
 // --- e2e: happy path --------------------------------------------------------
 
-test('check passes on the shipped example bundle', () => {
+test('check passes on the research wiki bundle', () => {
   const dir = sandbox();
   const r = run(dir, '--check');
   clean(dir);
   assert.equal(r.status, 0, r.stderr);
-  assert.match(r.stdout, /check ok: 2 concepts, 0 problems/);
+  assert.match(r.stdout, /check ok: [1-9][0-9]* concepts, 0 problems/);
 });
 
 test('build emits valid HTML with a rewritten, resolving link', () => {
