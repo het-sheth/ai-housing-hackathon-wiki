@@ -1,6 +1,8 @@
 # Current handoff: Pittsburgh housing hackathon
 
-Updated: 2026-09-26. Stage: local application start authorized; scaffolding has not started. Latest work: full original English automatic captions retrieved and analyzed after Het requested tool-based transcription. Het then asked about "jev or some other system one model"; Het clarified typesafe.ai. Official docs identify Jev as a typed-decision model, not text generation. No account/API access or integration tested. Candidate role: proposal classification with user confirmation; no feasibility verdict or confidence-as-Ease substitution. See docs/typesafe-evaluation-2026-09-26.md.
+Updated: 2026-09-26. Stage: fresh-session execution handoff prepared. Het explicitly requested a new local repo and a quick working prototype with iteration. Latest request is to stop this bloated session after saving a comprehensive build prompt. Do not start the app in this closing session.
+
+**Start the next session with `docs/start-prototype-session.md`.** It is a self-contained execution prompt with source map, exact resource IDs, supported flow, provenance, scope limits and acceptance checks. It directs implementation rather than another discovery phase. The default is React + TypeScript + Vite unless Het changes it. The initial repo path remains `/home/het/personal/ai-housing-navigator`; no app has been created.
 
 ## For Humans
 
@@ -62,8 +64,11 @@ Existing agents: `/root/practitioner` (Sol), `/root/data` (Terra), `/root/altern
 
 ### Verification
 
-This handoff update: wiki check passed with 78 concepts and zero problems (exit 0); all 40 tests passed outside the sandbox (exit 0); git diff --check passed. Sandboxed subprocess tests reproduced the known execution-environment failure. Never weaken assertions to hide it. Run `npm run check` for docs and `npm test` for the publishing guidance batch; record actual exit status. No app tests exist because no app code exists.
+This handoff update: wiki check passed with 79 concepts and zero problems (exit 0); all 40 tests passed outside the sandbox (exit 0); git diff --check passed. Sandboxed subprocess tests reproduced the known execution-environment failure. Never weaken assertions to hide it. Run `npm run check` for docs and `npm test` for the publishing guidance batch; record actual exit status. No app tests exist because no app code exists.
 
 ### Resume prompt
+
+Preferred complete handoff: `docs/start-prototype-session.md`. Read it and execute the first small local prototype. The text below is historical short context.
+
 
 Read AGENTS.md and docs/handoffs/current.md in the research repository. Het has authorized starting a separate local application, but asked to update handoffs and explain YouTube findings first. The full automatic-caption text was subsequently retrieved and analyzed, with timestamps and quality caveats; see wiki/research/action-housing-video-findings.md. React/TypeScript/Vite is recommended, not explicitly selected. Preserve the evidence limitations, use fresh app code, and continue a small local build without reopening broad research or asking again whether a new repo is allowed. Keep research PR #3 separate from the app.

@@ -2,7 +2,7 @@
 
 ## For Humans
 
-This repository is Het and Rushi's shared research and decision record for the Pittsburgh AI for Housing Hackathon. Track 1, Development Feasibility Navigator, is selected. We are still brainstorming the practitioner workflow and product scope. The application will have its own repository.
+This repository is Het and Rushi's shared research and decision record for the Pittsburgh AI for Housing Hackathon. Track 1, Development Feasibility Navigator, is selected. Het has authorized starting a quick local prototype in a separate application repository. Read `docs/start-prototype-session.md` for the execution handoff; practitioner fit and the final rule/scoring scope still require validation.
 
 Read `docs/handoffs/current.md` to resume work. Read `docs/adr/README.md` for accepted and proposed decisions. Use `wiki/product/context-start.md` for a compact research overview.
 
@@ -67,4 +67,4 @@ Run `npm run check` after documentation changes. Run `npm test` after tooling or
 
 Use branches and PRs; never push directly to main. Follow the inherited global commit conventions, with no attribution trailers. Rushi's GitHub account is Baburaoooo; verify invitation acceptance before asserting collaborator access.
 
-This repo was derived from `het-sheth/okf-wiki-template`. That is provenance, not an active template-development task. The old template's implementation plans do not govern this project. Do not create application code here or reuse prior project implementation for the hackathon app. Broader source research does not authorize product implementation; obtain agreement on the product design first.
+This repo was derived from `het-sheth/okf-wiki-template`. That is provenance, not an active template-development task. The old template's implementation plans do not govern this project. Do not create application code here or reuse prior project implementation for the hackathon app. Research alone does not authorize implementation. Het subsequently authorized the narrow local prototype described in `docs/start-prototype-session.md`; do not ask for that same permission again. Wider scope, remote publication and deployment remain separate decisions.
