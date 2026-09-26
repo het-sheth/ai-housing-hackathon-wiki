@@ -11,6 +11,8 @@ ADRs explain consequential choices, their evidence, alternatives and tradeoffs. 
 | [0003](0003-stack-candidate.md) | Proposed | Evaluate a familiar TypeScript web stack; Better T Stack remains optional |
 | [0004](0004-context-and-handoffs.md) | Accepted | Use selective Markdown context, ADRs and a current handoff |
 | [0005](0005-propose-project-comparison.md) | Proposed | Evaluate two housing proposals on one Pittsburgh parcel |
+| [0006](0006-select-action-led-v1.md) | Accepted | Lead with proposal assessment and next actions |
+| [0007](0007-propose-persisted-workflow-architecture.md) | Proposed | Extend the prototype with owner-scoped persisted workflows |
 
 ## For Agents
 

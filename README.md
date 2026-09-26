@@ -1,15 +1,11 @@
 # AI for Housing Hackathon research wiki
 
-Het and Rushi's shared research context. Resume with [the current handoff](docs/handoffs/current.md), review [decision records](docs/adr/README.md), or start at [the overview](wiki/event/overview.md).
+Het and Rushi's shared research and decision record for Track 1, Development Feasibility Navigator. Start with [the current handoff](docs/handoffs/current.md), [accepted product specification](docs/product-spec-v1-2026-09-26.md), [dated decisions](docs/product-decisions-2026-09-26.md) and [decision records](docs/adr/README.md).
 
-1. Read [rules and submission](wiki/event/rules.md).
-2. Compare [the three tracks](wiki/tracks/comparison.md).
-3. Browse [all 60 catalog entries](wiki/data/catalog.md).
-4. Discuss [Rushi's direction](wiki/research/rushi-direction.md).
-5. Resolve [open decisions](wiki/product/open-questions.md).
+The accepted v1 direction starts with a proposal-specific assessment and prioritized next actions. Comparison is secondary. Countywide Allegheny County intake accepts all housing work categories and combinations, then reports source and check coverage honestly. Results use named statuses and an evidence/action checklist, without an overall score. Useful 2D site context is in scope. The selected foundation is React, TypeScript, Vite, Supabase Postgres and Supabase Auth, with Vercel planned. [ADR 0007](docs/adr/0007-propose-persisted-workflow-architecture.md) and the [technical design](docs/technical-design-v1-2026-09-26.md) contain proposed engineering details. No expanded application implementation or deployment has occurred.
 
-Canonical notes live in `wiki/`; immutable sources and checksums live in `raw/hackathon/`. The repository is copied from https://github.com/het-sheth/okf-wiki-template and keeps its template provenance. It is a research workspace, not the hackathon application submission. New app development needs its own repository and event-time commit history.
+Read [source adapter verification](docs/source-adapter-verification-2026-09-26.md) for tested API behavior and unresolved coverage and reuse gates, then [the phased implementation plan](docs/implementation-plan-v1-2026-09-26.md) for the proposed sequence. [Event rules](wiki/event/rules.md), [track comparison](wiki/tracks/comparison.md) and [the data catalog](wiki/data/catalog.md) provide background. The original comparison-focused prototype and earlier research proposals are historical context, not the current product authority.
 
-Run `npm ci`, then `npm run check`. Run `npm test` for template regression checks. Optional `npm run build` generates a local static site. Do not edit generated `site/` files.
+Canonical notes live in `wiki/`; immutable sources and checksums live in `raw/hackathon/`. The application lives separately at [ai-housing-navigator](https://github.com/het-sheth/ai-housing-navigator/tree/feat/first-prototype). This repository retains provenance from [okf-wiki-template](https://github.com/het-sheth/okf-wiki-template). Wiki PR #3 is merged; publication of the current design batch through a new PR is in progress. See the current handoff for the latest branch and publication state.
 
-Track 1 is selected. No product design or stack is approved yet. The source catalog is fully read; underlying datasets are not fully ingested. Current policy claims require independent verification before product use.
+Run `npm ci`, then `npm run check`. Run `npm test` for guidance or structure changes. Optional `npm run build` generates a local static site. Do not edit generated `site/` files.
