@@ -1,21 +1,22 @@
 ---
 type: concept
-title: Welcome to OKF wikis
-description: What this template is and how a concept page is structured.
-tags: [okf, meta]
-timestamp: 2026-06-27T00:00:00Z
+title: Start a housing project session
+description: Read current status and decisions before expanding into housing research.
+tags: [housing, workflow, context]
+timestamp: 2026-09-26T00:00:00Z
 status: solid
 ---
 
-This is a **concept** page — one idea per file. Frontmatter carries `type` (required),
-`title`, `description`, `tags`, and `timestamp`; the body is plain Markdown.
+# Start a housing project session
 
-Cross-link other concepts with standard Markdown links, e.g. see
-[writing concepts](./writing-concepts.md) for the authoring rules.
+This is the shared research wiki for Het and Rushi's Pittsburgh housing hackathon. Track 1 is selected. The current phase is brainstorming a useful practitioner workflow, with a separate Deep Research session in progress.
 
-> [!NOTE]
-> `site/` is generated. Edit Markdown in `wiki/`, then run `npm run build`.
+Read root `AGENTS.md`, `docs/handoffs/current.md` and `docs/adr/README.md`. Then use [minimal brainstorming context](/wiki/product/context-start.md) to select the relevant sources. Do not load the entire corpus or re-open settled track selection.
+
+The application will have a separate repository. A nonprofit site screen and Better T Stack are possibilities, not approved product or architecture decisions.
+
+See [writing housing notes](./writing-concepts.md) before adding research. Keep source evidence, interpretation and decisions distinct. When a session becomes too long, update the current handoff so another session can resume from files.
 
 # Citations
 
-- Open Knowledge Format v0.1 — https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+Project-specific `AGENTS.md`, `docs/adr/` and user decisions captured in this repository.

@@ -1,0 +1,1954 @@
+---
+type: source
+title: "The U.S. Housing Problem as a System_ From Dirt to Keys, With Pittsburgh as the Laboratory"
+description: Full PDF text extraction with original page anchors and embedded URLs.
+tags: [housing, source]
+---
+
+# The U.S. Housing Problem as a System_ From Dirt to Keys, With Pittsburgh as the Laboratory
+
+Source PDF: `raw/hackathon/The U.S. Housing Problem as a System_ From Dirt to Keys, With Pittsburgh as the Laboratory.pdf`
+
+This is a text extraction, not a summary. Page boundaries are retained. Spacing is simplified; tables and figures should be checked in the original PDF when their layout matters. Printed page headers and footers remain for traceability.
+
+## Page 1
+
+The U.S. Housing Problem as a System: From Dirt
+to Keys, With Pittsburgh as the Laboratory
+The most important conclusion from the research is that “America needs more housing” is true, but it is
+too coarse a problem statement to design against.
+
+There are at least five different shortages interacting at once: a shortage of units in high-demand places, a
+shortage of units affordable to particular incomes, a shortage of buildable/entitled land even where raw land
+exists, a shortage of infrastructure or capacity to serve projects, and—since rates rose sharply—a shortage
+of existing homes actually coming onto the market. Those problems look similar to a buyer facing a high price,
+but they have very different causes and therefore very different technical interventions. Freddie Mac
+estimated the national structural housing shortage at about 3.7 million units as of Q3 2024, while
+Pennsylvania now projects that, absent further action, it will fall roughly 185,000 homes short of need by
+2035. 1
+
+The 2026 market demonstrates why the distinction matters. In August, U.S. housing starts ran at a 1.275
+million annualized pace and completions at 1.128 million, with completions 27.1% below a year earlier. Yet
+the new-home market simultaneously had 483,000 homes for sale, equivalent to 8.5 months of supply at the
+current sales rate. New single-family sales were running at 684,000 annually. In other words, you can have a
+long-run housing shortage, severe affordability problems, weak turnover of existing homes, and plenty of
+newly built inventory at a particular price point at the same time. 2
+
+That distinction should shape your hackathon approach. The three sponsor briefs are actually pointing at
+three different layers of the same operating system:
+
+• Challenge 01 is about project uncertainty: “Can I build this here, and what will stop me?” It asks for
+parcel-level zoning, infrastructure, environmental and policy reasoning, with explicit human-review
+points. fileciteturn0file0
+• Challenge 02 is about system observability: “What is actually being proposed, permitted, completed,
+rented and lost?” It explicitly identifies fragmented and lagged data as the problem.
+fileciteturn0file1
+• Challenge 03 is about decision quality: “Even if I can build, what should I build here?” It asks teams to
+distinguish evidence from normative choices and compare typologies rather than proclaim a single
+answer. fileciteturn0file2
+
+My strongest thesis after going through the evidence is this:
+
+A surprisingly large housing opportunity is not “AI designs houses.” It is reducing the
+cost of uncertainty between deciding to build a house and knowing that you are
+actually allowed, able, financed and ready to build it.
+
+1
+
+## Page 2
+
+That uncertainty is expensive because land and capital sit idle while lawyers, architects, engineers, planners,
+utility reviewers, lenders, boards, inspectors and developers exchange information—often serially, often
+through differently structured systems, and often while nobody has a complete dependency map.
+
+The real problem is several housing markets, not one
+
+Start with a better mental model of “supply”
+
+Imagine five nested inventories:
+
+Physical housing stock → usable housing → legally usable housing → financially attainable housing
+→ actually available housing.
+
+A city can have plenty of physical structures while still having a severe shortage at the final two layers.
+
+Pennsylvania illustrates this particularly well. More than half of the Commonwealth's housing stock is over
+50 years old, more than one million Pennsylvania households spend over 30% of income on housing, and
+the state says about 450,000 additional units will be needed by 2035 while current construction trajectories
+imply an approximately 185,000-unit gap. 3
+
+Pittsburgh is not Phoenix, Austin or Miami. Its challenge is partly old stock, disinvestment, difficult
+terrain, fragmented parcels, legacy infrastructure and affordability mismatch, rather than simply rapid
+population growth outrunning greenfield subdivision production. The hackathon's own first brief
+specifically describes Pittsburgh's “older housing stock and constrained development environment” and
+focuses on starter and affordable housing feasibility. fileciteturn0file0
+
+That matters because “build more” branches into several different questions:
+
+Question                         What may actually be scarce?        Possible intervention
+
+Why can't this household                                             Rates, financing, down-payment
+Monthly payment capacity
+buy?                                                                 support, price
+
+Why isn't a developer                                                Entitlement, land, infrastructure,
+Feasible residual economics
+building?                                                            financing, construction cost
+
+Why is an empty lot still                                            Zoning, geometry, title, utilities,
+Legal/buildable capacity
+empty?                                                               environmental conditions
+
+Why is an existing owner         Mobility / replacement-home
+Mortgage lock-in
+not selling?                     economics
+
+Why aren't affordable units                                          LIHTC, vouchers, PHARE, local gap
+Subsidy / operating gap
+getting built?                                                       financing
+
+Information processing /            Better intake, rules engines, parallel
+Why is permitting slow?
+queueing / rework                   workflows
+
+2
+
+## Page 3
+
+Question                        What may actually be scarce?      Possible intervention
+
+Why does nobody know
+Data integration                  Project/parcel event graph
+what's happening?
+
+Matching demand to physical/
+What type should go here?                                         Scenario analysis
+legal constraints
+
+This is also why the sponsor's “fragmented data” statement is more profound than it initially sounds.
+Housing is fundamentally a joins problem. Parcel geometry lives in one system. Ownership and
+assessments live elsewhere. Zoning is another layer. Permits are applications linked imperfectly to
+addresses and parcels. Environmental records use different geographies. Utilities use networks rather than
+parcels. Household need is measured at census geography. Rents may come from private listings. Financing
+happens behind closed doors.
+
+Challenge 02 recognizes almost exactly this: it asks for movement from region → tract → parcel → building
+→ project while making missingness, reporting bias and privacy visible rather than pretending the joins are
+perfect. fileciteturn0file1
+
+There is another hidden supply: “option value”
+
+A developer does not need merely a parcel. They need a parcel with a credible option to become a project.
+
+Suppose two pieces of land each cost $500,000:
+
+• Parcel A is zoned appropriately, has adequate water/sewer capacity, no flood issue, straightforward
+access and predictable permits.
+• Parcel B might support the same building but requires a variance, a sewer study, unclear stormwater
+mitigation, utility coordination and perhaps a board hearing.
+
+The physical land supply is two parcels. The financeable buildable supply may effectively be one.
+
+This is why your sponsor's proposed Development Ease Score is potentially useful—but only if it is not a
+black-box score. The brief itself stresses source grounding, explanations, assumptions and human-review
+points. fileciteturn0file0
+
+A much more valuable output than:
+
+Development Ease Score: 72/100
+
+would be:
+
+Likely by-right: medium confidence
+Earliest plausible permit-ready date: 122–185 days
+Critical-path uncertainty: sewer capacity
+Next irreversible spend: $X engineering study
+Potential zoning variance: none found
+
+3
+
+## Page 4
+
+External dependencies: Pittsburgh Water, PA DEP
+Evidence freshness: zoning 3 days old; utility capacity unknown
+Estimated cost of a 30-day delay: $Y under user's financing assumptions
+Human confirmation required: utility capacity, title easements
+
+That is no longer an “AI score.” It is a primitive development operating system.
+
+The developer journey from parcel to keys
+A developer building at scale is really operating a sequence of expensive options. At each stage they spend
+more money to reduce uncertainty about whether it is rational to spend the next dollar.
+
+The process is not strictly linear, but conceptually it looks like this:
+
+Market thesis → site → title/due diligence → concept → entitlement → financing → permit
+documents → permits → construction → inspections → occupancy → lease/sale
+
+The dangerous part is that many of those arrows can loop backward.
+
+Site selection and market thesis
+
+Before anyone draws a building, the developer asks:
+
+What could be sold or rented here, to whom, at what achievable price, and at what velocity?
+
+For a market-rate project, this involves sales or rent comparables, household growth, incomes, vacancies,
+concessions, competing pipeline, absorption, financing assumptions and exit values.
+
+For an affordable project, the equation adds income restrictions, allowable rent, vouchers, operating
+subsidies, tax credits, grants, soft loans and affordability periods. Pittsburgh's local Housing Opportunity
+Fund currently supports mechanisms including Rental Gap, For-Sale Development, down-payment and
+closing-cost support and other housing programs; the City committed $10 million annually for 12 years
+beginning in 2018. 4
+
+The fact that “gap financing” exists is itself an important clue: a project can be physically useful, socially
+needed and legally permissible while still not pencil out financially.
+
+For example, in May 2026 the URA considered Rental Gap Program support for three Pittsburgh projects
+totaling 159 units, 149 of them affordable. 5 Pennsylvania's mixed-use housing pilot is another striking
+signal: 104 applications sought more than $469 million from a program with only $10 million available. That
+does not prove every request represented an otherwise viable project, but it shows an enormous demand
+for capital intended to close development feasibility gaps. 6
+
+Site control and title
+
+Once a site looks interesting, you want to know what you are actually buying.
+
+4
+
+## Page 5
+
+Questions include:
+
+Who owns every parcel? Are there liens? Easements? Restrictions? Rights-of-way? Encroachments? Access?
+Separate parcels that need consolidation? Are the legal description and physical boundaries consistent? Is
+some “vacant” strip actually owned by another party?
+
+For sophisticated transactions, the 2026 ALTA/NSPS Land Title Survey standards provide a standardized way
+to align surveyors, lenders, title insurers and clients around boundaries, easements, encroachments, access
+and related title matters. The new standards became effective February 23, 2026. 7
+
+In Pittsburgh, a subdivision or consolidation plan must be prepared by a licensed surveyor; major
+subdivisions and consolidations go to the Planning Commission, and approved plans must subsequently be
+recorded with Allegheny County. 8
+
+Notice the intelligence chain already:
+
+developer → attorney/title → surveyor → city planning → county recording → back to city records.
+
+Each actor is rational. The system as a whole can still be slow.
+
+Physical due diligence: what is really under the ground?
+
+This is where a pretty GIS map meets reality.
+
+A scalable development may need some combination of:
+
+Investigation                                 What it protects against
+
+Boundary / ALTA survey                        Boundary, access, easement and encroachment errors
+
+Topographic survey                            Elevation, slope, grading and drainage surprises
+
+Utility survey / records                      Unknown lines, easements and connection points
+
+Soil bearing, fill, rock, mine conditions, retaining
+Geotechnical investigation
+requirements
+
+Phase I Environmental Site
+Potential contamination/liability
+Assessment
+
+Phase II testing                              Actual sampling where Phase I identifies concerns
+
+Flood analysis                                Floodplain requirements and insurability
+
+Wetlands/waters review                        Federal/state environmental constraints
+
+Stormwater study                              Detention/infiltration/impervious-area requirements
+
+Sewer/water capacity                          Whether the project can actually be served
+
+5
+
+## Page 6
+
+Investigation                               What it protects against
+
+Traffic/transportation study                Network/access impact and mitigation
+
+Existing-building investigation             Structure, hazardous materials, MEP condition for reuse
+
+A Phase I ESA is not simply “some environmental report.” EPA recognizes ASTM E1527-21 as consistent with
+federal All Appropriate Inquiries requirements, which can matter for certain CERCLA liability protections.
+9
+
+At a large enough construction disturbance, Pennsylvania introduces another layer. Construction earth
+disturbance of an acre or more can trigger Chapter 102 NPDES permitting. PA DEP has itself experimented
+with expedited processes; one of its permit modernization pilots said it expected to cut average review time
+for certain Chapter 102 individual NPDES permits by 73 business days. 10
+
+That is a crucial data point for your thesis: government is explicitly acknowledging that elapsed review
+time is a material economic variable.
+
+Zoning and development rights
+
+Next comes the deceptively simple question:
+
+What can I legally put here?
+
+Not merely “what color is the zoning map?”
+
+You need to evaluate use, units, lot size, density, setbacks, height, lot coverage, parking/loading, access,
+overlays, floodplain, historic status, design requirements, affordable housing provisions, subdivision, and
+potentially discretionary approvals.
+
+Pittsburgh's zoning workflow has multiple review levels—Basic Zoning Review, Site Plan Review and review
+involving the Planning Commission—and additional notices, hearings or reviews can arise depending on
+location and scope. 11
+
+This is where regulation can create absurd results through interacting rules rather than one obviously bad
+rule. Pittsburgh recently eliminated minimum lot size per dwelling unit and reduced other minimum lot
+sizes. Before that reform, for example, R2-M zoning could permit a duplex as a use but still require a
+variance on a 3,200-square-foot parcel because of the per-unit lot-area rule. The city's reform removed that
+particular collision. 12
+
+That is a perfect “AI opportunity” pattern:
+
+Rule A says yes.
+Rule B says yes.
+Rule C, applied to the geometry, quietly makes the project impossible.
+
+6
+
+## Page 7
+
+Humans are good at eventually discovering these contradictions. Software is potentially much better at
+discovering them before someone buys the land.
+
+Pre-application and discretionary review
+
+For sufficiently complex Pittsburgh projects, a developer may go through a pre-application meeting with
+City Planning. It is recommended for complex Site Plan or Planning Commission projects and can be
+required at thresholds such as new commercial structures/additions of at least 5,000 square feet, more than
+20 parking spaces, master plans/rezonings and certain other situations. The current fee is $250. 13
+
+This is not necessarily bureaucratic waste.
+
+A pre-application meeting is a form of human uncertainty compression. Experienced planners can detect
+“you don't realize this requirement will apply” before an applicant spends months on a bad design.
+
+That creates an important product insight:
+
+Don't automatically ask, “How do we eliminate the planner?”
+Ask, “How do we encode the 80% of predictable planner knowledge so the planner spends
+time on the 20% genuinely requiring judgment?”
+
+Utility capacity and infrastructure
+
+A zoning-compliant project is not necessarily serviceable.
+
+Pittsburgh Water asks developers to engage early. Development workflows can involve availability
+determinations, pre-development coordination, professional-engineer-stamped tap-in plans and, where
+applicable, Pennsylvania sewage-facilities planning. The utility explicitly advises starting early because its
+approvals can interact with building permitting. 14
+
+This is another major opportunity for a “Development Ease” product. A parcel score based on zoning but not
+infrastructure is dangerously incomplete.
+
+You want the application to answer:
+
+Can I build?
+then
+Can I connect?
+then
+At what incremental infrastructure cost?
+then
+Who must approve that answer?
+
+Those are different questions.
+
+7
+
+## Page 8
+
+Stormwater and land disturbance
+
+Pittsburgh requires a commercial stormwater permit for projects involving at least 10,000 square feet of
+land disturbance, at least 5,000 square feet of increased impervious surface, and certain lower-threshold
+riverfront cases. 15
+
+Separate land-operations requirements can arise for major grading, work on steep slopes, large paved
+areas, drainage-channel changes and related activity. 16
+
+A useful software system therefore needs trigger logic, not just static data:
+
+IF land_disturbance >= 10,000 sq ft
+THEN stormwater review likely triggered
+
+IF earth_disturbance >= 1 acre
+THEN check PA Chapter 102 / NPDES pathway
+
+IF subdivision needed
+THEN survey → city approval → county recordation
+
+IF utility demand changes
+THEN utility development workflow
+
+IF discretionary zoning threshold triggered
+THEN hearing/review path changes
+
+That “requirements compiler” may be substantially more useful than generating architectural renderings.
+
+The permit package
+
+Pittsburgh is actively changing this system right now.
+
+The new Building and Development Application combines what had been separate zoning-development
+and building-permit applications. Relevant reviews can flow to PLI, City Planning and DOMI, and if a DOMI
+permit is needed, a reviewer can create the sub-permit. 17
+
+That is important because a hackathon team using an outdated model of Pittsburgh permitting could
+accidentally build a solution to a problem the City has already begun solving.
+
+The official current permit process is broadly:
+
+Application submission → application review → permit issuance → inspections → completion.
+OneStopPGH determines required documents based on permit/structure/work configuration and handles
+revised submissions. 18
+
+8
+
+## Page 9
+
+But review time is still consequential. Pittsburgh's standard permit reviews can carry service-level targets in
+the 15–30-business-day range, and the City's 2026 EZ Permit pilot makes the contrast explicit: eligible low-
+risk scopes can move from plans plus 15–30 business days of review to no plan review and approximately
+one business day, with applicants accepting responsibility through attestation. 19
+
+This is one of your strongest empirical clues.
+
+The City has effectively classified some reviews as:
+
+“Human review adds less expected safety value than it costs in delay for this low-risk class.”
+
+That suggests a general research question:
+
+Which other housing decisions are being given expensive bespoke human attention
+despite being sufficiently standardized to use rules + attestation + audit?
+
+Construction is not the end of regulation
+
+After permits, there are construction-phase inspections.
+
+Some work also requires special inspections. Pittsburgh states explicitly that special inspections
+supplement rather than replace PLI inspections. The design professional identifies applicable special
+inspections, the owner hires qualified special inspectors, and the permit holder must coordinate both
+inspection layers and may have to leave work exposed until both have cleared it. 20
+
+Again, don't immediately call that duplication “waste.” Structural inspection exists because failure can kill
+people.
+
+But it is a great place to ask:
+
+• Are both inspectors collecting overlapping evidence?
+• Can one photo/test result satisfy multiple documentation needs?
+• Can inspection prerequisites be scheduled automatically?
+• How often does work remain exposed waiting for a second inspection?
+• How much reinspection occurs because the wrong inspection was requested?
+• How many days of schedule variance come from coordination rather than actual defects?
+
+That is design thinking.
+
+Close-out and occupancy
+
+At the end, projects can still be delayed by testing reports, fire-system documentation, energy/
+commissioning records, special-inspection reports and administrative closeout before final occupancy.
+Pittsburgh's process includes administrative review of required closeout documents before issuance of the
+final certificate. 21
+
+A developer therefore doesn't merely need a checklist of permits.
+
+9
+
+## Page 10
+
+They need a dependency graph with evidence requirements.
+
+Conceptually:
+
+Pour foundation
+↓
+foundation inspection
+↓
+framing
+├── structural special inspection
+├── electrical rough
+├── plumbing rough
+└── mechanical rough
+↓
+permission to conceal
+↓
+finishes
+↓
+fire / energy / systems commissioning
+↓
+closeout document completeness
+↓
+occupancy
+
+Every unresolved edge can become a lost day.
+
+The buyer journey from search to closing
+The buyer's side is a different maze. The developer battles feasibility; the homebuyer battles information
+asymmetry, financing and transaction coordination.
+
+A simplified journey is:
+
+Budget → mortgage shopping → search → offer → inspection → appraisal → title/legal checks →
+underwriting → final disclosure → closing → taxes/insurance/ownership
+
+Start with the payment, not the house price
+
+Buyers frequently shop in terms of a price—“I can buy a $400,000 house”—but their lender ultimately cares
+about the financial package.
+
+At the moment, this distinction is enormous. Freddie Mac's national average 30-year fixed mortgage rate
+was 7.03% on September 24, 2026, compared with 6.30% one year earlier. 22
+
+Take a $400,000 property with 20% down, so the loan is $320,000.
+
+10
+
+## Page 11
+
+At 3% for 30 years, principal and interest are approximately:
+
+$1,349/month
+
+At 7%:
+
+$2,129/month
+
+The same principal therefore costs about $780 more every month, roughly 58% more, before taxes,
+homeowner insurance, HOA charges or maintenance.
+
+This is why high rates can create an affordability crisis even without rapidly rising home prices.
+
+Mortgage shopping and underwriting
+
+A lender must generally provide a Loan Estimate within three business days once it has the six core
+application items required under the mortgage disclosure framework. CFPB encourages consumers to
+compare multiple Loan Estimates. 23
+
+Once the buyer proceeds, underwriting becomes document-heavy:
+
+income, assets, debts, credit, employment, down payment, source of funds, property valuation, insurance,
+title conditions and potentially more.
+
+The buyer and lender are simultaneously underwriting two different things:
+
+Can this human repay?
+
+and
+
+Is this property adequate collateral?
+
+That separation explains why an appraisal and an inspection are not substitutes.
+
+The inspection is primarily for the buyer—condition, defects, systems, repairs.
+
+The appraisal is primarily a valuation/collateral function for the lender. CFPB explicitly warns buyers that a
+lender-required appraisal does not replace a home inspection. 24
+
+Title and property legality
+
+Now you encounter many of the same data systems as the developer—but from the other direction.
+
+A buyer needs confidence that:
+
+• the seller can convey title;
+
+11
+
+## Page 12
+
+• liens/easements/issues are known;
+• the physical thing being purchased corresponds to the legal parcel;
+• existing use is legitimate;
+• insurance can be obtained;
+• taxes and assessments make sense.
+
+Pittsburgh has a particularly revealing local requirement: a Property Certification is required for a real-
+estate closing due to sale or refinance. The certificate reports zoning classification, legality of use, historic
+status, occupancy information and active code violations. It currently costs $100. 25
+
+But a subtle historical-data problem appears immediately.
+
+Pittsburgh does not require a Certificate of Occupancy merely to buy or sell a property, and older single-
+family houses may have no CO because historic regulations did not require one. The absence of a record
+therefore does not mean either “illegal” or “compliant.” 26
+
+This is precisely the kind of situation an AI system routinely mishandles.
+
+Bad AI:
+
+“No occupancy certificate found → property noncompliant.”
+
+Good system:
+
+“No occupancy certificate found. Pittsburgh notes that older single-family properties may
+legitimately lack one. Current legal-use status requires additional verification. Confidence:
+low.”
+
+That difference is the difference between search and reasoning.
+
+Inspections and contingencies
+
+The buyer may inspect the home and use contract contingencies to renegotiate, demand repairs or exit
+depending on the agreement and findings. Lenders separately evaluate the collateral. 24
+
+Now imagine Pittsburgh's older housing stock: roof, foundation, knob-and-tube wiring, sewer lateral,
+retaining walls, lead, water infiltration, mechanical systems, unpermitted additions, hillside conditions and
+energy performance can all change the economics.
+
+This suggests a completely different AI product opportunity:
+
+A “true cost of ownership” layer that converts inspection findings and public records
+into a five- or ten-year capital-needs forecast rather than merely summarizing an
+inspection PDF.
+
+12
+
+## Page 13
+
+The caution is obvious: it should expose assumptions and ranges rather than pretend to diagnose a house
+remotely.
+
+Closing costs contain another maze
+
+Nationally, typical mortgage closing costs are often described as roughly 2–5% of the purchase price,
+excluding the down payment, though the actual number varies greatly by transaction. Title services can be
+a major third-party component. 27
+
+Pennsylvania imposes a 1% state realty transfer tax.     28
+
+Here is a fascinating Pittsburgh-specific data quality problem I found while researching your idea:
+
+Allegheny County, which collects the tax through the recording process, says Pittsburgh transactions are
+subject to:
+
+• 1% Commonwealth
+• 3% City of Pittsburgh
+• 1% Pittsburgh School District
+• 5% total
+
+and specifically says the overall 5% Pittsburgh rate has applied since 2020.    29
+
+Yet the City of Pittsburgh's own tax webpage, marked updated March 5, 2026, currently lists:
+
+• 1% Commonwealth
+• 2% City
+• 1% School District
+• 4% total
+
+30
+
+That is not a theoretical “fragmented data” complaint. Two official government pages presently disagree
+about a financially material transaction rate. The county Recorder's operational page indicates 5% and
+its local-rate table lists Pittsburgh at 3% municipal plus 1% school, but a buyer or software system should
+not silently decide which page is “truth”; the contradiction should be surfaced and the operative rate
+verified in the transaction. 31
+
+This is perhaps the most hackathon-relevant little discovery in the entire research exercise.
+
+AI's role should be:
+
+“I found two authoritative sources that conflict. Here is the conflict, timestamps, likely
+operational source, and person/agency responsible for final confirmation.”
+
+Not:
+
+13
+
+## Page 14
+
+“The answer is definitely X.”
+
+Final disclosures and closing
+
+For most covered mortgages, the lender must provide the Closing Disclosure at least three business days
+before closing. CFPB recommends comparing it with the latest Loan Estimate and resolving unexpected
+changes before signing. 32
+
+Even after purchase, another Pittsburgh-specific uncertainty exists: property assessments can be appealed
+by owners or taxing bodies, and Allegheny County has a formal administrative and court appeal chain. 33
+
+So the buyer's final “price” is not merely:
+
+purchase price + mortgage.
+
+It is better thought of as:
+
+acquisition cash + financing cost + taxes + insurance + immediate repairs + expected
+capital expenditures + transaction costs + risk premium for unknown conditions.
+
+There is an enormous information-product opportunity in making that legible.
+
+Where time and money actually disappear
+The obvious place to look is lumber, concrete and labor.
+
+Those matter, but a building has another category of cost that behaves almost like invisible material:
+
+time exposed to capital.
+
+Hard costs are only one piece
+
+NAHB's 2022 survey of single-family builders estimated that construction represented about 60.8% of final
+sale price and the finished lot another 17.8%, with the remainder including financing, overhead, marketing,
+sales commissions and profit. Within construction itself, interior finishes, framing and major systems were
+large components. Treat those numbers as industry survey evidence rather than universal engineering
+constants.   34
+
+NAHB's 2026 regulatory-cost study—a builder-industry estimate that should be treated as such—put costs
+attributable to regulation at approximately $131,734, or 26.4% of its roughly $499,500 average new single-
+family home price, including both land-development and construction-stage effects. 35
+
+That number is politically contested territory because defining the “cost of regulation” requires judgments
+about what counterfactual development would look like. You should not bake “26.4%” into a product as
+ground truth.
+
+14
+
+## Page 15
+
+Instead, instrument individual projects.
+
+Measure:
+
+What fee was paid?
+How many consultant hours were required?
+What redesign happened?
+How many calendar days were consumed?
+What additional construction was required?
+What safety/environmental/public value did the requirement create?
+
+Then let the data tell you the local number.
+
+Cost-of-delay is potentially bigger than the visible permit fee
+
+Suppose a developer has $10 million of capital exposed to a project at an illustrative 8% annual carrying
+cost.
+
+That capital costs roughly:
+
+$2,192 per calendar day
+
+or
+
+$66,667 per month
+
+A 60-day avoidable delay therefore represents roughly:
+
+$131,500
+
+in financing carry alone—before staff overhead, option extensions, contractor escalation, redesign or lost
+rent.
+
+That is why optimizing a $1,000 fee while ignoring three months of uncertainty is often economically
+backwards.
+
+A very powerful hackathon metric would therefore be:
+
+Expected Cost of Delay = probability of delay × expected delay days × daily capital
+exposure
+
+Different developers can insert their actual financing rate and capital exposure.
+
+Now the “Development Ease Score” becomes dollars.
+
+15
+
+## Page 16
+
+The housing “idiot index”
+
+You mentioned the Idiot Index. The term associated with Elon Musk is generally described as:
+
+finished component cost ÷ raw-material cost.
+
+It is intended as a first-principles prompt: if raw aluminum is worth $10 but the part is $1,000, what exactly
+created the other $990? The concept has been popularized from accounts of SpaceX/Tesla manufacturing; it
+is not a recognized housing-economics metric. 36
+
+Applying it literally to a house would be misleading.
+
+A house is not merely timber + steel + concrete. A large portion of legitimate value lies in:
+
+labor, land, infrastructure, engineering, architecture, equipment, logistics, safety verification, financing,
+legal certainty and location.
+
+But the spirit of the Idiot Index is extremely useful.
+
+I would create a Housing Friction Index instead:
+
+avoidable coordination + delay + rework cost
+Friction Wedge =
+all-in development cost
+And then several operational measures beneath it:
+
+Metric                          Question it answers
+
+Queue-to-touch ratio            How many days does a submission wait per hour of actual review?
+
+First-pass yield                What share of applications clear a review without resubmission?
+
+How much professional work is spent responding to preventable
+Rework ratio
+completeness issues?
+
+Data re-entry count             How many times is the same parcel/project fact manually entered?
+
+Decision density                How many human approvals exist per $1M or per housing unit?
+
+Seriality factor                How many approvals that could run in parallel instead run sequentially?
+
+Unknown-dependency              How many critical requirements become visible only after spending
+count                           money?
+
+How much financing/overhead cost is generated by elapsed process
+Cost-of-delay
+time?
+
+Evidence reuse rate             How often can one verified document satisfy multiple agencies?
+
+Rule-exception rate             How frequently does the formal code fail to predict the actual path?
+
+16
+
+## Page 17
+
+That is essentially the idiot index for bureaucracy, but it does not start from the insulting assumption that
+the bureaucracy is idiotic.
+
+It starts from measurement.
+
+Separate necessary intelligence from coordination waste
+
+This distinction is critical.
+
+Human layer             Why it exists                         What AI can realistically attack
+
+Establish legal/physical              Records extraction, conflict detection,
+Surveyor
+boundaries                            document prep—not field/legal certification
+
+Geotechnical            Ground conditions can destroy         Prior-risk screening, data aggregation—not
+engineer                structures                            replacing boring/testing
+
+Rule compilation, precedent search,
+Planner                 Interpret land-use rules/context
+completeness
+
+Architect/                                                    Code checking, clash detection,
+Life safety and integrated design
+engineer                                                      documentation QA
+
+Independent compliance                Triage, low-risk automated pathways,
+Permit reviewer
+verification                          inconsistency detection
+
+Exercises discretionary/public        Better evidence and scenario visualization, not
+Public board
+judgment                              “AI votes”
+
+Utility engineer        Protect scarce network capacity       Automated capacity pre-screening
+
+Verify the thing built matches        Scheduling, evidence capture, computer-
+Inspector
+approved/safe condition               vision assist
+
+Lender/
+Allocates financial risk              Data reconciliation and scenario analysis
+underwriter
+
+Appraiser               Independent collateral valuation      Comparable search and anomaly detection
+
+Title professional      Resolves legal ownership risk         Search and document extraction
+
+Buyer/home              Protect purchaser against
+Structured findings and repair-cost scenarios
+inspector               hidden condition
+
+The target is not “remove humans.”
+
+The target is:
+
+stop expensive humans from spending their time finding documents, copying
+addresses, checking obvious thresholds, chasing missing forms, explaining status, or
+rediscovering dependencies.
+
+17
+
+## Page 18
+
+Pittsburgh's EZ Permit experiment supports exactly this logic: low-risk scopes move to applicant attestation
+and roughly one-day issuance, while higher-risk work retains professional review. 19
+
+That is a much more defensible AI narrative than “replace city planners with an LLM.”
+
+Pittsburgh is an unusually good living laboratory
+Pittsburgh is useful because it contains almost every category of housing friction in a manageable
+geographic area.
+
+It has older stock, steep terrain, rivers/floodplain, legacy industrial sites, aging infrastructure, fragmented
+ownership, major institutional landowners, neighborhood political structures, affordable-housing gaps,
+relatively inexpensive properties in some neighborhoods, high development costs, adaptive-reuse
+opportunities and a permitting system undergoing reform.
+
+Pennsylvania's first statewide Housing Action Plan now explicitly lists modernizing development regulation
+and improving interagency coordination/data among its five central goals. The plan was based on more
+than a year of engagement, including 18 regional roundtables and nearly 2,500 survey responses from all
+67 counties. 37
+
+Meanwhile Pittsburgh's own government issued an executive order in January 2026 declaring its existing
+permitting system “outdated” and directing departments to simplify, streamline and make approvals more
+predictable.   38
+
+And then the City started shipping changes: a new permit tracker, Building and Development Application
+consolidation, EZ Permits and work to modernize transportation-impact review. 39
+
+This means you have an unusually good opportunity to study before and after.
+
+Pittsburgh's particularly interesting friction points
+
+Transportation studies are one example. DOMI itself said in 2026 that Transportation Impact Studies were
+being submitted separately from the rest of the development application, which could create longer review
+times, evolving requirements and uncertainty; the department is now redesigning that process. 40
+
+Special inspections provide another example: multiple independent verification layers can be necessary, but
+poor coordination can keep work uncovered and crews waiting. 20
+
+The City's property-sale process is another. Pittsburgh created a Home Buying Pilot after recognizing that
+the legal and legislative process associated with purchasing certain city-owned properties was too long and
+complicated for typical lower- and moderate-income homebuyers. 41
+
+Infrastructure is another. Pittsburgh Water's development process includes pre-development coordination
+and engineering documentation, and the developer manual explicitly contemplates ongoing dialogue with
+development staff rather than treating the rules as completely self-executing. 42
+
+18
+
+## Page 19
+
+And old records are another. The City openly acknowledges that some older single-family properties simply
+will not have modern occupancy records. 26
+
+These are not four separate software problems.
+
+They are manifestations of:
+
+The state of a housing project cannot be inferred from any single database.
+
+Who I would interview before the challenge
+
+Do not begin by asking people, “Would an AI permit tool help?”
+
+That question invites politeness and solution bias.
+
+Instead, hand them a real project and say:
+
+“Walk us from the moment you first heard about this property until somebody got keys. Every
+time you waited, changed a drawing, paid someone, called someone, learned something
+unexpectedly or submitted the same information twice, stop us.”
+
+I would prioritize these Pittsburgh groups:
+
+Interview                          Why it matters                     What to ask them to show you
+
+City of Pittsburgh PLI /           Sees permit queues and failure     Five applications that went
+permit-reform team                 patterns                           smoothly and five that bounced
+
+Department of City                 Knows where code becomes           Cases where map/code lookup
+Planning / Zoning                  judgment                           was insufficient
+
+DOMI development-review            External dependency /              A TIS/project that went through
+team                               transportation                     multiple revisions
+
+Actual development dependency
+Pittsburgh Water                   Infrastructure feasibility often
+chain from availability through
+development services               discovered late
+taps
+
+Allegheny County Health                                               Where City/County sequencing
+Cross-jurisdiction layer
+plumbing reviewers                                                    creates applicant confusion
+
+URA Housing / Housing              Sees projects that are needed      Real pro formas before/after gap
+Opportunity Fund                   but financially infeasible         financing
+
+Pittsburgh's largest nonprofit
+One affordable project from
+ACTION-Housing                     developer and actual repeat
+acquisition through occupancy
+user
+
+19
+
+## Page 20
+
+Interview                         Why it matters                      What to ask them to show you
+
+Builders Association of           Can recruit multiple private        Ask 5 builders to rank recurring
+Metropolitan Pittsburgh           builders quickly                    delay/cost causes
+
+Community/housing-policy
+Pittsburgh Community                                                  Where “streamlining” risks
+counterweight to developer
+Reinvestment Group                                                    displacement or public harm
+view
+
+City of Bridges Community         Permanent affordability /           Where acquisition and resale
+Land Trust                        homeowner perspective               mechanics create hidden friction
+
+Local surveyor + civil            They find the “unknown              What developers repeatedly fail
+engineer + geotech                unknowns”                           to discover early
+
+Title attorney / title            Sees ownership/legal-data           Three deals delayed by title rather
+company                           failures                            than construction
+
+Mortgage loan officer +
+buyer agent + home                Buyer-side reality                  What buyers learn too late
+inspector
+
+Small developer, not just         Most likely to be crushed by        How much expertise is effectively
+major developer                   fixed process cost                  required to submit correctly
+
+ACTION-Housing is especially useful because it describes itself as Pittsburgh's largest nonprofit developer
+and works in both housing development and housing services. 43 BAMP represents nearly 400 member
+businesses, giving you a potential channel to production builders, remodelers, suppliers and trades rather
+than relying on one anecdote. 44 PCRG says it works with 65 community organizations covering 125
+neighborhoods, giving you the opposite but equally necessary community perspective. 45
+
+Your interview question should always be “show me”
+
+For the developer:
+
+Show me the last project where you discovered something too late.
+
+For the planner:
+
+Show me an application where a competent developer misunderstood the code.
+
+For the permit reviewer:
+
+Show me the most common reasons applications return for revision.
+
+For the civil engineer:
+
+Show me something invisible on the zoning map that changed feasibility.
+
+20
+
+## Page 21
+
+For Pittsburgh Water:
+
+Show me the earliest point at which you can confidently say this development is serviceable.
+
+For the affordable-housing developer:
+
+Show me the gap between achievable rent and the rent required for the project to finance.
+
+For the buyer:
+
+Show me every number you did not know when you made the offer.
+
+For the inspector:
+
+Show me the defects that public data could have predicted—and the ones it never could.
+
+For the lender:
+
+Show me exactly when a “good” project stops penciling because rates or construction costs
+changed.
+
+For every person:
+
+What fact, had you known it 90 days earlier, would have changed your decision?
+
+That last question may give you the entire product.
+
+Interest rates, money and the housing machine
+Your instinct from Ray Dalio's Changing World Order framework is useful, but there is a danger of jumping
+too quickly from:
+
+“fiat money / debt cycles”
+
+to
+
+“therefore housing is expensive.”
+
+The actual mechanism is much more interesting.
+
+The housing monetary-transmission chain
+
+A simplified chain is:
+
+21
+
+## Page 22
+
+Federal Reserve / inflation expectations / Treasury market
+↓
+long-term yields + mortgage-backed-security pricing
+↓
+mortgage rates and construction/development financing
+↓
+buyer monthly payment + developer required return
+↓
+home demand + land values + project feasibility
+↓
+starts / sales / prices
+
+But then U.S. fixed-rate mortgages create a feedback loop:
+
+higher current rates
+↓
+existing owner says “I have a 3% mortgage; why would I sell and take a 7% mortgage?”
+↓
+fewer existing homes listed
+↓
+less transaction supply
+↓
+prices can remain unexpectedly firm even while demand weakens
+
+That last part has become extremely important.
+
+FHFA research estimates that for every one-percentage-point increase in the gap between prevailing
+mortgage rates and a homeowner's existing mortgage rate, the probability of sale falls about 18.1%. Its
+later geographic analysis estimated mortgage lock-in prevented roughly 1.72 million sales from 2022 Q2
+through 2024 Q2 and estimated that the resulting supply reduction added about 7% to house prices,
+offsetting a roughly 5.6% direct price-reducing effect from higher rates. These are model-based estimates,
+not universal mechanical laws, but they explain the current paradox very well. 46
+
+Federal Reserve researchers independently estimate that mortgage lock-in explained about 44% of the
+decline in mortgage-borrower mobility from 2021 to 2022, primarily by reducing local moves. 47
+
+And the Fed's July 2026 Monetary Policy Report noted that a majority of outstanding mortgages still carried
+rates below 4%, while prevailing new mortgage rates remained substantially higher. 48
+
+So rising rates hit the housing market in several directions simultaneously:
+
+Effect of higher rates                               Direction
+
+Buyer monthly payment                                ↑
+
+Buyer purchasing power                               ↓
+
+22
+
+## Page 23
+
+Effect of higher rates                             Direction
+
+Demand                                             ↓
+
+Price pressure from demand                         ↓
+
+Builder/developer financing cost                   ↑
+
+Construction feasibility                           ↓
+
+New supply response                                ↓
+
+Existing-owner willingness to sell                 ↓
+
+Existing-home inventory                            ↓
+
+Price pressure from reduced resale supply          ↑
+
+Rent demand as would-be buyers remain renters      potentially ↑
+
+That is why saying “rates up → home prices down” is an inadequate model.
+
+Monetary policy really does reach housing
+
+This is not merely correlation.
+
+Federal Reserve research finds monetary policy significantly affects homeownership choices and housing
+rents. 49
+
+Research on Federal Reserve large-scale asset purchases found that purchases of agency mortgage-backed
+securities and Treasuries lowered MBS yields and mortgage rates beyond what changes in market
+expectations alone would imply. 50
+
+A BIS study using high-frequency monetary-policy surprises found that a surprise that raised 30-year
+mortgage rates by 25 basis points reduced listing prices by roughly 1% within two weeks in its sample, with
+the effect carrying through substantially to eventual transaction prices. 51
+
+So there is absolutely a monetary layer to the housing puzzle.
+
+But “fiat money caused the housing shortage” goes too far
+
+Housing combines financial scarcity and physical scarcity.
+
+The central bank can affect:
+
+• cost of credit;
+• asset discount rates;
+• mortgage demand;
+• balance sheets;
+• liquidity;
+
+23
+
+## Page 24
+
+• risk appetite.
+
+It cannot directly create:
+
+• a serviced lot;
+• a sewer main;
+• a carpenter;
+• a transformer;
+• a zoning entitlement;
+• a completed structural inspection;
+• a parcel with clean title.
+
+This creates an inference that I think is the useful Dalio connection:
+
+When financial demand expands rapidly while the physical/legal supply system is
+inelastic, more purchasing power can capitalize into land and existing-home prices
+rather than rapidly producing more units. Conversely, when rates rise sharply, demand
+falls—but construction and resale supply can also contract, preventing the clean price
+correction a simple demand model predicts. 52
+
+San Francisco Fed research adds an important correction to the popular narrative: it found that the
+extraordinarily low inventory of 2020–22 was driven substantially by unusually strong demand and rapid
+sales rather than by a collapse in new listings; rising rates then cooled demand and helped inventory
+recover. 53
+
+So there are really three clocks:
+
+1. Money clock — rates can move within days.
+2. Demand clock — buyers react within weeks/months.
+3. Housing-supply clock — entitlement, infrastructure and construction can take years.
+
+That timing mismatch is fundamental.
+
+This creates another technology opportunity: dynamic feasibility
+
+Most conventional pro formas are snapshots.
+
+But a project may take years from acquisition to stabilization. You actually want:
+
+Feasibility = f (rent/sale price, construction cost, interest rate, entitlement probability, schedule, infrastructure cos
+
+And each one is a distribution, not a fixed number.
+
+An AI/analytics system could say:
+
+At today's assumptions this project produces a 6.1% yield on cost.
+If entitlement slips 120 days and debt costs rise 50 bps, it falls to 5.4%.
+The highest-value uncertainty to resolve next is sewer capacity.
+
+24
+
+## Page 25
+
+Spending $8,000 to resolve that uncertainty has higher expected value than completing
+architectural design.
+
+That is genuinely intelligent decision support.
+
+It tells the developer what to learn next.
+
+What I would build and what I would validate before the hackathon
+I would not build another housing dashboard first.
+
+I would also not build “ChatGPT for zoning.”
+
+I would build a Parcel-to-Keys Evidence Graph that happens to produce the sponsor's Development Ease
+Score.
+
+The product concept
+
+Input:
+
+Parcel ID + proposed housing concept.
+
+For example:
+
+“32 townhomes”
+
+or
+
+“60-unit apartment building, 20% affordable”
+
+or
+
+“duplex on existing residential lot.”
+
+The system creates a project-specific graph:
+
+PARCEL
+│
+├── title / ownership
+│   ├── owner
+│   ├── legal description
+│   ├── easements
+│   └── consolidation required?
+│
+├── zoning
+
+25
+
+## Page 26
+
+│    ├── use allowed?
+│    ├── unit count
+│   ├── setbacks
+│   ├── height
+│   ├── parking
+│   ├── affordable-housing rules
+│   └── discretionary review?
+│
+├── physical
+│   ├── slope
+│   ├── flood
+│   ├── environmental
+│   ├── soil / geotech unknown
+│   └── stormwater trigger
+│
+├── infrastructure
+│   ├── water
+│   ├── sanitary
+│   ├── storm
+│   ├── transportation
+│   └── utility confirmation required
+│
+├── process
+│   ├── subdivision?
+│   ├── BDA
+│   ├── planning review
+│   ├── external agency permits
+│   ├── inspections
+│   └── occupancy
+│
+└── economics
+├── land
+├── hard cost
+├── soft cost
+├── fees
+├── financing
+├── delay exposure
+├── achievable rents / price
+└── sensitivity
+
+Every node contains:
+
+status → evidence → source → timestamp → confidence → owner → prerequisite → human reviewer
+→ estimated duration → estimated cost.
+
+That architecture unifies all three sponsor tracks.
+
+26
+
+## Page 27
+
+Challenge 01 contributes the feasibility / process graph. fileciteturn0file0
+
+Challenge 02 contributes the historical event/data layer from previous projects. fileciteturn0file1
+
+Challenge 03 contributes alternative housing scenarios and explicit weighting/tradeoffs.
+fileciteturn0file2
+
+The Development Ease Score should be the least interesting output
+
+Something like:
+
+DES = f (Z, I, E, T , R, D, F )
+
+where:
+
+• Z = zoning uncertainty
+• I = infrastructure uncertainty
+• E = environmental/physical uncertainty
+• T = title/site-control uncertainty
+• R = review complexity
+• D = expected delay
+• F = financing sensitivity
+
+But never hide them behind one number.
+
+Show:
+
+68/100 overall
+
+Zoning: 92
+Infrastructure: 41
+Environmental: 78
+Title: 96
+Process predictability: 63
+Financial resilience: 54
+
+Primary reason the score is low: wastewater capacity has not been verified.
+
+This is not evidence the site lacks capacity. It means capacity is unknown.
+
+That last distinction—bad vs unknown—is one of the strongest design principles you can adopt.
+
+Separate facts, derived conclusions and value judgments
+
+This directly follows Challenge 03's instruction to distinguish data from normative weights.
+fileciteturn0file2
+
+27
+
+## Page 28
+
+Your interface should visibly distinguish:
+
+Observed
+
+Parcel area = 5,410 sq ft.
+Zoning = X.
+Flood overlay = no intersection in current GIS dataset.
+
+Derived
+
+Proposed unit count appears consistent with minimum-lot requirements.
+
+Assumption
+
+Construction cost = $240/sq ft.
+
+Unverified
+
+Adequate sanitary capacity.
+
+Normative
+
+Transit access weight = 20%.
+
+Conflicting sources
+
+City and County official pages disagree on transfer-tax rate.
+
+Requires professional review
+
+Survey boundary / final zoning determination / structural conditions.
+
+That kind of epistemic hygiene would be unusually strong for a hackathon.
+
+The killer feature may be “What should I do Monday morning?”
+
+Do not only produce analysis.
+
+Produce the next action:
+
+Next highest-value action: request Pittsburgh Water availability review.
+
+Why: unresolved infrastructure capacity is the largest remaining feasibility uncertainty.
+
+Inputs already available: parcel ID, proposed unit count.
+
+28
+
+## Page 29
+
+Missing input: projected average and peak flow.
+
+Who must prepare it: civil/MEP engineer.
+
+Downstream decisions blocked by it: final site design, financial model, construction schedule.
+
+Estimated cost of unresolved 60-day delay under current capital assumptions: $131k.
+
+Now you are moving from a dashboard to an operating tool.
+
+Use historical permits as empirical priors
+
+Challenge 02 asks for a regional observatory. Don't just map historic permits.
+
+Use them to answer:
+
+“For projects like mine, what actually happened?”
+
+If sufficiently clean data are available:
+
+• median days from application → first response;
+• distribution of revision counts;
+• time between review milestones;
+• inspection failure/reinspection patterns;
+• application abandonment;
+• permit → occupancy duration;
+• variance/hearing frequency;
+• differences by project type;
+• differences by review path;
+• differences before/after process reforms.
+
+Pittsburgh's OneStopPGH Insights already exposes current and historic permit/application/enforcement
+information, and the City has recently been consolidating datasets and workflows there. 54
+
+Therefore your opportunity is probably not:
+
+“Let's scrape some permits onto a map.”
+
+It is:
+
+“Let's infer the project state machine and estimate the next transition.”
+
+Three real projects would make a far stronger demo than citywide coverage
+
+Pick three archetypes:
+
+29
+
+## Page 30
+
+The easy parcel
+
+A straightforward, by-right small residential infill project.
+
+Your system should confidently say:
+
+Few obvious barriers. Here's the fastest path.
+
+The deceptive parcel
+
+Looks attractive from zoning/price but triggers slope, stormwater, subdivision, utility, environmental or
+discretionary-review issues.
+
+Your system should say:
+
+This looks easy from the map, but here are the hidden dependencies.
+
+The needed-but-not-financeable project
+
+An affordable/adaptive-reuse project whose physical feasibility is strong but whose pro forma has a gap.
+
+The system should say:
+
+Regulation isn't the principal blocker. Capital structure is.
+
+That final example is important. Otherwise your product will inherit the ideological assumption that every
+unbuilt unit is stuck because of zoning.
+
+Sometimes the project simply does not earn enough revenue to cover land + construction + finance +
+operating costs.
+
+What to measure during interviews
+
+Build a spreadsheet—not a product—before the hackathon.
+
+For every project discussed, record:
+
+Field                                       Why
+
+Project archetype                           Enables comparisons
+
+Units                                       Normalize friction
+
+Total development cost                      Cost denominator
+
+Date site first investigated                Start of journey
+
+30
+
+## Page 31
+
+Field                                   Why
+
+Date site control obtained              Risk commitment
+
+Date major approvals received           Entitlement duration
+
+Date building permit issued             Permit duration
+
+Date construction began                 Mobilization
+
+Date occupancy achieved                 Total cycle
+
+Number of agencies                      Coordination load
+
+Number of formal submissions            Process load
+
+Number of revisions                     Rework
+
+Number of professional disciplines      Intelligence layers
+
+Unplanned studies                       Surprise
+
+Biggest unknown discovered late         Product opportunity
+
+Days waiting versus actively working    Queueing
+
+Direct fees                             Visible regulatory cost
+
+Consultant expense                      Hidden process cost
+
+Carrying cost                           Time cost
+
+Major design changes                    Rework cost
+
+Root cause                              Rule / data / coordination / physical / market
+
+Could software have prevented it?       Automation hypothesis
+
+Could faster processing cause harm?     Safety/equity check
+
+Then you have something far more valuable than opinions.
+
+You can say:
+
+“Across 12 Pittsburgh projects totaling 184 units, we observed 2,430 cumulative project-days
+of preconstruction delay. Only 22% was active engineering; 38% was agency queueing; 17%
+was missing-information/rework; 13% was utility coordination; 10% other.”
+
+I made those percentages up as an example of the measurement you should produce, not as findings.
+Do not pitch them until you have collected the evidence.
+
+The hypotheses worth trying to kill
+
+Go into Pittsburgh trying to disprove these rather than confirm them:
+
+31
+
+## Page 32
+
+“Permitting is the bottleneck.”
+Perhaps financing, utilities or construction costs dominate.
+
+“The data exist but are fragmented.”
+Perhaps some decisive data simply do not exist until someone does a study.
+
+“Rules can be automated.”
+Perhaps exceptions and discretionary interpretation dominate precisely the high-value projects.
+
+“Developers don't know the requirements.”
+Large developers may already know them perfectly; small builders may be the actual underserved user.
+
+“Faster permitting means more housing.”
+Perhaps approved projects still sit because the pro forma does not work.
+
+“More housing means affordable housing.”
+Production can alleviate scarcity while still producing units unaffordable to the lowest-income households.
+
+“AI should make the decision.”
+Perhaps users mainly need provenance, dependency management and earlier warnings.
+
+“Government is the only fragmented actor.”
+The private side—architects, engineers, title, lenders, contractors, insurers—may be equally fragmented.
+
+If you kill three of your favorite assumptions before the hackathon, your eventual product will probably be
+substantially better.
+
+The deepest opportunity
+
+The sponsor briefs talk separately about permitting, housing data and typology. fileciteturn0file0
+fileciteturn0file1 fileciteturn0file2
+
+But I think there is one underlying problem:
+
+Nobody possesses a continuously updated, source-grounded model of “what must be
+true for this parcel to become these homes.”
+
+Today, that model is distributed across:
+
+• a developer's head;
+• a zoning lawyer's head;
+• an architect's checklist;
+• a civil engineer's drawings;
+• utility correspondence;
+• government databases;
+• title documents;
+
+32
+
+## Page 33
+
+• spreadsheets;
+• PDFs;
+• email threads;
+• permit comments;
+• hearing decisions;
+• lender requirements;
+• an inspector's observations.
+
+The intelligence already exists.
+
+It is just fragmented across humans and institutions.
+
+That is probably the highest-value place for AI: not replacing the intelligence, but making the distributed
+intelligence computationally visible.
+
+The house is ultimately made of concrete, wood, steel, drywall, glass and labor.
+
+The permission and confidence to build it are made of information.
+
+And right now, that information supply chain may be nearly as important a bottleneck as the physical one.
+
+1   Housing Supply: Still Undersupplied by Millions of Units - Freddie Mac
+https://www.freddiemac.com/research/insight/housing-supply-still-undersupplied?utm_source=chatgpt.com
+
+2   New Residential Construction Press Release
+https://www.census.gov/construction/nrc/current/?utm_source=chatgpt.com
+
+3    Governor Shapiro Unveils Pennsylvania’s First-Ever Housing Action Plan | Commonwealth of
+37
+
+Pennsylvania
+https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-unveils-pennsylvania-s-first-ever-housing-actio?
+utm_source=chatgpt.com
+
+4   Housing Opportunity Fund
+https://www.ura.org/pages/HOF?utm_source=chatgpt.com
+
+5   URA Board to Vote on Funding for 3 Affordable Housing Projects
+https://www.ura.org/news/ura-board-to-vote-on-funding-for-three-affordable-housing-projects-providing-over-260-affordable-
+bedrooms-in-fairywood-hazelwood-and-the-hill-district?utm_source=chatgpt.com
+
+6   Gov. Shapiro Invests $10 Million for Affordable Housing Across PA | Commonwealth of Pennsylvania
+https://www.pa.gov/governor/newsroom/2026-press-releases/gov--shapiro-invests--10-million-for-affordable-housing-across-p?
+utm_source=chatgpt.com
+
+7   ALTA - ALTA/NSPS Land Title Survey Standards
+https://www.alta.org/topics/topic-land-survey-standards?utm_source=chatgpt.com
+
+8   Consolidations/Subdivisions - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/
+ConsolidationsSubdivisions?utm_source=chatgpt.com
+
+33
+
+## Page 34
+
+9   Brownfields All Appropriate Inquiries | US EPA
+https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries?utm_source=chatgpt.com
+
+10   Construction Stormwater | Department of Environmental Protection | Commonwealth of Pennsylvania
+https://www.pa.gov/agencies/dep/programs-and-services/water/clean-water/stormwater-management/construction-
+stormwater?utm_source=chatgpt.com
+
+11   Planning Application and Process - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes?
+utm_source=chatgpt.com
+
+12   Minimum Lot Size | Implementing the Housing Needs Assessment | EngagePgh
+https://engage.pittsburghpa.gov/implementing-housing-needs-assessment/minimum-lot-size?utm_source=chatgpt.com
+
+13   Pre-Application Meeting - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/Pre-
+Application-Meeting?utm_source=chatgpt.com
+
+14   Water and Sewer Tap-in Plan Review | Pittsburgh Water
+https://www.pgh2o.com/developers-contractors-vendors/permits/water-and-sewer-tap-plan-review?utm_source=chatgpt.com
+
+15   Stormwater Permit - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Stormwater-Permit?
+utm_source=chatgpt.com
+
+16   Land Operations Permit - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Land-Operations-Permit?
+utm_source=chatgpt.com
+
+17   Building & Development Application - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Building-Development-
+Application?utm_source=chatgpt.com
+
+18   Permit Process - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Permit-
+Process?utm_source=chatgpt.com
+
+19   EZ Permits (Pilot) - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/EZ-Permits-Pilot?
+utm_source=chatgpt.com
+
+20   Third Party Agencies and Special Inspections - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Third-Party-Agencies-and-
+Special-Inspections?utm_source=chatgpt.com
+
+21   Permit Completion / Passed Final Inspections - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Permit-
+Process/Permit-Completion?utm_source=chatgpt.com
+
+22   Mortgage Rates - Freddie Mac
+https://www.freddiemac.com/pmms?utm_source=chatgpt.com
+
+23 Can a lender make me provide documents like my W-2 or pay stub in order to give me a Loan Estimate?
+
+| Consumer Financial Protection Bureau
+https://www.consumerfinance.gov/ask-cfpb/can-a-lender-make-me-provide-documents-like-my-w-2-or-pay-stub-in-order-to-give-
+me-a-loan-estimate-en-147/?utm_source=chatgpt.com
+
+34
+
+## Page 35
+
+24   Schedule a home inspection | Consumer Financial Protection Bureau
+https://www.consumerfinance.gov/owning-a-home/close/schedule-a-home-inspection/?utm_source=chatgpt.com
+
+25   Property Certification - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/Property-
+Certification?utm_source=chatgpt.com
+
+26   Online Occupancy Search - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/References-Resources-and-Forms/
+Online-Occupancy-Search?utm_source=chatgpt.com
+
+27   Determine your down payment | Consumer Financial Protection Bureau
+https://www.consumerfinance.gov/owning-a-home/prepare/determine-your-down-payment/?utm_source=chatgpt.com
+
+28   Realty Transfer Tax | Department of Revenue | Commonwealth of Pennsylvania
+https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/realty-transfer-tax?utm_source=chatgpt.com
+
+29   31   Realty Transfer Taxes - Allegheny County, PA
+https://www.alleghenycounty.us/Services/Property-Assessments-and-Real-Estate/Realty-Transfer-Taxes?utm_source=chatgpt.com
+
+30   Taxes - Pittsburgh, PA
+https://www.pittsburghpa.gov/City-Government/Finance-Budget/Taxes?utm_source=chatgpt.com
+
+32   When do I get a Closing Disclosure? | Consumer Financial Protection Bureau
+https://www.consumerfinance.gov/ask-cfpb/when-do-i-get-a-closing-disclosure-en-179/?utm_source=chatgpt.com
+
+33   Appeals - Allegheny County, PA
+https://www.alleghenycounty.us/Services/Property-Assessments-and-Real-Estate/Appeals?utm_source=chatgpt.com
+
+34   60% of a Home’s Sales Price Goes to Construction Costs | NAHB
+https://www.nahb.org/blog/2023/03/60-percent-of-home-sales-price-goes-to-construction-costs?utm_source=chatgpt.com
+
+35   Regulatory Costs Jump 40% in Five Years, Add $131,734 to New Home Prices | NAHB
+https://www.nahb.org/news-and-economics/press-releases/2026/06/regulatory-costs-jump-40-in-five-years-add-131734-to-new-
+home-prices?utm_source=chatgpt.com
+
+36 What is Elon Musk’s ‘Idiot Index’: The metric that is said to shape SpaceX, Tesla, and xAI | - The Times of
+India
+https://timesofindia.indiatimes.com/technology/tech-news/what-is-elon-musks-idiot-index-the-metric-that-is-said-to-shape-
+spacex-tesla-and-xai/articleshow/128063300.cms?utm_source=chatgpt.com
+
+38   Executive Order No. 2026-01 - January 6th, 2026 - Pittsburgh, PA
+https://www.pittsburghpa.gov/City-Government/The-Mayor/Executive-Orders/Executive-Order-No.-2026-01-January-6th-2026?
+utm_source=chatgpt.com
+
+39   New Online Permit Tracker Rolled Out as Part of Permit Reform - Pittsburgh, PA
+https://www.pittsburghpa.gov/News-articles/Homepage/New-Online-Permit-Tracker-Rolled-Out-as-Part-of-Permit-Reform?
+utm_source=chatgpt.com
+
+40   DOMI to Improve Transportation Impact Study Review Process - Pittsburgh, PA
+https://www.pittsburghpa.gov/News-articles/Homepage/DOMI-to-Modernize-and-Improve-Transportation-Impact-Study-Review-
+Process?utm_source=chatgpt.com
+
+41   Home Buying Program PILOT | EngagePgh
+https://engage.pittsburghpa.gov/home-buying-program-pilot?utm_source=chatgpt.com
+
+35
+
+## Page 36
+
+42   Developer's Manual & Standard Details | Pittsburgh Water
+https://www.pgh2o.com/developers-contractors-vendors/developers-manual-standard-details?utm_source=chatgpt.com
+
+43   Homepage - Action Housing
+https://actionhousing.org/?utm_source=chatgpt.com
+
+44   About The Builders Association Of Pittsburgh | BAMP
+https://pghhomebuilders.com/about/?utm_source=chatgpt.com
+
+45   Policy Agenda — Pittsburgh Community Reinvestment Group
+https://www.pcrg.org/policy-agenda?utm_source=chatgpt.com
+
+46   Working Paper 24-03: The Lock-In Effect of Rising Mortgage Rates | FHFA
+https://www.fhfa.gov/research/papers/wp2403?utm_source=chatgpt.com
+
+47   The Fed - Locked In: Mobility, Market Tightness, and House Prices
+https://www.federalreserve.gov/econres/feds/locked-in-rate-hikes-housing-markets-and-mobility.htm?utm_source=chatgpt.com
+
+48   The Fed - Monetary Policy: Monetary Policy Report (Branch)
+https://www.federalreserve.gov/monetarypolicy/2026-07-mpr-part1.htm?utm_source=chatgpt.com
+
+49   The Fed - Monetary Policy and Homeownership: Empirical Evidence, Theory, and Policy Implications
+https://www.federalreserve.gov/econres/ifdp/monetary-policy-and-homeownership-empirical-evidence-theory-policy-
+implications.htm?utm_source=chatgpt.com
+
+50 The Fed - How the Federal Reserve's Large-Scale Asset Purchases (LSAPs) Influence Mortgage-Backed
+Securities (MBS) Yields and U.S. Mortgage Rates
+https://www.federalreserve.gov/econres/feds/how-the-federal-reserve-s-large-scale-asset-purchases-influence-mortgage-backed-
+securities-yields-and-us-mortgage-rates.htm?utm_source=chatgpt.com
+
+51   House price responses to monetary policy surprises: evidence from US listings data
+https://www.bis.org/publications/working-paper-1212-house-price-responses-monetary-policy-surprises-evidence-us-listings-
+data?utm_source=chatgpt.com
+
+52   The Fed - Monetary Policy: Monetary Policy Report (Branch)
+https://www.federalreserve.gov/monetarypolicy/2024-03-mpr-part1.htm?utm_source=chatgpt.com
+
+53   Pandemic-Era Demand Squeezed Housing Inventories - San Francisco Fed
+https://www.frbsf.org/research-and-insights/publications/economic-letter/2025/01/pandemic-era-demand-squeezed-housing-
+inventories/?utm_source=chatgpt.com
+
+54   What is the Status of My Permit? - Pittsburgh, PA
+https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH/What-is-the-Status-of-My-
+Permit?utm_source=chatgpt.com
+
+36
+
+## Embedded source links
+
+1. <https://www.freddiemac.com/research/insight/housing-supply-still-undersupplied?utm_source=chatgpt.com>
+2. <https://www.census.gov/construction/nrc/current/?utm_source=chatgpt.com>
+3. <https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-unveils-pennsylvania-s-first-ever-housing-actio?utm_source=chatgpt.com>
+4. <https://www.ura.org/pages/HOF?utm_source=chatgpt.com>
+5. <https://www.ura.org/news/ura-board-to-vote-on-funding-for-three-affordable-housing-projects-providing-over-260-affordable-bedrooms-in-fairywood-hazelwood-and-the-hill-district?utm_source=chatgpt.com>
+6. <https://www.pa.gov/governor/newsroom/2026-press-releases/gov--shapiro-invests--10-million-for-affordable-housing-across-p?utm_source=chatgpt.com>
+7. <https://www.alta.org/topics/topic-land-survey-standards?utm_source=chatgpt.com>
+8. <https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/ConsolidationsSubdivisions?utm_source=chatgpt.com>
+9. <https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries?utm_source=chatgpt.com>
+10. <https://www.pa.gov/agencies/dep/programs-and-services/water/clean-water/stormwater-management/construction-stormwater?utm_source=chatgpt.com>
+11. <https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes?utm_source=chatgpt.com>
+12. <https://engage.pittsburghpa.gov/implementing-housing-needs-assessment/minimum-lot-size?utm_source=chatgpt.com>
+13. <https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/Pre-Application-Meeting?utm_source=chatgpt.com>
+14. <https://www.pgh2o.com/developers-contractors-vendors/permits/water-and-sewer-tap-plan-review?utm_source=chatgpt.com>
+15. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Stormwater-Permit?utm_source=chatgpt.com>
+16. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Land-Operations-Permit?utm_source=chatgpt.com>
+17. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Building-Development-Application?utm_source=chatgpt.com>
+18. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Permit-Process?utm_source=chatgpt.com>
+19. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/EZ-Permits-Pilot?utm_source=chatgpt.com>
+20. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Third-Party-Agencies-and-Special-Inspections?utm_source=chatgpt.com>
+21. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Permit-Process/Permit-Completion?utm_source=chatgpt.com>
+22. <https://www.freddiemac.com/pmms?utm_source=chatgpt.com>
+23. <https://www.consumerfinance.gov/ask-cfpb/can-a-lender-make-me-provide-documents-like-my-w-2-or-pay-stub-in-order-to-give-me-a-loan-estimate-en-147/?utm_source=chatgpt.com>
+24. <https://www.consumerfinance.gov/owning-a-home/close/schedule-a-home-inspection/?utm_source=chatgpt.com>
+25. <https://www.pittsburghpa.gov/Business-Development/City-Planning/Zoning/Planning-Applications-and-Processes/Property-Certification?utm_source=chatgpt.com>
+26. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/References-Resources-and-Forms/Online-Occupancy-Search?utm_source=chatgpt.com>
+27. <https://www.consumerfinance.gov/owning-a-home/prepare/determine-your-down-payment/?utm_source=chatgpt.com>
+28. <https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/realty-transfer-tax?utm_source=chatgpt.com>
+29. <https://www.alleghenycounty.us/Services/Property-Assessments-and-Real-Estate/Realty-Transfer-Taxes?utm_source=chatgpt.com>
+30. <https://www.pittsburghpa.gov/City-Government/Finance-Budget/Taxes?utm_source=chatgpt.com>
+31. <https://www.consumerfinance.gov/ask-cfpb/when-do-i-get-a-closing-disclosure-en-179/?utm_source=chatgpt.com>
+32. <https://www.alleghenycounty.us/Services/Property-Assessments-and-Real-Estate/Appeals?utm_source=chatgpt.com>
+33. <https://www.nahb.org/blog/2023/03/60-percent-of-home-sales-price-goes-to-construction-costs?utm_source=chatgpt.com>
+34. <https://www.nahb.org/news-and-economics/press-releases/2026/06/regulatory-costs-jump-40-in-five-years-add-131734-to-new-home-prices?utm_source=chatgpt.com>
+35. <https://timesofindia.indiatimes.com/technology/tech-news/what-is-elon-musks-idiot-index-the-metric-that-is-said-to-shape-spacex-tesla-and-xai/articleshow/128063300.cms?utm_source=chatgpt.com>
+36. <https://www.pittsburghpa.gov/City-Government/The-Mayor/Executive-Orders/Executive-Order-No.-2026-01-January-6th-2026?utm_source=chatgpt.com>
+37. <https://www.pittsburghpa.gov/News-articles/Homepage/New-Online-Permit-Tracker-Rolled-Out-as-Part-of-Permit-Reform?utm_source=chatgpt.com>
+38. <https://www.pittsburghpa.gov/News-articles/Homepage/DOMI-to-Modernize-and-Improve-Transportation-Impact-Study-Review-Process?utm_source=chatgpt.com>
+39. <https://engage.pittsburghpa.gov/home-buying-program-pilot?utm_source=chatgpt.com>
+40. <https://www.pgh2o.com/developers-contractors-vendors/developers-manual-standard-details?utm_source=chatgpt.com>
+41. <https://actionhousing.org/?utm_source=chatgpt.com>
+42. <https://pghhomebuilders.com/about/?utm_source=chatgpt.com>
+43. <https://www.pcrg.org/policy-agenda?utm_source=chatgpt.com>
+44. <https://www.fhfa.gov/research/papers/wp2403?utm_source=chatgpt.com>
+45. <https://www.federalreserve.gov/econres/feds/locked-in-rate-hikes-housing-markets-and-mobility.htm?utm_source=chatgpt.com>
+46. <https://www.federalreserve.gov/monetarypolicy/2026-07-mpr-part1.htm?utm_source=chatgpt.com>
+47. <https://www.federalreserve.gov/econres/ifdp/monetary-policy-and-homeownership-empirical-evidence-theory-policy-implications.htm?utm_source=chatgpt.com>
+48. <https://www.federalreserve.gov/econres/feds/how-the-federal-reserve-s-large-scale-asset-purchases-influence-mortgage-backed-securities-yields-and-us-mortgage-rates.htm?utm_source=chatgpt.com>
+49. <https://www.bis.org/publications/working-paper-1212-house-price-responses-monetary-policy-surprises-evidence-us-listings-data?utm_source=chatgpt.com>
+50. <https://www.federalreserve.gov/monetarypolicy/2024-03-mpr-part1.htm?utm_source=chatgpt.com>
+51. <https://www.frbsf.org/research-and-insights/publications/economic-letter/2025/01/pandemic-era-demand-squeezed-housing-inventories/?utm_source=chatgpt.com>
+52. <https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH/What-is-the-Status-of-My-Permit?utm_source=chatgpt.com>

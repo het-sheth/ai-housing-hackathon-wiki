@@ -1,87 +1,70 @@
-# OKF Wiki — schema & conventions (canonical agent doc)
+# AI for Housing Hackathon: agent instructions
 
-A Markdown-canonical knowledge base conforming to a **strict OKF profile** (Google Open Knowledge
-Format v0.1). **Markdown in `wiki/` is the source of truth. `site/` is generated — never edit it by hand.**
+## For Humans
 
-## Layout
-- `wiki/<topic>/<slug>.md` — atomic concept pages (one concept per file). Slugs are kebab-case.
-- `wiki/<topic>/index.md` — OPTIONAL, reserved, **no frontmatter**: intro prose for the topic. The
-  card listing is auto-generated from the concept files.
-- `raw/<topic>/` — immutable source material. Read, never rewrite.
-- `topics.json` — `{ "order": [...] }` controls topic order on the hub.
-- `build.mjs` — `npm run build` regenerates `site/`; `npm run check` validates without writing.
+This repository is Het and Rushi's shared research and decision record for the Pittsburgh AI for Housing Hackathon. Track 1, Development Feasibility Navigator, is selected. We are still brainstorming the practitioner workflow and product scope. The application will have its own repository.
 
-## Concept frontmatter (required: `type`)
-```
----
-type: concept           # required. wiki concepts: concept | pattern | worked-example
-title: Human Title      # recommended
-description: one-sentence summary    # recommended; canonical summary field
-tags: [a, b]            # recommended
-timestamp: 2026-06-27T00:00:00Z      # recommended; ISO 8601, last meaningful change
-resource: https://...   # optional; URI of the underlying asset
-status: stub | learning | researched | solid   # optional custom lifecycle key
----
-```
+Read `docs/handoffs/current.md` to resume work. Read `docs/adr/README.md` for accepted and proposed decisions. Use `wiki/product/context-start.md` for a compact research overview.
 
-## Reserved files (OKF)
-- `index.md` and `log.md` carry **NO frontmatter**. `index.md` = intro prose (listing is generated).
-  `log.md` = chronological update history. Both are exempt from the `type` requirement.
-- **Reserved directories:** `wiki/_templates/` (note scaffolding) and `wiki/journal/` (the dated
-  private inbox) are reserved like `index.md`/`log.md` — exempt from the `type` requirement, from
-  link/wikilink resolution, and from the no-frontmatter rule (templates legitimately show example
-  frontmatter; journal notes are freeform). They are not published to `site/`. Journal notes are the
-  capture inbox; durable knowledge is promoted into topic concepts.
+## For Agents
 
-## Body conventions the generator understands
-- Cross-link **concepts** with **standard Markdown links**: `[Label](/wiki/<topic>/<slug>.md)`
-  (absolute, repo-root-relative — preferred) or `[Label](./<slug>.md)` (relative). A link must
-  resolve to an existing concept; to cite `raw/` source material, reference it as inline code
-  (`` `raw/<topic>/file.md` ``) or via `resource:` — not as a clickable link.
-- **Wikilinks** (within this wiki): `[[slug]]`, `[[topic/slug]]`, `[[slug|Label]]` →
-  cross-links. Bare `[[slug]]` resolves against the current page's topic. Must resolve to an
-  existing concept or `check` fails.
-- **Cross-wiki wikilinks** (into a *federated peer* wiki): `[[<peer>:<topic>/<slug>]]` and
-  `[[<peer>:<topic>/<slug>|Label]]`. Peer name **and** full `topic/slug` are both required — no
-  bare-slug, no peerless form (`check` rejects malformed forms). Cross-wiki rendering is **opt-in
-  per wiki, default OFF** (`okf.federation: true` in `package.json` + a discoverable `peers.json`
-  via `OKF_PEERS` or the sibling `../knowledge-hub/peers.json`). With federation OFF the link is
-  still parsed and **masked** — the human `Label` (or `(linked page)`) renders, never the
-  peer/topic/slug. With it ON the link resolves to a relative href into the peer's local `site/`.
-- External sources go under a `# Citations` heading in the body — NOT in frontmatter.
-- `> [!TIP]` / `[!NOTE]` / `[!WARNING]` / `[!CAUTION]` / `[!IMPORTANT]` → callouts.
-- ` ```lang title="…" ` → code block with a head bar. Tables, lists, headings → standard Markdown.
+### Session entry and intent
 
-## The one inviolable rule: never invent content
-Pages capture only what was in the source material (`raw/`) or what the author provided. Ground every
-claim in `raw/` or a cited source. Flag third-party/unverified claims inline (e.g. "{{partly third-party}}").
-Missing material → leave a `status: stub` with a note, don't fabricate.
+1. Read this file, `docs/handoffs/current.md`, then `docs/adr/README.md`.
+2. Check the current branch and working tree. Preserve unfinished work and inspect the handoff's publication state.
+3. Load only the wiki concepts or source sections needed for the current question.
+4. Continue the user's active task; do not restart discovery, repeat settled questions or treat a research proposal as approval to implement.
 
-## OKF profile (enforced by `npm run check`)
-Frontmatter/`type` rules apply to `wiki/**` and `raw/**` (never `README`/`AGENTS`/`CLAUDE`/`docs`/`ingest`).
-Link resolution applies to `wiki/` concept bodies only (raw/ is not link-validated).
+The user wants an actionable Pittsburgh housing product that fits practitioners' existing tools and handoffs. It should be usable by people without technical expertise. A nonprofit site screen is a candidate workflow, not an approved specification. Het does not want a standalone analytics dashboard. Architecture, model provider and hosting remain open. Better T Stack is being evaluated, not selected.
 
-| Path | required `type` |
-|------|------|
-| `raw/**/*.md` | `source` |
-| `wiki/<topic>/<slug>.md` | `concept` \| `pattern` \| `worked-example` |
-| `wiki/**/index.md`, `**/log.md` | reserved — **no frontmatter** |
+The team has two people. Het has Saturday and Sunday. Build window: September 26, 2026 at 9 a.m. through September 27 at 11:59 p.m. Eastern. The full official rules are in the packet; do not replace them with assumptions. Before public claims, distinguish Pittsburgh city jurisdiction from other Allegheny County municipalities.
 
-`check` fails on: missing/wrong `type` on a concept, wrong `type` on a raw doc, frontmatter on a
-reserved file, a topic in `topics.json` with no `wiki/<topic>/` directory, a body `.md` link that
-does not resolve to a wiki concept, a within-wiki `[[wikilink]]` to a non-existent page, or a
-malformed cross-wiki wikilink. A cross-wiki link to a missing peer page fails check **only when
-federation is on and the peer manifest is present** — with federation off, cross-wiki links are
-masked, not resolved, and not checked, so the wiki still builds standalone. This profile is
-*stricter* than base OKF on purpose; every bundle it accepts is still valid OKF v0.1.
+### Where information belongs
 
-## Federation manifest (`site/manifest.json`)
-Every `npm run build` writes `site/manifest.json` (deterministic, no LLM) describing this wiki for
-the local knowledge hub: `wiki`, `title`, and `pages[]` each with `id` (=`topic/slug`), `title`,
-`topic`, `type`, `description`, `tags`, `href` (relative to this wiki's `site/`), and `links` (the
-page's outgoing `[[<peer>:<topic>/<slug>]]` references — what lets the hub build backlinks).
+| Location | Purpose |
+|---|---|
+| `wiki/event/` | Rules, provenance and project overview |
+| `wiki/tracks/` | Challenge requirements and comparison |
+| `wiki/research/` | Housing concepts and interpretation of Rushi's research |
+| `wiki/data/` | Catalog index, access checks and corrections |
+| `wiki/datasets/` | One page per organizer catalog entry |
+| `wiki/product/` | Current hypotheses, open questions, research brief and stack assessment |
+| `wiki/getting-started/` | Project-specific reading and authoring guidance |
+| `raw/hackathon/` | Immutable downloaded sources and original-byte manifest |
+| `raw/markdown/` | Full PDF text extractions, page anchors, links and conversion manifest |
+| `docs/adr/` | Consequential decisions, rationale, alternatives and approval evidence |
+| `docs/handoffs/` | Current state and dated transition snapshots |
+| `docs/deep-research-prompt.txt` | Copyable assignment for the separate research session |
+| `site/` | Optional generated website; never edit manually |
 
-## Operations
-- **Check (always run):** `npm run check` — validates the OKF profile; the everyday gate. **Test:** `npm test`.
-- **Build (optional):** `npm run build` — regenerates `site/`; only for publishing/federation, not the everyday write → check loop.
-- **Optional ingest** (if `ingest/` is present): `npm run ingest -- <src> --topic <t>`. See README.
+### Evidence and context discipline
+
+Preserve source files. Correct stale URLs or mistaken claims in a derived note rather than rewriting originals. Label official requirements, research claims, verified findings, inferences and team decisions separately. Never invent interviews, endorsements, dataset coverage, time savings, score calibration or financial assumptions.
+
+The long PDF and original research Markdown substantially overlap. The two catalog CSVs are duplicates. Read one relevant representation. Prefer curated concepts, then page-marked text, then the original PDF when figures or table layout matter. Reading a data catalog is not equivalent to validating underlying records or joins.
+
+Do not put Penny/customer conversations, credentials or private discovery records in this public repository. Public notes may contain only appropriate, explicitly shareable findings. Never infer access or outreach authorization from a request to brainstorm.
+
+### ADRs and handoffs
+
+Record consequential decisions using `docs/adr/template.md`. Include status, decision owner, approval evidence, alternatives, rationale, tradeoffs and revisit conditions. Keep proposals proposed until accepted. Supersede old decisions explicitly instead of rewriting their history.
+
+Update `docs/handoffs/current.md` after meaningful progress and before ending a substantial work session. Include current stage, branch/publication state, outstanding work, blockers, verification and exact next actions. Archive a dated snapshot for a major transition. Provide a resume prompt that works without the original chat. Keep the current handoff concise; reference detailed notes instead of copying them.
+
+### Markdown and validation contract
+
+Markdown in `wiki/` is canonical. Each concept has YAML frontmatter with required `type: concept`, `pattern` or `worked-example`; include a title, description, tags, status and meaningful-change timestamp. Use `status: stub` for unresolved knowledge. Full source Markdown under `raw/` uses `type: source`.
+
+Reserved `index.md` and `log.md` have no frontmatter. `wiki/_templates/` and `wiki/journal/` are excluded from normal concept validation and publication, but Git still tracks them unless ignored: they are not private storage.
+
+Cross-link concepts using `[Label](/wiki/topic/slug.md)` or relative Markdown links. Every concept link must resolve. Cite raw source paths as inline code or via `resource:` rather than ordinary local Markdown links. Put external sources under `# Citations`. Use plain ASCII punctuation in authored material; preserve original source text faithfully.
+
+`topics.json` controls topic ordering. Each named topic must exist. The optional renderer supports within-wiki links and callouts. Cross-wiki federation is not enabled for this project; do not add peer dependencies without a reason and a decision.
+
+Run `npm run check` after documentation changes. Run `npm test` after tooling or rendering changes and before publishing a batch that affects agent guidance or wiki structure. Use `npm run build` only when a generated local site is requested or needed. In this environment, sandboxed test subprocesses have intermittently returned empty captured output. The full suite passed outside the sandbox; diagnose execution-environment failures before changing assertions.
+
+### Collaboration and boundaries
+
+Use branches and PRs; never push directly to main. Follow the inherited global commit conventions, with no attribution trailers. Rushi's GitHub account is Baburaoooo; verify invitation acceptance before asserting collaborator access.
+
+This repo was derived from `het-sheth/okf-wiki-template`. That is provenance, not an active template-development task. The old template's implementation plans do not govern this project. Do not create application code here or reuse prior project implementation for the hackathon app. Broader source research does not authorize product implementation; obtain agreement on the product design first.

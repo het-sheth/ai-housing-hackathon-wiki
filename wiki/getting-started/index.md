@@ -1,4 +1,3 @@
-# Getting started
+# Working in the housing research wiki
 
-This topic shows the shape of a strict-OKF-profile wiki. The card list below is generated
-from the concept files in this folder — do not hand-maintain it.
+Start with the project reading guide and authoring conventions below. The pages explain how Het, Rushi and future sessions should navigate evidence, preserve decisions and continue the housing project.

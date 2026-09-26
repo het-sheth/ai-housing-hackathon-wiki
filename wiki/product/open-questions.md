@@ -11,7 +11,7 @@ status: stub
 
 ## Confirmed
 
-Het and Rushi are a two-person team. Het has Saturday and Sunday available. Rushi supplied the research already ingested. No further Rushi document is assumed missing. The existing research most strongly develops Track 1; the team has not explicitly selected it.
+Het and Rushi are a two-person team. Het has Saturday and Sunday available. Rushi supplied the research already ingested. No further Rushi document is assumed missing. Het selected Track 1. The intended product should fit existing Pittsburgh housing-practitioner workflows and be usable without high technical sophistication. Het does not want a standalone analytics tool and has no pre-existing nonprofit relationships. Authorized, de-identified summaries of Penny conversations may be a future input; access and reuse permission are not established.
 
 ## Decisions to make next
 
@@ -23,7 +23,7 @@ Het and Rushi are a two-person team. Het has Saturday and Sunday available. Rush
 6. A short expert check in housing-sme-help: is the proposed output useful, and are the claims appropriately limited?
 7. Public demo/deployment approach, available API budgets and Rushi's weekend availability.
 
-The next conversation should start with the user and decision, before deciding the stack. Treat the suggested weekend screener as a proposal, not an approved design.
+Use the [Deep Research prompt](/wiki/product/deep-research-brief.md) to investigate workflow gaps. The next conversation should start with the user and decision, before deciding the stack. Treat the suggested weekend screener as a proposal, not an approved design.
 
 # Citations
 

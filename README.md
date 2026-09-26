@@ -1,6 +1,6 @@
 # AI for Housing Hackathon research wiki
 
-Het and Rushi's shared research context. Start at [the overview](wiki/event/overview.md).
+Het and Rushi's shared research context. Resume with [the current handoff](docs/handoffs/current.md), review [decision records](docs/adr/README.md), or start at [the overview](wiki/event/overview.md).
 
 1. Read [rules and submission](wiki/event/rules.md).
 2. Compare [the three tracks](wiki/tracks/comparison.md).
@@ -12,4 +12,4 @@ Canonical notes live in `wiki/`; immutable sources and checksums live in `raw/ha
 
 Run `npm ci`, then `npm run check`. Run `npm test` for template regression checks. Optional `npm run build` generates a local static site. Do not edit generated `site/` files.
 
-No product design or stack is approved yet. The source catalog is fully read; underlying datasets are not fully ingested. Current policy claims require independent verification before product use.
+Track 1 is selected. No product design or stack is approved yet. The source catalog is fully read; underlying datasets are not fully ingested. Current policy claims require independent verification before product use.
