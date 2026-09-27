@@ -1,6 +1,6 @@
 # Current handoff: resumed work and split publication
 
-September 26, 2026, Eastern. The user resumed work after the deployed checkpoint and authorized focused branches and PRs for the corrected walkthrough, source integration and wiki updates. The earlier stop instructions are historical. Preserve all existing app, explorer and proposal-comparison work. Two wiki and eight app branches are published as draft PRs. The app documentation branch is prepared for a later PR. No new merge or deployment occurred.
+September 26, 2026, Eastern. The user resumed work after the deployed checkpoint and authorized focused branches and PRs for the corrected walkthrough, source integration and wiki updates. The earlier stop instructions are historical. Preserve all existing app, explorer and proposal-comparison work. Two wiki and nine app branches are published as focused draft PRs. No new merge or deployment occurred.
 
 ## For Humans
 
@@ -8,7 +8,7 @@ The public site at https://ai-housing-navigator.vercel.app/projects/new is still
 
 The latest accepted scoring policy is [ADR 0008](../adr/0008-gate-preliminary-scoring-on-complete-evidence.md): withhold every numeric Development Ease Score and range until all required rubric factors are assessed. Current coverage is incomplete. Public records, map intersections, source metadata and completed form fields do not establish feasibility or permission. Jev is not integrated. The optional local intake uses configured DeepSeek through OpenRouter; hosted AI is disabled. No paid model call or credential inspection was made for this source work.
 
-The organizer catalog has 60 entries. The final bounded source probe classified 35 as scoped source or context paths, 7 as public metadata paths, and 18 as no-data outcomes in this adapter set. These categories do not mean that all 60 underlying datasets are ingested or that their records apply to a selected parcel. USGS elevation first returned a transient error, then succeeded on one retry; the Pittsburgh zoning code page returned HTTP 403 to the bounded request. The prepared [app documentation branch](https://github.com/het-sheth/ai-housing-navigator/tree/docs/source-architecture-flow) records per-source scope and limits; its PR is forthcoming.
+The organizer catalog has 60 entries. The final bounded source probe classified 35 as scoped source or context paths, 7 as public metadata paths, and 18 as no-data outcomes in this adapter set. These categories do not mean that all 60 underlying datasets are ingested or that their records apply to a selected parcel. USGS elevation first returned a transient error, then succeeded on one retry; the Pittsburgh zoning code page returned HTTP 403 to the bounded request. [App documentation PR #12](https://github.com/het-sheth/ai-housing-navigator/pull/12) records the architecture, flow, per-source scope and limits.
 
 ## For Agents
 
@@ -28,7 +28,7 @@ Supabase Auth and cloud project storage are not connected. Drafts remain on the 
 
 ### Next actions
 
-1. Review app draft PRs #4 through #11 in dependency order. Publish and review the prepared `docs/source-architecture-flow` branch after reconciling its source counts and PR links with the final stack.
+1. Review app draft PRs #4 through #12 in their stated dependency order. Use the [published review map](https://github.com/het-sheth/ai-housing-navigator/blob/docs/source-architecture-flow/docs/pr-stack.md); walkthrough PR #5 is a sibling of the source stack.
 2. Review wiki draft PR #5 before its stacked policy PR #6. Keep ADR 0007 proposed and do not push wiki main directly.
 3. Compare each later PR head with these local snapshots. Update this handoff with actual merge, verification or deployment events only after they occur.
 4. Continue source-specific gaps without claiming full feasibility coverage. Do not make paid AI calls or move credentials as part of this work.
