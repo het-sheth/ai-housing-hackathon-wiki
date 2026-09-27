@@ -1,12 +1,18 @@
-# Current handoff: technical design ready for review
+# Current handoff: technical design and stopped build checkpoint
 
-Updated September 26, 2026. Stage: accepted product decisions and proposed technical design prepared for wiki publication; application implementation has not begun for the expanded design.
+## Latest session stop
+
+The user stopped implementation on September 26. Latest accepted finance and illustrative-intro amendments are saved in this wiki. Application WIP is on `feat/guided-project-workspace`; resume from `/home/het/personal/ai-housing-navigator/docs/resume-guided-workspace.md`. The new domain/storage foundation passes 71 total unit tests, but UI CSS/3D scene and browser tests are incomplete, so typecheck/build/lint fail. Do not claim a finished UI. Latest changes are local checkpoint commits, not assumed published in PR #4 or app PR #1.
+
+The next session should act as an orchestrator, use and reuse Sol implementation agents and Luna bounded support agents, and keep main context lean. Read focused files and short agent summaries rather than bulk-loading both repositories. No large swarm is requested.
+
+Updated September 26, 2026. Stage: wiki PR #4 is open for design review; Het subsequently accepted an early financial diligence question and authorized starting application implementation. Recheck the app working tree for current progress.
 
 ## Resume here
 
 1. Read [the technical design](../technical-design-v1-2026-09-26.md), [source verification and C01-C12 inventory](../source-adapter-verification-2026-09-26.md), then [the phased implementation plan](../implementation-plan-v1-2026-09-26.md).
 2. Treat [the product specification](../product-spec-v1-2026-09-26.md), [dated decision log](../product-decisions-2026-09-26.md) and [ADR 0006](../adr/0006-select-action-led-v1.md) as the accepted product record. [ADR 0007](../adr/0007-propose-persisted-workflow-architecture.md) is proposed architecture, not approval.
-3. First implementation slice for review: typed broad activity/status contracts, fenced Lanark evaluator and recoverable guided local draft at `/projects/new`, preserving `/` and `/design-system`. No material product question blocks review. Obtain implementation direction before coding this expanded scope.
+3. First implementation slice: typed broad activity/status contracts, fenced Lanark evaluator and recoverable guided local draft at `/projects/new`, preserving `/` and `/design-system`. Add the accepted early budget, applicable sale/rental assumptions and funding-path question with Unknown answers. Implementation is authorized; detailed architecture still requires review against ADR 0007.
 
 ## State and publication
 
@@ -15,6 +21,8 @@ Research repository: `/home/het/personal/ai-housing-hackathon-wiki`, branch `doc
 Application repository: `/home/het/personal/ai-housing-navigator`, branch `feat/first-prototype`, baseline inspected at `6288d5a`, published prototype head `128aec4` before this documentation update; application source was left unchanged. Publication added the four existing interview/research notes and a dated app handoff update, and joined the GitHub README baseline into the feature branch. It retains Lanark-only conditional evaluation, comparisons, Markdown/print export, design preview and one exact-assessment adapter. Runtime AI, generic countywide identity, durable drafts, accounts and task continuation remain unimplemented. No expanded-design infrastructure was provisioned or deployed. No new purchases were made. No merge or deployment occurred. The Sol guidance reconciliation is committed and pushed at `d2940aa` in app PR #1. Both repositories now link the accepted product record and distinguish it from the historical prototype and proposed architecture. Recheck Git state before further publication.
 
 The previous handoff is preserved in [the pre-design snapshot](2026-09-26-before-technical-design.md). Historical deployment requests and comparison-first suggestions do not supersede current instructions. The accepted scope makes assessment and prioritized actions primary, comparison secondary, and selects React/TypeScript/Vite, Supabase Postgres/Auth and planned Vercel. ADR 0007 remains proposed. The user explicitly requested bounded subagent use/reuse and lean parent context; continue with short focused assignments instead of broad context duplication.
+
+September 26 product amendment: ask early whether a relevant project has a preliminary budget, expected sale/rental assumptions and an identified funding path. Unknown or missing relevant answers create a prioritized financial diligence task, after identity and established adverse/blocking dependencies and ahead of generic gaps when decision-relevant. Finance stays Unassessed without a reviewed method; no overall score. This is Het's accepted product decision, not practitioner interview evidence. A striking illustrative 3D animated intro is also accepted, separate from the actual 2D parcel view. Procedural Three.js is the current implementation direction; a Blender GLB can be considered later. Do not claim surveyed or verified 3D site geometry. Do not publish private conversation quotes or names as interview evidence.
 
 ## Findings and real release blockers
 
@@ -34,4 +42,4 @@ Fresh application verification during this handoff: 41 unit tests, typecheck, li
 
 ## Resume prompt
 
-Read this repository's AGENTS.md, then the accepted product spec and decisions, the three linked design/source/plan documents, and ADR 0007. Preserve existing unfinished work and keep application changes in the separate app repository. Do not reopen accepted personas, geography, activity intake, personal ownership, 2D, no-score, Supabase or outage behavior. Review the first implementation slice without coding until authorized. Before publication, inspect Git state and the latest user instructions. Wiki PR #3 is merged; the current design batch is published in open PR #4. App PR #1 includes the reconciled guidance. Verify current PR state before further integration. Source/rule/model/auth prerequisites remain explicit release gates.
+Read this repository's AGENTS.md, then the accepted product spec and decisions including the financial and visual amendments, the three linked design/source/plan documents, and ADR 0007. Preserve existing unfinished work and keep application changes in the separate app repository. Do not reopen accepted personas, geography, activity intake, personal ownership, no-score, Supabase or outage behavior. Application implementation is authorized, with the first slice and financial question above; coordinate actual app work and check its latest branch/status. Build the illustrative 3D intro separately from sourced 2D parcel context. Before publication, inspect Git state and the latest user instructions. Wiki PR #3 is merged; the previous design batch is published in open PR #4. This amendment is local until separately committed and pushed. Verify current PR state before further integration. Source/rule/model/auth prerequisites remain explicit release gates.

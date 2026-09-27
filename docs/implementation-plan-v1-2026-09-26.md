@@ -1,6 +1,6 @@
 # Housing Navigator v1 Implementation Plan
 
-> **For agentic workers:** Use superpowers:subagent-driven-development or superpowers:executing-plans when implementation is authorized. Complete the slices in dependency order, with bounded agents reused for related work. This handoff authorizes documentation only.
+> **For agentic workers:** Het subsequently authorized starting application implementation. Complete the slices in dependency order, with bounded review. This plan was originally a documentation-only handoff; its technical architecture remains proposed.
 
 **Goal:** Extend the existing prototype into a recoverable, proposal-specific evidence and next-action workflow without representing missing coverage as permission.
 
@@ -19,7 +19,7 @@
 - Keep applicability, coverage, finding status, provenance/completeness and task state separate. No averaged score, permission verdict or inferred financial feasibility.
 - Keep immutable proposal versions and completed assessment runs; explicit refresh creates a new run. Unsupported proposals must never become repair proposals.
 - Unknown legal use stays unknown. No permit record or assessment classification establishes current lawful use by itself.
-- Preserve independent 412 identity, 2D context, black/gold interaction, progressive evidence disclosure, keyboard access and mobile layouts. No 3D, packet extraction, shared editing or pro forma work.
+- Preserve independent 412 identity, actual 2D parcel context, black/gold interaction, progressive evidence disclosure, keyboard access and mobile layouts. A striking procedural Three.js animated intro is authorized as illustration only. Keep it separate from sourced parcel context, label it illustrative and avoid survey, current-building or 3D-site claims. A later Blender GLB remains optional. No packet extraction, shared editing or pro forma work.
 - No em dashes or credential inspection. No secrets, full prompts or source bodies in logs.
 
 ## Readiness and actual starting point
@@ -36,7 +36,7 @@ Slices 4-7 complete the launch requirements and release gates. Do not compress s
 
 | Slice | Depends on | Reviewable outcome | Suggested work split |
 |---|---|---|---|
-| 1. Safe local guided foundation | Design review and implementation authorization | Broad intake cannot accidentally invoke Lanark rules; recoverable draft | One implementer, one bounded domain/browser reviewer |
+| 1. Safe local guided foundation | Implementation authorized; design review continues | Broad intake cannot accidentally invoke Lanark rules; recoverable draft | One implementer, one bounded domain/browser reviewer |
 | 2. Lanark assessment and action brief | 1 | Primary assessment/actions, eight-pillar gaps, consistent export | UI implementer with domain reviewer |
 | 3. Confirmable runtime AI | 1; operational Supabase ledger and restricted budget RPC; endpoint/budget validation | One working model operation end to end | Server/AI work can proceed beside slice 2 |
 | 4. Countywide property and exact source evidence | 1; operational Supabase/PostGIS and restricted GIS RPC; geometry/terms gates for publication | Confirmed identity and municipality, assessment, City permit evidence | Source/geometry implementer with fixture review |
@@ -60,6 +60,7 @@ Paths below are proposed application paths, not files created in this documentat
 - [ ] Add evaluator guard tests: a different parcel, unmatched snapshot or unsupported scope cannot emit Lanark-specific conflict/zoning/slope findings. The old default comparison still has zero review-status and next-action changes.
 - [ ] Extract the fixture and narrow evaluator behind the existing facade. Keep unsupported activity selections intact and return explicit unsupported scope rather than convert them to repair.
 - [ ] Implement `/projects/new`: role/current decision, property confirmation, description and visible activity selections, relevant single clarification, proposal confirmation. The local demo clearly limits assessment to the Lanark fixture. Other entered properties remain drafts pending source support. Back/edit preserves answers; upstream edits invalidate dependent confirmation.
+- [ ] Ask early, when relevant, whether the proposal has a preliminary budget, applicable sale/rental assumptions and an identified funding path. Each part accepts Unknown. Keep provided values as user assumptions with provenance; the question must not block progress or calculate viability.
 - [ ] Implement versioned IndexedDB storage, serialized writes and visible saving/saved/error state. On schema migration failure preserve the original record and offer export/reset rather than overwrite. Clear draft removes that draft after confirmation. A blocked or quota-limited database leaves the in-memory draft usable with a persistent unsaved warning and export.
 - [ ] Add browser assertions for close/reopen recovery, no loss on back/edit, tab reload during saving, Clear draft, corrupt/older draft handling, storage denial and narrow-screen keyboard order. No AI operation is pretended successful.
 - [ ] Run the common checks plus the new guided browser script. Review the diff and record exact checks before a scoped feature commit if commits are authorized for execution.
@@ -72,9 +73,9 @@ Paths below are proposed application paths, not files created in this documentat
 
 **Interfaces:** `assessProposal(input: AssessmentInput): AssessmentDraft`; `prioritizeTasks(findings: Finding[]): TaskSuggestion[]`; `compareRuns(left: AssessmentRun, right: AssessmentRun): Comparison`; `exportProjectBrief(snapshot: ExportSnapshot): string`. C01-C12 check IDs and statuses come from the source/design documents. `ExportSnapshot` pins one proposal version and assessment run, referenced observations, relevant outcomes and overrides.
 
-- [ ] Add tests for C06 housing arithmetic and C12 honest pillar gaps, including negative net-new homes, unknown existing units, affordability goal without a count and grocery-only zero homes. Financial viability remains Unassessed even when user estimates are present.
+- [ ] Add tests for C06 housing arithmetic and C12 honest pillar gaps, including negative net-new homes, unknown existing units, affordability goal without a count, grocery-only zero homes, and unknown budget, applicable sale/rental assumptions or funding path. Financial viability remains Unassessed even when user estimates are present.
 - [ ] Implement separate applicability/coverage/review/evidence indicators. Default result shows the proposal summary, housing outcomes, source dates, priority tasks and expandable evidence; eight pillars are a coverage checklist, not eight fabricated engines.
-- [ ] Show one useful task detail with responsible party, requested evidence and dependencies. Preserve conflicts and keep applicable independent tasks available. Order by unresolved identity, adverse findings/dependencies, scope-specific missing evidence, then remaining gaps; stable IDs resolve ties.
+- [ ] Show one useful task detail with responsible party, requested evidence and dependencies. Preserve conflicts and keep applicable independent tasks available. Order by unresolved identity, adverse findings/dependencies, scope-specific missing evidence including relevant financial assumptions, then remaining gaps; stable IDs resolve ties. A missing budget, applicable sale/rental assumption or funding path yields a named financial diligence task ahead of generic gaps when it affects the next decision.
 - [ ] Add a secondary change/duplicate action that creates a new proposal version. Comparison independently reports input, explanation, review-status and next-action differences. The Lanark repair/expansion pair explicitly reports unchanged next action.
 - [ ] Generate Markdown and browser print from the same pinned snapshot. Include missing evidence, scope/coverage, version/date/source references and intended housing outcomes. Add tests comparing rendered/exported values and dates; export cannot silently use current draft inputs with an older assessment.
 - [ ] Run common checks and both existing browser suites plus guided flow. Verify at 320 px and by keyboard that the current action appears before secondary map/evidence, status is not color-only and focus moves predictably.
