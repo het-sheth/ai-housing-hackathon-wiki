@@ -2,7 +2,7 @@
 
 ## For Humans
 
-This repository is Het and Rushi's shared research and decision record for the Pittsburgh AI for Housing Hackathon. Track 1, Development Feasibility Navigator, is selected. Het has authorized starting a quick local prototype in a separate application repository. Read `docs/start-prototype-session.md` for the execution handoff; practitioner fit and the final rule/scoring scope still require validation.
+This repository is Het and Rushi's shared research and decision record for the Pittsburgh AI for Housing Hackathon. Track 1, Development Feasibility Navigator, is selected. The accepted v1 product record is `docs/product-spec-v1-2026-09-26.md`, `docs/product-decisions-2026-09-26.md` and ADR 0006. The separate application repository contains a published, bounded Lanark prototype. Practitioner fit and release coverage still require validation.
 
 Read `docs/handoffs/current.md` to resume work. Read `docs/adr/README.md` for accepted and proposed decisions. Use `wiki/product/context-start.md` for a compact research overview.
 
@@ -15,7 +15,7 @@ Read `docs/handoffs/current.md` to resume work. Read `docs/adr/README.md` for ac
 3. Load only the wiki concepts or source sections needed for the current question.
 4. Continue the user's active task; do not restart discovery, repeat settled questions or treat a research proposal as approval to implement.
 
-The user wants an actionable Pittsburgh housing product that fits practitioners' existing tools and handoffs. It should be usable by people without technical expertise. A nonprofit site screen is a candidate workflow, not an approved specification. Het does not want a standalone analytics dashboard. Architecture, model provider and hosting remain open. Better T Stack is being evaluated, not selected.
+The accepted product leads with a proposal-specific assessment and prioritized next actions. Comparison is secondary when changing or duplicating a proposal. Countywide intake retains every housing work activity and combination, while each source and check discloses bounded coverage. Use named statuses and an evidence/action checklist without an overall score. V1 uses useful 2D site context. The selected foundation is React, TypeScript, Vite, Supabase Postgres and Supabase Auth, with Vercel planned. ADR 0007 and the detailed technical design remain proposed engineering recommendations. Runtime model and endpoint remain unselected.
 
 The team has two people. Het has Saturday and Sunday. Build window: September 26, 2026 at 9 a.m. through September 27 at 11:59 p.m. Eastern. The full official rules are in the packet; do not replace them with assumptions. Before public claims, distinguish Pittsburgh city jurisdiction from other Allegheny County municipalities.
 
@@ -67,4 +67,4 @@ Run `npm run check` after documentation changes. Run `npm test` after tooling or
 
 Use branches and PRs; never push directly to main. Follow the inherited global commit conventions, with no attribution trailers. Rushi's GitHub account is Baburaoooo; verify invitation acceptance before asserting collaborator access.
 
-This repo was derived from `het-sheth/okf-wiki-template`. That is provenance, not an active template-development task. The old template's implementation plans do not govern this project. Do not create application code here or reuse prior project implementation for the hackathon app. Research alone does not authorize implementation. Het subsequently authorized the narrow local prototype described in `docs/start-prototype-session.md`; do not ask for that same permission again. Wider scope, remote publication and deployment remain separate decisions.
+This repo was derived from `het-sheth/okf-wiki-template`. That is provenance, not an active template-development task. The old template's implementation plans do not govern this project. Do not create application code here or reuse prior project implementation for the hackathon app. The narrow prototype was authorized and published on the app feature branch; do not ask for that same permission again. Wiki PR #3 is merged. The current design batch is published in wiki PR #4 for review. Expanded app implementation and deployment remain separate decisions. `docs/start-prototype-session.md` is a historical prototype handoff, not current product authority.

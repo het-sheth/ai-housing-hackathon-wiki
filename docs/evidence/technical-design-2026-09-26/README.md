@@ -1,0 +1,9 @@
+# Public API probe evidence
+
+Retrieved September 26, 2026. Read-only public requests, no credentials or owner/contact fields. `public-api-probes.json` is a publication derivative recording UTC retrieval times, HTTP status and responses. Geometry payloads, layer extent coordinates and URL geometry values are replaced by SHA-256 references pending reuse clearance. Other URL parameters and record attributes are retained; modified geometry URLs cannot be replayed as published. Package metadata and layer metadata are reduced to relevant fields. These are research observations, not deployed adapter tests.
+
+SHA-256 of published derivative public-api-probes.json: `0521ac6282297b4492358bd36b565b41e98d0783f4e31aef0fb6afdad424435c`.
+
+SHA-256 of byte-exact original: `cfce961b99cf05786e26596b49db99bb1809552964ce0c583498a0ba4614a173`. The original is preserved outside this repository at `/home/het/personal/ai-housing-hackathon-wiki-local-evidence/technical-design-2026-09-26-public-api-probes.json` and is not part of the publication. Geometry hashes use UTF-8 original strings; structured geometry objects use sorted-key compact JSON with `ensure_ascii=false`. Hashes retain traceability without distributing the geometry.
+
+Probe names preserve mistakes: `dormont` returned zero, consistent with an exact whitespace mismatch; no successful corrected Dormont text query establishes that cause; `dormont-code` used an incorrect hypothesized code and returned Edgeworth. The authoritative `muni-crosswalk` response establishes Dormont 819 and Edgeworth 824. `unfamiliar-city` returned zero for the attempted Cedar address; `city-sample` supplied the unfamiliar Mountford parcel. Do not convert these failed searches into absence claims. No complete countywide coverage or polygon containment test was performed.

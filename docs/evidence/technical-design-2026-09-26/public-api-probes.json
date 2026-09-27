@@ -1,0 +1,1781 @@
+[
+  {
+    "url": "https://data.wprdc.org/api/3/action/package_show?id=allegheny-county-municipal-boundaries",
+    "retrieved_at": "2026-09-26T19:59:07.689061+00:00",
+    "http_status": 200,
+    "body": {
+      "name": "allegheny-county-municipal-boundaries",
+      "license_id": "notspecified",
+      "license_title": "License not specified",
+      "metadata_modified": "2026-08-30T17:16:04.897160",
+      "resources": [
+        {
+          "id": "5d1d6419-b8c1-421d-a3b7-028b388f01f5",
+          "name": "ArcGIS Hub Dataset",
+          "url": "https://openac-alcogis.opendata.arcgis.com/datasets/AlCoGIS::allegheny-county-municipal-boundaries"
+        },
+        {
+          "id": "f82f1dcf-3aac-4cf7-bdda-b937382378cc",
+          "name": "Esri Rest API",
+          "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0"
+        },
+        {
+          "id": "b0cb0249-d1ba-45b7-9918-dc86fa8af04c",
+          "name": "GeoJSON",
+          "url": "https://data.wprdc.org/dataset/2fa577d6-1a6b-46a8-8165-27fecac1dee5/resource/b0cb0249-d1ba-45b7-9918-dc86fa8af04c/download/muni_boundaries.geojson"
+        },
+        {
+          "id": "44ef6677-ade7-4fda-a32c-93cf124cf09b",
+          "name": "CSV",
+          "url": "https://data.wprdc.org/datastore/dump/44ef6677-ade7-4fda-a32c-93cf124cf09b"
+        },
+        {
+          "id": "7916c74c-8612-4edf-919b-8605a23af526",
+          "name": "KML",
+          "url": "https://data.wprdc.org/dataset/2fa577d6-1a6b-46a8-8165-27fecac1dee5/resource/7916c74c-8612-4edf-919b-8605a23af526/download/muni_boundaries.kml"
+        },
+        {
+          "id": "744aa7aa-b75e-41d3-8b15-6c1288e43844",
+          "name": "Shapefile",
+          "url": "https://data.wprdc.org/dataset/2fa577d6-1a6b-46a8-8165-27fecac1dee5/resource/744aa7aa-b75e-41d3-8b15-6c1288e43844/download/muni_boundaries.zip"
+        }
+      ]
+    },
+    "probe_name": "allegheny-county-municipal-boundaries",
+    "publication_derivative": {
+      "original_artifact_sha256": "cfce961b99cf05786e26596b49db99bb1809552964ce0c583498a0ba4614a173",
+      "redactions": "Geometry payloads and URL geometry values replaced by SHA-256 references. Modified URLs are not replayable.",
+      "geometry_hash_encoding": "UTF-8 original string; structured objects use sorted-key compact JSON with ensure_ascii=false."
+    }
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/package_show?id=allegheny-county-parcel-boundaries1",
+    "retrieved_at": "2026-09-26T19:59:07.688571+00:00",
+    "http_status": 200,
+    "body": {
+      "name": "allegheny-county-parcel-boundaries1",
+      "license_id": "notspecified",
+      "license_title": "License not specified",
+      "metadata_modified": "2026-09-23T11:55:23.942402",
+      "resources": [
+        {
+          "id": "5bc43fab-2877-415d-bb6e-45a73d21a929",
+          "name": "PASDA landing page for Allegheny County Parcel Boundaries",
+          "url": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1214"
+        },
+        {
+          "id": "0f7adae5-e1fb-4d30-89fa-d0c888dfda01",
+          "name": "ESRI Rest API",
+          "url": "https://maps.pasda.psu.edu/ArcGIS/rest/services/pasda/AlleghenyCounty/MapServer/25"
+        },
+        {
+          "id": "3f50d47a-ab54-4da2-9f03-8519006e9fc9",
+          "name": "GeoJSON",
+          "url": "https://data.wprdc.org/dataset/709e4e52-6f82-4cd0-a848-f3e2b3f5d22b/resource/3f50d47a-ab54-4da2-9f03-8519006e9fc9/download/alleghenycounty_parcels202609.geojson"
+        },
+        {
+          "id": "858bbc0f-b949-4e22-b4bb-1a78fef24afc",
+          "name": "CSV",
+          "url": "https://data.wprdc.org/datastore/dump/858bbc0f-b949-4e22-b4bb-1a78fef24afc"
+        },
+        {
+          "id": "55c40a7d-8a93-4f86-a64d-392c1aef8942",
+          "name": "KML",
+          "url": "https://data.wprdc.org/dataset/709e4e52-6f82-4cd0-a848-f3e2b3f5d22b/resource/55c40a7d-8a93-4f86-a64d-392c1aef8942/download/alleghenycounty_parcels202609.kmz"
+        },
+        {
+          "id": "be216088-d51c-41ce-aa4a-2c315c2c7725",
+          "name": "Shapefile",
+          "url": "https://data.wprdc.org/dataset/709e4e52-6f82-4cd0-a848-f3e2b3f5d22b/resource/be216088-d51c-41ce-aa4a-2c315c2c7725/download/alleghenycounty_parcels202609.zip"
+        }
+      ]
+    },
+    "probe_name": "allegheny-county-parcel-boundaries1"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22100%22%2C+%22PROPERTYADDRESS%22%3A+%22MAIN+ST%22%7D&limit=5",
+    "retrieved_at": "2026-09-26T19:59:07.814134+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "PROPERTYHOUSENUM": "100",
+          "PROPERTYADDRESS": "MAIN ST"
+        },
+        "include_total": true,
+        "limit": 5,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "PARID": "0167L00265000000",
+            "PROPERTYHOUSENUM": "100",
+            "PROPERTYADDRESS": "MAIN ST",
+            "PROPERTYCITY": "PITTSBURGH",
+            "PROPERTYZIP": "15215",
+            "MUNICODE": "852",
+            "MUNIDESC": "Sharpsburg  ",
+            "USEDESC": "WAREHOUSE",
+            "LOTAREA": 3000,
+            "ASOFDATE": "2026-09-01"
+          },
+          {
+            "PARID": "1224J00278000000",
+            "PROPERTYHOUSENUM": "100",
+            "PROPERTYADDRESS": "MAIN ST",
+            "PROPERTYCITY": "TARENTUM",
+            "PROPERTYZIP": "15084",
+            "MUNICODE": "855",
+            "MUNIDESC": "Tarentum  ",
+            "USEDESC": "VACANT LAND",
+            "LOTAREA": 3330,
+            "ASOFDATE": "2026-09-01"
+          },
+          {
+            "PARID": "1224J00280000000",
+            "PROPERTYHOUSENUM": "100",
+            "PROPERTYADDRESS": "MAIN ST",
+            "PROPERTYCITY": "TARENTUM",
+            "PROPERTYZIP": "15084",
+            "MUNICODE": "855",
+            "MUNIDESC": "Tarentum  ",
+            "USEDESC": "VACANT LAND",
+            "LOTAREA": 3398,
+            "ASOFDATE": "2026-09-01"
+          },
+          {
+            "PARID": "1224J00282000000",
+            "PROPERTYHOUSENUM": "100",
+            "PROPERTYADDRESS": "MAIN ST",
+            "PROPERTYCITY": "TARENTUM",
+            "PROPERTYZIP": "15084",
+            "MUNICODE": "855",
+            "MUNIDESC": "Tarentum  ",
+            "USEDESC": "FOUR FAMILY",
+            "LOTAREA": 5169,
+            "ASOFDATE": "2026-09-01"
+          },
+          {
+            "PARID": "0933S00277000000",
+            "PROPERTYHOUSENUM": "100",
+            "PROPERTYADDRESS": "MAIN ST",
+            "PROPERTYCITY": "AMBRIDGE",
+            "PROPERTYZIP": "15003",
+            "MUNICODE": "921",
+            "MUNIDESC": "Leet  ",
+            "USEDESC": "RES AUX BUILDING (NO HOUSE)",
+            "LOTAREA": 10586,
+            "ASOFDATE": "2026-09-01"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22100%22%2C+%22PROPERTYADDRESS%22%3A+%22MAIN+ST%22%7D&limit=5",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22100%22%2C+%22PROPERTYADDRESS%22%3A+%22MAIN+ST%22%7D&limit=5&offset=5"
+        },
+        "total": 6,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "ambiguous"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22125%22%2C+%22USEDESC%22%3A+%22SINGLE+FAMILY%22%7D&limit=1",
+    "retrieved_at": "2026-09-26T20:00:33.177547+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "MUNICODE": "125",
+          "USEDESC": "SINGLE FAMILY"
+        },
+        "include_total": true,
+        "limit": 1,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "PARID": "0046R00029000000",
+            "PROPERTYHOUSENUM": "2003",
+            "PROPERTYADDRESS": "MOUNTFORD AVE",
+            "PROPERTYCITY": "PITTSBURGH",
+            "PROPERTYZIP": "15214",
+            "MUNICODE": "125",
+            "MUNIDESC": "25th Ward - PITTSBURGH",
+            "USEDESC": "SINGLE FAMILY",
+            "LOTAREA": 1620,
+            "ASOFDATE": "2026-09-01"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22125%22%2C+%22USEDESC%22%3A+%22SINGLE+FAMILY%22%7D&limit=1",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22125%22%2C+%22USEDESC%22%3A+%22SINGLE+FAMILY%22%7D&limit=1&offset=1"
+        },
+        "total": 754,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "city-sample"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22824%22%7D&limit=2",
+    "retrieved_at": "2026-09-26T19:59:51.873436+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "MUNICODE": "824"
+        },
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "PARID": "0602R00213000000",
+            "PROPERTYHOUSENUM": "501",
+            "PROPERTYADDRESS": "CHESTNUT RD",
+            "PROPERTYCITY": "SEWICKLEY",
+            "PROPERTYZIP": "15143",
+            "MUNICODE": "824",
+            "MUNIDESC": "Edgeworth  ",
+            "USEDESC": "SINGLE FAMILY",
+            "LOTAREA": 82459,
+            "ASOFDATE": "2026-09-01"
+          },
+          {
+            "PARID": "0602R00229000000",
+            "PROPERTYHOUSENUM": "511",
+            "PROPERTYADDRESS": "CHESTNUT RD",
+            "PROPERTYCITY": "SEWICKLEY",
+            "PROPERTYZIP": "15143",
+            "MUNICODE": "824",
+            "MUNIDESC": "Edgeworth  ",
+            "USEDESC": "SINGLE FAMILY",
+            "LOTAREA": 19428,
+            "ASOFDATE": "2026-09-01"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22824%22%7D&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNICODE%22%3A+%22824%22%7D&limit=2&offset=2"
+        },
+        "total": 712,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "dormont-code"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNIDESC%22%3A+%22Dormont%22%7D&limit=5",
+    "retrieved_at": "2026-09-26T19:59:07.797997+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "MUNIDESC": "Dormont"
+        },
+        "include_total": true,
+        "limit": 5,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNIDESC%22%3A+%22Dormont%22%7D&limit=5",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22MUNIDESC%22%3A+%22Dormont%22%7D&limit=5&offset=5"
+        },
+        "total": 0,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "dormont"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PARID%22%3A+%220023C00208000000%22%7D&limit=5",
+    "retrieved_at": "2026-09-26T19:59:07.769622+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "PARID": "0023C00208000000"
+        },
+        "include_total": true,
+        "limit": 5,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "PARID": "0023C00208000000",
+            "PROPERTYHOUSENUM": "1623",
+            "PROPERTYADDRESS": "LANARK ST",
+            "PROPERTYCITY": "PITTSBURGH",
+            "PROPERTYZIP": "15214",
+            "MUNICODE": "125",
+            "MUNIDESC": "25th Ward - PITTSBURGH",
+            "USEDESC": "VACANT LAND",
+            "LOTAREA": 1657,
+            "ASOFDATE": "2026-09-01"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PARID%22%3A+%220023C00208000000%22%7D&limit=5",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PARID%22%3A+%220023C00208000000%22%7D&limit=5&offset=5"
+        },
+        "total": 1,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "lanark"
+  },
+  {
+    "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0/query?f=json&where=NAME+IN+%28%27DORMONT%27%2C%27EDGEWORTH%27%29&outFields=NAME%2CMUNICODE&returnGeometry=false",
+    "retrieved_at": "2026-09-26T20:00:35.007706+00:00",
+    "http_status": 200,
+    "body": {
+      "objectIdFieldName": "OBJECTID",
+      "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+      },
+      "globalIdFieldName": "GlobalID",
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 102729,
+        "latestWkid": 2272
+      },
+      "fields": [
+        {
+          "name": "NAME",
+          "type": "esriFieldTypeString",
+          "alias": "NAME",
+          "sqlType": "sqlTypeOther",
+          "length": 30,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "MUNICODE",
+          "type": "esriFieldTypeString",
+          "alias": "MUNICODE",
+          "sqlType": "sqlTypeOther",
+          "length": 3,
+          "domain": null,
+          "defaultValue": null
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "NAME": "DORMONT",
+            "MUNICODE": "819"
+          }
+        },
+        {
+          "attributes": {
+            "NAME": "EDGEWORTH",
+            "MUNICODE": "824"
+          }
+        }
+      ]
+    },
+    "probe_name": "muni-crosswalk"
+  },
+  {
+    "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0?f=json",
+    "retrieved_at": "2026-09-26T19:59:07.690329+00:00",
+    "http_status": 200,
+    "body": {
+      "name": "LandRecords.LANDRECORDS_OWNER.Municipalities",
+      "extent": {
+        "redacted": "geometry omitted pending reuse clearance",
+        "sha256": "210ece079674757fbf1149ef8f5dc524cb89e6af4afd62a8c738e0c208f15dc9",
+        "spatialReference": {
+          "wkid": 102729,
+          "latestWkid": 2272
+        }
+      },
+      "copyrightText": "",
+      "editingInfo": {
+        "lastEditDate": 1757688795594,
+        "schemaLastEditDate": 1757688795594,
+        "dataLastEditDate": 1757688795594
+      },
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "NAME",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "TYPE",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "LABEL",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "COG",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "SCHOOLD",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "CONGDIST",
+          "type": "esriFieldTypeSmallInteger"
+        },
+        {
+          "name": "FIPS",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "name": "REGION",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "ACRES",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "SQMI",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "MUNICODE",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "CNTL_ID",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "CNTYCOUNCIL",
+          "type": "esriFieldTypeSmallInteger"
+        },
+        {
+          "name": "EOC",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "ASSESSORTERRITORY",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "VALUATIONAREA",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "YEARCONVERTED",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "GlobalID",
+          "type": "esriFieldTypeGlobalID"
+        },
+        {
+          "name": "Shape__Area",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape__Length",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    },
+    "probe_name": "municipal-layer"
+  },
+  {
+    "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0/query?f=json&geometry=REDACTED_GEOMETRY_SHA256_5a4bba2b23fa7f18660a34c77fa9a3d0fe7130e24305bb7c557a33876bf2ac57&geometryType=esriGeometryPolygon&inSR=2272&spatialRel=esriSpatialRelIntersects&outFields=NAME%2CMUNICODE%2CTYPE&returnGeometry=false",
+    "retrieved_at": "2026-09-26T19:59:54.275860+00:00",
+    "http_status": 200,
+    "body": {
+      "objectIdFieldName": "OBJECTID",
+      "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+      },
+      "globalIdFieldName": "GlobalID",
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 102729,
+        "latestWkid": 2272
+      },
+      "fields": [
+        {
+          "name": "NAME",
+          "type": "esriFieldTypeString",
+          "alias": "NAME",
+          "sqlType": "sqlTypeOther",
+          "length": 30,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "MUNICODE",
+          "type": "esriFieldTypeString",
+          "alias": "MUNICODE",
+          "sqlType": "sqlTypeOther",
+          "length": 3,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "TYPE",
+          "type": "esriFieldTypeString",
+          "alias": "TYPE",
+          "sqlType": "sqlTypeOther",
+          "length": 10,
+          "domain": null,
+          "defaultValue": null
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "NAME": "PITTSBURGH",
+            "MUNICODE": "100",
+            "TYPE": "CITY"
+          }
+        }
+      ]
+    },
+    "probe_name": "municipality-0023C00208000000"
+  },
+  {
+    "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0/query?f=json&geometry=REDACTED_GEOMETRY_SHA256_9b848489160cdad5e524c47b0287e5ece076f5559fac2243d436e91187d5b82b&geometryType=esriGeometryPolygon&inSR=2272&spatialRel=esriSpatialRelIntersects&outFields=NAME%2CMUNICODE%2CTYPE&returnGeometry=false",
+    "retrieved_at": "2026-09-26T20:00:34.436100+00:00",
+    "http_status": 200,
+    "body": {
+      "objectIdFieldName": "OBJECTID",
+      "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+      },
+      "globalIdFieldName": "GlobalID",
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 102729,
+        "latestWkid": 2272
+      },
+      "fields": [
+        {
+          "name": "NAME",
+          "type": "esriFieldTypeString",
+          "alias": "NAME",
+          "sqlType": "sqlTypeOther",
+          "length": 30,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "MUNICODE",
+          "type": "esriFieldTypeString",
+          "alias": "MUNICODE",
+          "sqlType": "sqlTypeOther",
+          "length": 3,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "TYPE",
+          "type": "esriFieldTypeString",
+          "alias": "TYPE",
+          "sqlType": "sqlTypeOther",
+          "length": 10,
+          "domain": null,
+          "defaultValue": null
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "NAME": "PITTSBURGH",
+            "MUNICODE": "100",
+            "TYPE": "CITY"
+          }
+        }
+      ]
+    },
+    "probe_name": "municipality-0046R00029000000"
+  },
+  {
+    "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/AlleghenyCountyMunicipalBoundaries/FeatureServer/0/query?f=json&geometry=REDACTED_GEOMETRY_SHA256_8dd192efe4ee5342db9826bd51f766e11e70a04826be7edc0fa89768f94cd2e1&geometryType=esriGeometryPolygon&inSR=2272&spatialRel=esriSpatialRelIntersects&outFields=NAME%2CMUNICODE%2CTYPE&returnGeometry=false",
+    "retrieved_at": "2026-09-26T19:59:55.738462+00:00",
+    "http_status": 200,
+    "body": {
+      "objectIdFieldName": "OBJECTID",
+      "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+      },
+      "globalIdFieldName": "GlobalID",
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 102729,
+        "latestWkid": 2272
+      },
+      "fields": [
+        {
+          "name": "NAME",
+          "type": "esriFieldTypeString",
+          "alias": "NAME",
+          "sqlType": "sqlTypeOther",
+          "length": 30,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "MUNICODE",
+          "type": "esriFieldTypeString",
+          "alias": "MUNICODE",
+          "sqlType": "sqlTypeOther",
+          "length": 3,
+          "domain": null,
+          "defaultValue": null
+        },
+        {
+          "name": "TYPE",
+          "type": "esriFieldTypeString",
+          "alias": "TYPE",
+          "sqlType": "sqlTypeOther",
+          "length": 10,
+          "domain": null,
+          "defaultValue": null
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "NAME": "SHARPSBURG",
+            "MUNICODE": "852",
+            "TYPE": "BOROUGH"
+          }
+        }
+      ]
+    },
+    "probe_name": "municipality-0167L00265000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220023C00208000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+    "retrieved_at": "2026-09-26T19:59:53.033426+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "pin",
+            "type": "text"
+          },
+          {
+            "id": "map_block_lot",
+            "type": "text"
+          },
+          {
+            "id": "municode",
+            "type": "text"
+          },
+          {
+            "id": "wkt",
+            "type": "text"
+          }
+        ],
+        "filters": {
+          "pin": "0023C00208000000"
+        },
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "858bbc0f-b949-4e22-b4bb-1a78fef24afc",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "pin": "0023C00208000000",
+            "map_block_lot": "23-C-208",
+            "municode": "125",
+            "wkt": {
+              "redacted": "geometry omitted pending reuse clearance",
+              "sha256": "045b2d62404007642ad09f3859bed09f8c254ee0070d39472ce20b52aca23476"
+            }
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220023C00208000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220023C00208000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2&offset=2"
+        },
+        "total": 1,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "parcel-0023C00208000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220046R00029000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+    "retrieved_at": "2026-09-26T20:00:33.718005+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "pin",
+            "type": "text"
+          },
+          {
+            "id": "map_block_lot",
+            "type": "text"
+          },
+          {
+            "id": "municode",
+            "type": "text"
+          },
+          {
+            "id": "wkt",
+            "type": "text"
+          }
+        ],
+        "filters": {
+          "pin": "0046R00029000000"
+        },
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "858bbc0f-b949-4e22-b4bb-1a78fef24afc",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "pin": "0046R00029000000",
+            "map_block_lot": "46-R-29",
+            "municode": "125",
+            "wkt": {
+              "redacted": "geometry omitted pending reuse clearance",
+              "sha256": "1b56cbeaf4d94463753d354c3725b50059d8a22d1400dc5e96278842e5698b4f"
+            }
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220046R00029000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220046R00029000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2&offset=2"
+        },
+        "total": 1,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "parcel-0046R00029000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220167L00265000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+    "retrieved_at": "2026-09-26T19:59:55.352167+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "pin",
+            "type": "text"
+          },
+          {
+            "id": "map_block_lot",
+            "type": "text"
+          },
+          {
+            "id": "municode",
+            "type": "text"
+          },
+          {
+            "id": "wkt",
+            "type": "text"
+          }
+        ],
+        "filters": {
+          "pin": "0167L00265000000"
+        },
+        "include_total": true,
+        "limit": 2,
+        "records_format": "objects",
+        "resource_id": "858bbc0f-b949-4e22-b4bb-1a78fef24afc",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "pin": "0167L00265000000",
+            "map_block_lot": "167-L-265",
+            "municode": "852",
+            "wkt": {
+              "redacted": "geometry omitted pending reuse clearance",
+              "sha256": "23a375ce66b6e6510b8e6240b5f49153c86e9f98707c01a2e30ff8c1a38010e4"
+            }
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220167L00265000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2",
+          "next": "/api/3/action/datastore_search?resource_id=858bbc0f-b949-4e22-b4bb-1a78fef24afc&filters=%7B%22pin%22%3A+%220167L00265000000%22%7D&fields=pin%2Cmap_block_lot%2Cmunicode%2Cwkt&limit=2&offset=2"
+        },
+        "total": 1,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "parcel-0167L00265000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220023C00208000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_description%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100",
+    "retrieved_at": "2026-09-26T19:59:54.998707+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "permit_id",
+            "type": "text",
+            "info": {
+              "label": "Permit ID",
+              "notes": "This is a unique identifier for each permit. Permits may appear in the table multiple times since this table breaks permits down into the associated street closures.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "permit_type",
+            "type": "text",
+            "info": {
+              "label": "Permit type",
+              "notes": "The nature of the permit. These values are just a few words and are selected from a list of options.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "work_description",
+            "type": "text",
+            "info": {
+              "label": "Work Description",
+              "notes": "Description of services performed by company",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "work_type",
+            "type": "text",
+            "info": {
+              "label": "Work type",
+              "notes": "A basic description of the work necessitating the permit. These values are just a few words and are selected from a list of options.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "issue_date",
+            "type": "date",
+            "info": {
+              "label": "Issue date",
+              "notes": "The date that the permit was issued.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "parcel_num",
+            "type": "text",
+            "info": {
+              "label": "Parcel number",
+              "notes": "Alphanumeric identifier for the Allegheny County land parcel the where work takes place.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "status",
+            "type": "text",
+            "info": {
+              "label": "",
+              "notes": "",
+              "type_override": ""
+            }
+          }
+        ],
+        "filters": {
+          "parcel_num": "0023C00208000000"
+        },
+        "include_total": true,
+        "limit": 100,
+        "records_format": "objects",
+        "resource_id": "f4d1177a-f597-4c32-8cbf-7885f56253f6",
+        "total_estimation_threshold": null,
+        "records": [
+          {
+            "permit_id": "BP-2021-06707",
+            "permit_type": "BUILDING",
+            "work_description": "EXTERIOR ALTERATIONS TO ENCLOSE BUILDING ENVELOPE AT REAR AFTER DEMOLITION OF EXISTING TWO STORY ADDITION AT THREE STORY, SINGLE FAMILY DWELLING",
+            "work_type": "ADDITION / ALTERATION",
+            "issue_date": "2021-04-26",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          },
+          {
+            "permit_id": "BP-2023-19723",
+            "permit_type": "BUILDING",
+            "work_description": "INTERIOR AND EXTERIOR ALTERATIONS TO INCLUDE REMOVE AND REPLACE BLOCK FOUNDATION WALL IN REAR; INSTALL FOOTER; REMOVE AND REPLACE EXTERIOR WALL IN REAR; RELOCATE SECOND FLOOR BATHROOM; NEW POWDER ROOM; REMOVE CHIMNEYS, REFRAME SOME WINDOWS AND EXTERIOR DOOR. CONSTRUCTION OF DECK AT REAR OF EXISTING SINGLE-FAMILY DWELLING",
+            "work_type": "ADDITION / ALTERATION",
+            "issue_date": "2024-01-29",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          },
+          {
+            "permit_id": "DP-2021-06343",
+            "permit_type": "Demolition Permit",
+            "work_description": "EMERGENCY PARTIAL DEMOLITION - REMOVE TWO STORY ADDITION AT REAR OF EXISTING THREE STORY, SINGLE FAMILY DWELLING",
+            "work_type": "PARTIAL DEMOLITION",
+            "issue_date": "2021-04-26",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          },
+          {
+            "permit_id": "EP-2024-05671",
+            "permit_type": "ELECTRICAL",
+            "work_description": "install 200 amp service, rewire",
+            "work_type": "ADDITION / ALTERATION",
+            "issue_date": "2024-04-15",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          },
+          {
+            "permit_id": "EP-2026-05647",
+            "permit_type": "ELECTRICAL",
+            "work_description": "Installation of a 5.72 kW roof mounted solar array on a single family home\nArray will consist of (13) VSUN 440W modules & (13) Enphase IQ8Plus micro inverters; (1) Enphase IQ Battery 10C BBU; (1) Enphase IQ Meter Collar; (1) meter pan & (1) Enphase IQ Combiner 6C",
+            "work_type": "ADDITION / ALTERATION",
+            "issue_date": "2026-08-28",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          },
+          {
+            "permit_id": "MP-2024-02581",
+            "permit_type": "MECHANICAL",
+            "work_description": "Ductwork and electric air handler\nAdded AC to back of house",
+            "work_type": "ADDITION / ALTERATION",
+            "issue_date": "2024-02-20",
+            "parcel_num": "0023C00208000000",
+            "status": "Completed"
+          }
+        ],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220023C00208000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_description%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100",
+          "next": "/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220023C00208000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_description%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100&offset=100"
+        },
+        "total": 6,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "pli-0023C00208000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220046R00029000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100",
+    "retrieved_at": "2026-09-26T20:00:34.675857+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "permit_id",
+            "type": "text",
+            "info": {
+              "label": "Permit ID",
+              "notes": "This is a unique identifier for each permit. Permits may appear in the table multiple times since this table breaks permits down into the associated street closures.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "permit_type",
+            "type": "text",
+            "info": {
+              "label": "Permit type",
+              "notes": "The nature of the permit. These values are just a few words and are selected from a list of options.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "work_type",
+            "type": "text",
+            "info": {
+              "label": "Work type",
+              "notes": "A basic description of the work necessitating the permit. These values are just a few words and are selected from a list of options.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "issue_date",
+            "type": "date",
+            "info": {
+              "label": "Issue date",
+              "notes": "The date that the permit was issued.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "parcel_num",
+            "type": "text",
+            "info": {
+              "label": "Parcel number",
+              "notes": "Alphanumeric identifier for the Allegheny County land parcel the where work takes place.",
+              "type_override": ""
+            }
+          },
+          {
+            "id": "status",
+            "type": "text",
+            "info": {
+              "label": "",
+              "notes": "",
+              "type_override": ""
+            }
+          }
+        ],
+        "filters": {
+          "parcel_num": "0046R00029000000"
+        },
+        "include_total": true,
+        "limit": 100,
+        "records_format": "objects",
+        "resource_id": "f4d1177a-f597-4c32-8cbf-7885f56253f6",
+        "total_estimation_threshold": null,
+        "records": [],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220046R00029000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100",
+          "next": "/api/3/action/datastore_search?resource_id=f4d1177a-f597-4c32-8cbf-7885f56253f6&filters=%7B%22parcel_num%22%3A+%220046R00029000000%22%7D&fields=permit_id%2Cpermit_type%2Cwork_type%2Cissue_date%2Cparcel_num%2Cstatus&limit=100&offset=100"
+        },
+        "total": 0,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "pli-0046R00029000000"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/package_show?id=pli-permits",
+    "retrieved_at": "2026-09-26T19:59:07.689440+00:00",
+    "http_status": 200,
+    "body": {
+      "name": "pli-permits",
+      "license_id": "cc-by",
+      "license_title": "Creative Commons Attribution",
+      "metadata_modified": "2026-09-26T07:22:06.111414",
+      "resources": [
+        {
+          "id": "f4d1177a-f597-4c32-8cbf-7885f56253f6",
+          "name": "PLI Permits",
+          "url": "https://data.wprdc.org/datastore/dump/f4d1177a-f597-4c32-8cbf-7885f56253f6"
+        }
+      ]
+    },
+    "probe_name": "pli-permits"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/package_show?id=property-assessments",
+    "retrieved_at": "2026-09-26T19:59:07.688077+00:00",
+    "http_status": 200,
+    "body": {
+      "name": "property-assessments",
+      "license_id": "cc-zero",
+      "license_title": "Creative Commons CCZero",
+      "metadata_modified": "2026-09-07T07:15:48.442472",
+      "resources": [
+        {
+          "id": "9a1c60bd-f9f7-4aba-aeb7-af8c3aaa44e5",
+          "name": "Property Assessments Parcel Data (for downloads)",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/9a1c60bd-f9f7-4aba-aeb7-af8c3aaa44e5/download/assessments.csv"
+        },
+        {
+          "id": "65855e14-549e-4992-b5be-d629afc676fa",
+          "name": "Property Assessments Parcel Data (API version)",
+          "url": "https://tools.wprdc.org/downstream/65855e14-549e-4992-b5be-d629afc676fa"
+        },
+        {
+          "id": "2fae179a-ad05-45cb-9383-f642d6e0c5fa",
+          "name": "Property Dashboard",
+          "url": "http://tools.wprdc.org/property-dashboard/"
+        },
+        {
+          "id": "6ce5911d-8b5c-4f43-8ba4-a0a66429b163",
+          "name": "County Real Estate Portal Search Page",
+          "url": "https://www2.alleghenycounty.us/RealEstate/search.aspx"
+        },
+        {
+          "id": "1499b924-8dcc-4904-9715-c6b110b13710",
+          "name": "Property Assessment Data User Guide Allegheny County",
+          "url": "https://docs.google.com/document/d/1eYuJOh4_CBitclhhgeJv6iLStPjtouhXV1_2cwei_-s/edit?usp=sharing"
+        },
+        {
+          "id": "cc4bafd2-25b6-41d7-83aa-d16bc211b020",
+          "name": "Property Assessment Data User Guide (PDF)",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/cc4bafd2-25b6-41d7-83aa-d16bc211b020/download/allegheny-county-property-assessment-data-user-guide.pdf"
+        },
+        {
+          "id": "eec5cf1b-cf98-494e-b299-b69fb5b8cb59",
+          "name": "Parcel Information Extractor",
+          "url": "http://wprdc.github.io/property-information-extractor/#"
+        },
+        {
+          "id": "42c37141-aaff-46ef-9c76-faf4ef7b041a",
+          "name": "Selected 2020 Property Assessments Files",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/42c37141-aaff-46ef-9c76-faf4ef7b041a/download/selected-2020-assessments.csv.zip"
+        },
+        {
+          "id": "abb205ca-6ec1-4bf1-b7d9-f9fb23478161",
+          "name": "Selected 2019 Property Assessments Files",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/abb205ca-6ec1-4bf1-b7d9-f9fb23478161/download/selected-2019-assessments.zip"
+        },
+        {
+          "id": "ca74478b-1fd0-4050-848e-32d3767af61e",
+          "name": "2017 Assessment Files",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/ca74478b-1fd0-4050-848e-32d3767af61e/download/2017-assessment-files-2.zip"
+        },
+        {
+          "id": "43bf0e48-aadd-4c39-a2c1-b1f247656c0b",
+          "name": "2016 Assessment Files",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/43bf0e48-aadd-4c39-a2c1-b1f247656c0b/download/2016-assessments.zip"
+        },
+        {
+          "id": "2514a4e4-5842-4dca-aff6-099bcd68482c",
+          "name": "SEP-2017 Property Assessment Parcel Data",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/2514a4e4-5842-4dca-aff6-099bcd68482c/download/assessments.csv"
+        },
+        {
+          "id": "518b583f-7cc8-4f60-94d0-174cc98310dc",
+          "name": "Property Assessments Parcel Data (deprecated)",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/518b583f-7cc8-4f60-94d0-174cc98310dc/download/___"
+        },
+        {
+          "id": "c665470c-ee72-4f0d-b772-4f09c2145f2a",
+          "name": "Property Assessment Data Dictionary",
+          "url": "https://data.wprdc.org/dataset/2b3df818-601e-4f06-b150-643557229491/resource/c665470c-ee72-4f0d-b772-4f09c2145f2a/download/data-dictionary-open-data.csv"
+        }
+      ]
+    },
+    "probe_name": "property-assessments"
+  },
+  {
+    "url": "https://data.wprdc.org/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22604%22%2C+%22PROPERTYADDRESS%22%3A+%22CEDAR+AVE%22%7D&limit=5",
+    "retrieved_at": "2026-09-26T19:59:52.491924+00:00",
+    "http_status": 200,
+    "body": {
+      "help": "https://data.wprdc.org/api/3/action/help_show?name=datastore_search",
+      "success": true,
+      "result": {
+        "fields": [
+          {
+            "id": "PARID",
+            "type": "text",
+            "info": {
+              "label": "Parcel Identification  Number",
+              "notes": "A 16 character unique identifier for the parcel. \n"
+            }
+          },
+          {
+            "id": "PROPERTYHOUSENUM",
+            "type": "text",
+            "info": {
+              "label": "Property Location House Number",
+              "notes": "House Number for the physical location of property;  may be zero or blank. "
+            }
+          },
+          {
+            "id": "PROPERTYADDRESS",
+            "type": "text",
+            "info": {
+              "label": "Property Location Street Name",
+              "notes": "Street name for the physical location of the property, including directional indicators and suffixes."
+            }
+          },
+          {
+            "id": "PROPERTYCITY",
+            "type": "text",
+            "info": {
+              "label": "Property Location City  Name",
+              "notes": "City where the property is physically located."
+            }
+          },
+          {
+            "id": "PROPERTYZIP",
+            "type": "text",
+            "info": {
+              "label": "Property Location Zip  code",
+              "notes": "Zip Code where the property is physically located. \n"
+            }
+          },
+          {
+            "id": "MUNICODE",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "MUNIDESC",
+            "type": "text",
+            "info": {
+              "label": "Municipality Name ",
+              "notes": "Municipality name associated with specified parcel."
+            }
+          },
+          {
+            "id": "USEDESC",
+            "type": "text",
+            "info": {
+              "label": "Land Use Code Description",
+              "notes": "More detailed than class, these categories further describe the primary use of the parcel. There are about 200 self-explanatory categories."
+            }
+          },
+          {
+            "id": "LOTAREA",
+            "type": "float8",
+            "info": {
+              "label": "Sum of Area of Land",
+              "notes": "Total square footage of land."
+            }
+          },
+          {
+            "id": "ASOFDATE",
+            "type": "date",
+            "info": {
+              "label": "",
+              "notes": "The run date of this file"
+            }
+          }
+        ],
+        "filters": {
+          "PROPERTYHOUSENUM": "604",
+          "PROPERTYADDRESS": "CEDAR AVE"
+        },
+        "include_total": true,
+        "limit": 5,
+        "records_format": "objects",
+        "resource_id": "65855e14-549e-4992-b5be-d629afc676fa",
+        "total_estimation_threshold": null,
+        "records": [],
+        "_links": {
+          "start": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22604%22%2C+%22PROPERTYADDRESS%22%3A+%22CEDAR+AVE%22%7D&limit=5",
+          "next": "/api/3/action/datastore_search?resource_id=property_assessments_table&fields=PARID%2CPROPERTYHOUSENUM%2CPROPERTYADDRESS%2CPROPERTYCITY%2CPROPERTYZIP%2CMUNICODE%2CMUNIDESC%2CUSEDESC%2CLOTAREA%2CASOFDATE&filters=%7B%22PROPERTYHOUSENUM%22%3A+%22604%22%2C+%22PROPERTYADDRESS%22%3A+%22CEDAR+AVE%22%7D&limit=5&offset=5"
+        },
+        "total": 0,
+        "total_was_estimated": false
+      }
+    },
+    "probe_name": "unfamiliar-city"
+  },
+  {
+    "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/MapServer/0/query?f=json&geometry=REDACTED_GEOMETRY_SHA256_5a4bba2b23fa7f18660a34c77fa9a3d0fe7130e24305bb7c557a33876bf2ac57&geometryType=esriGeometryPolygon&inSR=2272&spatialRel=esriSpatialRelIntersects&outFields=zon_new%2Cfull_zoning_type%2Cstatus&returnGeometry=false",
+    "retrieved_at": "2026-09-26T19:59:55.129054+00:00",
+    "http_status": 200,
+    "body": {
+      "displayFieldName": "zon_new",
+      "fieldAliases": {
+        "zon_new": "zon_new",
+        "full_zoning_type": "full_zoning_type",
+        "status": "status"
+      },
+      "fields": [
+        {
+          "name": "zon_new",
+          "type": "esriFieldTypeString",
+          "alias": "zon_new",
+          "length": 25
+        },
+        {
+          "name": "full_zoning_type",
+          "type": "esriFieldTypeString",
+          "alias": "full_zoning_type",
+          "length": 100
+        },
+        {
+          "name": "status",
+          "type": "esriFieldTypeString",
+          "alias": "status",
+          "length": 20
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "zon_new": "R1D-H",
+            "full_zoning_type": "SINGLE-UNIT DETACHED RESIDENTIAL HIGH DENSITY",
+            "status": "Approved"
+          }
+        }
+      ]
+    },
+    "probe_name": "zoning-0023C00208000000"
+  },
+  {
+    "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/MapServer/0/query?f=json&geometry=REDACTED_GEOMETRY_SHA256_9b848489160cdad5e524c47b0287e5ece076f5559fac2243d436e91187d5b82b&geometryType=esriGeometryPolygon&inSR=2272&spatialRel=esriSpatialRelIntersects&outFields=zon_new%2Cfull_zoning_type%2Cstatus&returnGeometry=false",
+    "retrieved_at": "2026-09-26T20:00:34.804506+00:00",
+    "http_status": 200,
+    "body": {
+      "displayFieldName": "zon_new",
+      "fieldAliases": {
+        "zon_new": "zon_new",
+        "full_zoning_type": "full_zoning_type",
+        "status": "status"
+      },
+      "fields": [
+        {
+          "name": "zon_new",
+          "type": "esriFieldTypeString",
+          "alias": "zon_new",
+          "length": 25
+        },
+        {
+          "name": "full_zoning_type",
+          "type": "esriFieldTypeString",
+          "alias": "full_zoning_type",
+          "length": 100
+        },
+        {
+          "name": "status",
+          "type": "esriFieldTypeString",
+          "alias": "status",
+          "length": 20
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "zon_new": "R1D-L",
+            "full_zoning_type": "SINGLE-UNIT DETACHED RESIDENTIAL LOW DENSITY",
+            "status": "Approved"
+          }
+        }
+      ]
+    },
+    "probe_name": "zoning-0046R00029000000"
+  }
+]
