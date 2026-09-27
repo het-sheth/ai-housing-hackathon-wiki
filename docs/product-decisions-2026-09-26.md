@@ -1,5 +1,7 @@
 # Product interview decisions
 
+Latest amendment: [ADR 0008](adr/0008-gate-preliminary-scoring-on-complete-evidence.md) supersedes the blanket no-score preference below. A Pittsburgh preliminary score is allowed only after all required rubric factors are assessed. Current coverage is incomplete and produces no score. Other historical decisions are preserved; read [the current handoff](handoffs/current.md) for deployment, rejected UI and paused work.
+
 September 26, 2026. Accepted by Het during the product interview. These decisions guide the forthcoming design; they do not mean the capabilities are implemented or that practitioner demand is validated. Recommendations in the separate product critique remain recommendations unless explicitly accepted here.
 
 ## Personas and journey

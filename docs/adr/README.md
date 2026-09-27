@@ -8,11 +8,12 @@ ADRs explain consequential choices, their evidence, alternatives and tradeoffs. 
 |---|---|---|
 | [0001](0001-select-track-one.md) | Accepted | Enter Track 1 and continue workflow discovery |
 | [0002](0002-separate-research-and-application.md) | Accepted | Keep research and application repositories separate |
-| [0003](0003-stack-candidate.md) | Proposed | Evaluate a familiar TypeScript web stack; Better T Stack remains optional |
+| [0003](0003-stack-candidate.md) | Superseded by selected foundation | Historical stack candidate; React/Vite and Supabase were later selected |
 | [0004](0004-context-and-handoffs.md) | Accepted | Use selective Markdown context, ADRs and a current handoff |
 | [0005](0005-propose-project-comparison.md) | Proposed | Evaluate two housing proposals on one Pittsburgh parcel |
-| [0006](0006-select-action-led-v1.md) | Accepted | Lead with proposal assessment and next actions |
+| [0006](0006-select-action-led-v1.md) | Partially superseded by 0008 | Lead with proposal assessment and next actions |
 | [0007](0007-propose-persisted-workflow-architecture.md) | Proposed | Extend the prototype with owner-scoped persisted workflows |
+| [0008](0008-gate-preliminary-scoring-on-complete-evidence.md) | Accepted | Withhold preliminary score until required evidence is complete |
 
 ## For Agents
 

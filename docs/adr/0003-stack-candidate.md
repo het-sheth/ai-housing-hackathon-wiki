@@ -1,9 +1,9 @@
 # ADR 0003: Evaluate a familiar web stack
 
-- Status: Proposed
+- Status: Superseded by the selected foundation in [product decisions](../product-decisions-2026-09-26.md). This record remains the historical proposal.
 - Date: 2026-09-26
 - Decision owner: Het and Rushi
-- Approval evidence: None; stack discussion remains open
+- Approval evidence: Original proposal only; no stack approval existed when this candidate was recorded.
 
 ## For Humans
 
@@ -22,3 +22,5 @@ Do not scaffold, install product dependencies or create a production repository 
 Evidence: read-only review of available personal repository commit metadata, plus manifests and selected recent commits in nine relevant projects. This was not an exhaustive review of every historical code change, an audit of deployed systems, or a claim about unseen remote branches.
 
 Reference: https://www.better-t-stack.dev/docs . Prior code informs experience only; it is not application source for this hackathon.
+
+The later product decision selected React, TypeScript, Vite, Supabase Postgres and Supabase Auth, with Vercel planned. The current app uses React/Vite and is deployed to Vercel; Supabase authentication and cloud project storage are not connected. This update records current status without retroactively accepting every option or instruction in this proposal.

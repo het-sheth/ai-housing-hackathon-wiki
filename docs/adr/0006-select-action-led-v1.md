@@ -1,6 +1,6 @@
 # ADR 0006: Select an action-led v1 workflow
 
-- Status: Accepted
+- Status: Partially superseded by [ADR 0008](0008-gate-preliminary-scoring-on-complete-evidence.md) for the blanket no-score preference; other decisions remain accepted.
 - Date: 2026-09-26
 - Decision owner: Het and Rushi; approval by Het
 - Approval evidence: Het accepted the six final interview choices: "agree with all. i have 10 dollars in openrouter balance + cursor".
