@@ -1,5 +1,7 @@
 # Housing Navigator v1 product specification
 
+Latest amendment: [ADR 0008](adr/0008-gate-preliminary-scoring-on-complete-evidence.md) supersedes the blanket no-score preference below. A Pittsburgh preliminary score is allowed only after all required rubric factors are assessed. Current coverage is incomplete and produces no score. Other historical decisions are preserved; read [the current handoff](handoffs/current.md) for deployment, rejected UI and paused work.
+
 Status: PRODUCT DECISIONS ACCEPTED; CONSOLIDATED SPEC FOR REVIEW. September 26, 2026. Owners: Het and Rushi.
 
 This document preserves the product interview before context compaction. Accepted decisions are identified explicitly. The final interview choices are accepted. Detailed engineering recommendations and release verification remain to be reviewed. It is not authorization to implement all recommendations. No feature described here should be represented as implemented without verification.

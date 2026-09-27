@@ -36,6 +36,10 @@ Browser-only integration cannot enforce shared AI budgets or protect server cred
 
 Architecture is recommended, not accepted. No infrastructure was provisioned, no runtime model selected and no application implementation performed in this handoff. Source reuse, rule review, full jurisdiction tests, endpoint validation, email delivery and retention remain release gates. Existing balances do not authorize new purchases or top-ups. Public deployment requires later authority.
 
+### Current implementation status, September 26, 2026
+
+The architecture above remains proposed. Since this recommendation was written, the app implemented a guided single-property walkthrough, same-origin property and screening handlers, device-local IndexedDB drafts, and a manual Vercel deployment. The local intake handler is configured for DeepSeek through OpenRouter; the hosted assist handler is disabled. Supabase Auth, cloud project storage, PostGIS and owner-scoped project history are not connected. Property display and screening currently make separate public-source requests; a shared persisted observation snapshot and separate rule service are still proposed. The user's checkpoint deployment authorization does not accept the rest of this architecture. See `docs/architecture.md` in the application repository for implementation detail.
+
 ### Revisit when
 
 Review this recommendation before implementation. Revisit orchestration only if bounded request records and relational dependency transactions cannot meet measured workflow needs. Revisit spatial infrastructure if permitted data or verified geometry behavior cannot support reliable countywide identity.
