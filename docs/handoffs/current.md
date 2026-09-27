@@ -12,6 +12,8 @@ The organizer catalog has 60 entries. The final bounded source probe classified 
 
 ## For Agents
 
+For Codex CLI browser checks, see the [Chrome DevTools MCP note](../chrome-devtools-mcp-cli.md). It records a configured stdio server, a native Chromium launch failure in one CLI sandbox, and a successful approval-reviewed isolated stdio workaround. Native Chrome tools are not exposed in every agent session.
+
 ### Repositories and publication
 
 - App original checkout: `/home/het/personal/ai-housing-navigator`, `feat/clear-project-results`, pushed head `40ad242`. That checkout also contains uncommitted walkthrough, backend, docs and source work. Preserve it. Existing app draft PR #3 does not include these changes. The focused app drafts are [#4 catalog](https://github.com/het-sheth/ai-housing-navigator/pull/4), [#5 walkthrough](https://github.com/het-sheth/ai-housing-navigator/pull/5), [#6 parcel queries](https://github.com/het-sheth/ai-housing-navigator/pull/6), [#7 screening observations](https://github.com/het-sheth/ai-housing-navigator/pull/7), [#8 regional context](https://github.com/het-sheth/ai-housing-navigator/pull/8), [#9 spatial sources](https://github.com/het-sheth/ai-housing-navigator/pull/9), [#10 GTFS](https://github.com/het-sheth/ai-housing-navigator/pull/10) and [#11 NCES](https://github.com/het-sheth/ai-housing-navigator/pull/11). Explorer and proposal comparison remain separate worktrees.
