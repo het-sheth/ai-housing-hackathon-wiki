@@ -1,3 +1,13 @@
+# Paused checkpoint, September 27, 2026
+
+The user asked to stop at a good point. No further implementation should start until the user resumes. Reviewed source and tooling slices are published as draft PRs: [app #13 Chrome guidance](https://github.com/het-sheth/ai-housing-navigator/pull/13), [app #14 historical HUD CHAS](https://github.com/het-sheth/ai-housing-navigator/pull/14), [app #15 Census LODES](https://github.com/het-sheth/ai-housing-navigator/pull/15), and [wiki #7 CLI procedure](https://github.com/het-sheth/ai-housing-hackathon-wiki/pull/7). Nothing was merged or deployed.
+
+HUD `e2b0041` passed 200 tests and the other three app gates. LODES `9d1645c` passed 205 tests and the other gates; its unmatched-geography result is incomplete with no numeric total. Both received independent review. These branches are siblings based on app documentation PR #12 and have not been verified together. The earlier 60-source probe remains a dated baseline; all-source integration is not complete. FY2026 HUD income limits remain behind a verified HTTP 202 access challenge.
+
+A fresh isolated Chrome DevTools MCP stdio probe listed 30 tools and returned about:blank. It did not inspect app or personal data. Native Chrome tools are unavailable in the current agent session; use the [documented CLI procedure](../chrome-devtools-mcp-cli.md) when resuming browser work.
+
+The original app and wiki checkouts remain preserved with their unfinished and historical edits. Git hygiene follow-up is reconciliation and cleanup of worktrees plus clearer enforced code boundaries, not wholesale commits of the original dirty tree. See the [latest app handoff](https://github.com/het-sheth/ai-housing-navigator/blob/docs/chrome-devtools-runtime/docs/current.md) for exact branches and remaining work. Earlier notes below are historical where this checkpoint supersedes them.
+
 # Current handoff: resumed work and split publication
 
 September 26, 2026, Eastern. The user resumed work after the deployed checkpoint and authorized focused branches and PRs for the corrected walkthrough, source integration and wiki updates. The earlier stop instructions are historical. Preserve all existing app, explorer and proposal-comparison work. Two wiki and nine app branches are published as focused draft PRs. No new merge or deployment occurred.
