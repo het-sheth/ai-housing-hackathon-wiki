@@ -1,5 +1,19 @@
 # Current handoff: Pittsburgh housing hackathon
 
+## September 27 contribution intake
+
+Rushi requested documentation and PRs for the September 26 design discussion and a supplied deep-research PDF. See [the report review](../research/decision-focused-brief-review.md) for provenance, unresolved claims and next actions. The PDF is preserved under `docs/research/`; it is an AI-generated research artifact, not independent verification.
+
+PR #3 was verified merged on September 27. This intake branch is `docs/rushi-research-report`, based on `origin/main` at `0aaec10`. A separate branch, `docs/rushi-design-research`, contains the standalone research assignment, practitioner feedback kit, comparison-brief design and focused Shur Save assignment. These are separate proposed documentation contributions; no app changes or new scope decisions were made. PR URLs are recorded in the publishing session and on GitHub rather than guessed here.
+
+The eight-home Lanark case in the PDF, 21 Lanark advocacy example and 1623 LANARK ST parcel demo must stay distinct until primary identifiers/plans establish a relationship. Next: verify the selected case's revised plan and decision, prepare a concise brief, then request a concrete practitioner critique. Do not restart broad discovery or treat the PDF as reviewed production rule logic.
+
+Publication checks and source-hash verification are recorded in the PR description. No raw Slack messages were committed. Contribution dates are documented in prose; Git timestamps record actual commit creation.
+
+The September 26 handoff below is retained as historical application context. Its open-PR and machine-local statements are not current publication facts.
+
+---
+
 Updated: 2026-09-26. Stage: fresh-session execution handoff prepared. Het explicitly requested a new local repo and a quick working prototype with iteration. Latest request is to stop this bloated session after saving a comprehensive build prompt. Do not start the app in this closing session.
 
 **Start the next session with `docs/start-prototype-session.md`.** It is a self-contained execution prompt with source map, exact resource IDs, supported flow, provenance, scope limits and acceptance checks. It directs implementation rather than another discovery phase. The prompt now explicitly assigns Sol to ordinary implementation, Luna to bounded support, and Astra to hard reasoning/review, with at most two child agents active by default. The default is React + TypeScript + Vite unless Het changes it. The initial repo path remains `/home/het/personal/ai-housing-navigator`; no app has been created.
